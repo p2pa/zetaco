@@ -73,6 +73,7 @@ async function main(){
     // });  
 
     // exchange / transaction / ethereum 
+    // to do: branch out in classes depending on the above variables
     const response = await Moralis.EvmApi.token.getWalletTokenTransfers({
       address,
       chain,
@@ -86,6 +87,7 @@ async function main(){
 
     results.forEach(async (tx) => {
       // apply validation
+      // to do: find a different API for token price since rate limit on moralis
       const tokenValue = tx.value * await Moralis.EvmApi.token.getTokenPrice({
           address: tx.address,
           toBlock: tx.blockNumber,
