@@ -117,22 +117,3 @@ async function main(){
 
 init();
 setInterval(main, 10*1000);
-
-// app.get('/', async (req, res) => {
-//   const address = "0xd8da6bf26964af9d7eed9e03e53415d37aa96045";
-
-//   const chain = EvmChain.ETHEREUM;
-
-//   const response = await Moralis.EvmApi.transaction.getWalletTransactions({
-//     address,
-//     chain,
-//   });
-  
-//   console.log(response.toJSON());
-// })
-
-app.listen(port, async () => {
-  
-  console.log(`Example app listening on port ${port}`)
-})
-
