@@ -26,10 +26,10 @@ Moralis.start({
 app.get('/api', async (req, res) => {
   //let streams = await getStreams().result;  
   //res.render('streams', streams)
-  res.write("Hello from the API");
+  res.send("Hello from the API");
 })
 
-app.post('/api/webhook', (req, res) => {
+app.post('api/webhook', (req, res) => {
   // webhooks enter here  
   res.sendStatus(200);    
 })
