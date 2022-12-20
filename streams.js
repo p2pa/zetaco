@@ -12,7 +12,7 @@ module.exports = function(){
           includeNativeTxs: true,
         });
       
-        return result.raw;
+        return result.toJSON();
     }
 
     this.getStreams = async function(){
@@ -20,7 +20,7 @@ module.exports = function(){
             limit: 20,
             networkType: 'evm',
         });  
-        return result.raw;
+        return result.toJSON();
     }
 
     this.deleteStream = async function(id, options){
@@ -28,7 +28,7 @@ module.exports = function(){
             id,
             networkType: 'evm',
         });              
-        return result.raw;
+        return result.toJSON();
     }
 
     this.updateStream = async function (id, options) {
