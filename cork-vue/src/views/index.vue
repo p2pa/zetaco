@@ -94,10 +94,10 @@
     import '@suadelabs/vue3-multiselect/dist/vue3-multiselect.css';
     import { useMeta } from '@/composables/use-meta';
     
-    import sushi from '../sushi.json';
-    import thorchain from '../thorchain.json';
-    import synthetix from '../synthetix.json';
-    import balancer from '../balancer.json';
+    import sushi from '../../../sushi.json';
+    import thorchain from '../../../thorchain.json';
+    import synthetix from '../../../synthetix.json';
+    import balancer from '../../../balancer.json';
 
     useMeta({ title: 'Sales Admin' });    
 
