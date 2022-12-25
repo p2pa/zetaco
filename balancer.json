@@ -1,0 +1,4906 @@
+[
+    {
+      "Date": "2021-04-22 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2,
+      "Number of Unique Users": 1,
+      "Transaction Volume USD": 230.52,
+      "Average Transaction Volume USD": 115.26
+    },
+    {
+      "Date": "2021-04-23 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 7,
+      "Number of Unique Users": 4,
+      "Transaction Volume USD": 361.41,
+      "Average Transaction Volume USD": 40.156666667
+    },
+    {
+      "Date": "2021-04-24 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 9,
+      "Number of Unique Users": 6,
+      "Transaction Volume USD": 1308.55,
+      "Average Transaction Volume USD": 118.959090909
+    },
+    {
+      "Date": "2021-04-25 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 17,
+      "Number of Unique Users": 6,
+      "Transaction Volume USD": 773.15,
+      "Average Transaction Volume USD": 42.952777778
+    },
+    {
+      "Date": "2021-04-26 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 19,
+      "Number of Unique Users": 11,
+      "Transaction Volume USD": 1982.38,
+      "Average Transaction Volume USD": 90.108181818
+    },
+    {
+      "Date": "2021-04-27 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 7,
+      "Number of Unique Users": 2,
+      "Transaction Volume USD": 149.27,
+      "Average Transaction Volume USD": 14.927
+    },
+    {
+      "Date": "2021-04-28 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 17,
+      "Number of Unique Users": 8,
+      "Transaction Volume USD": 1713.59,
+      "Average Transaction Volume USD": 71.399583333
+    },
+    {
+      "Date": "2021-04-29 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 11,
+      "Number of Unique Users": 6,
+      "Transaction Volume USD": 1694.15,
+      "Average Transaction Volume USD": 130.319230769
+    },
+    {
+      "Date": "2021-04-30 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 19,
+      "Number of Unique Users": 10,
+      "Transaction Volume USD": 2903.53,
+      "Average Transaction Volume USD": 107.538148148
+    },
+    {
+      "Date": "2021-05-01 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3,
+      "Number of Unique Users": 3,
+      "Transaction Volume USD": 630.13,
+      "Average Transaction Volume USD": 210.043333333
+    },
+    {
+      "Date": "2021-05-02 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3,
+      "Number of Unique Users": 3,
+      "Transaction Volume USD": 404.35,
+      "Average Transaction Volume USD": 101.0875
+    },
+    {
+      "Date": "2021-05-03 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 8,
+      "Number of Unique Users": 4,
+      "Transaction Volume USD": 2376.97,
+      "Average Transaction Volume USD": 264.107777778
+    },
+    {
+      "Date": "2021-05-04 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 21,
+      "Number of Unique Users": 14,
+      "Transaction Volume USD": 3420,
+      "Average Transaction Volume USD": 142.5
+    },
+    {
+      "Date": "2021-05-05 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 11,
+      "Number of Unique Users": 10,
+      "Transaction Volume USD": 2459.19,
+      "Average Transaction Volume USD": 223.562727273
+    },
+    {
+      "Date": "2021-05-06 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 16,
+      "Number of Unique Users": 12,
+      "Transaction Volume USD": 3789.72,
+      "Average Transaction Volume USD": 236.8575
+    },
+    {
+      "Date": "2021-05-07 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 15,
+      "Number of Unique Users": 6,
+      "Transaction Volume USD": 4464.15,
+      "Average Transaction Volume USD": 279.009375
+    },
+    {
+      "Date": "2021-05-08 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3,
+      "Number of Unique Users": 3,
+      "Transaction Volume USD": 1488.09,
+      "Average Transaction Volume USD": 372.0225
+    },
+    {
+      "Date": "2021-05-09 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 4,
+      "Number of Unique Users": 4,
+      "Transaction Volume USD": 2811.45,
+      "Average Transaction Volume USD": 702.8625
+    },
+    {
+      "Date": "2021-05-10 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 9,
+      "Number of Unique Users": 7,
+      "Transaction Volume USD": 6396.6,
+      "Average Transaction Volume USD": 492.046153846
+    },
+    {
+      "Date": "2021-05-11 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 10,
+      "Number of Unique Users": 9,
+      "Transaction Volume USD": 32937.35,
+      "Average Transaction Volume USD": 2533.642307692
+    },
+    {
+      "Date": "2021-05-12 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 23,
+      "Number of Unique Users": 21,
+      "Transaction Volume USD": 100617.4,
+      "Average Transaction Volume USD": 4192.391666667
+    },
+    {
+      "Date": "2021-05-13 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 64,
+      "Number of Unique Users": 57,
+      "Transaction Volume USD": 261051.44,
+      "Average Transaction Volume USD": 3729.306285714
+    },
+    {
+      "Date": "2021-05-14 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 61,
+      "Number of Unique Users": 56,
+      "Transaction Volume USD": 255839.85,
+      "Average Transaction Volume USD": 3997.49765625
+    },
+    {
+      "Date": "2021-05-15 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 66,
+      "Number of Unique Users": 64,
+      "Transaction Volume USD": 208059.76,
+      "Average Transaction Volume USD": 2737.628421053
+    },
+    {
+      "Date": "2021-05-16 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 125,
+      "Number of Unique Users": 105,
+      "Transaction Volume USD": 615702.94,
+      "Average Transaction Volume USD": 4494.182043796
+    },
+    {
+      "Date": "2021-05-17 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 151,
+      "Number of Unique Users": 124,
+      "Transaction Volume USD": 764978.93,
+      "Average Transaction Volume USD": 4841.638797468
+    },
+    {
+      "Date": "2021-05-18 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 100,
+      "Number of Unique Users": 91,
+      "Transaction Volume USD": 434094.06,
+      "Average Transaction Volume USD": 3982.514311927
+    },
+    {
+      "Date": "2021-05-19 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 232,
+      "Number of Unique Users": 158,
+      "Transaction Volume USD": 1689669.44,
+      "Average Transaction Volume USD": 6785.821044177
+    },
+    {
+      "Date": "2021-05-20 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 215,
+      "Number of Unique Users": 152,
+      "Transaction Volume USD": 1007804.77,
+      "Average Transaction Volume USD": 4362.791212121
+    },
+    {
+      "Date": "2021-05-21 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 195,
+      "Number of Unique Users": 140,
+      "Transaction Volume USD": 799939.4,
+      "Average Transaction Volume USD": 3902.143414634
+    },
+    {
+      "Date": "2021-05-22 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 219,
+      "Number of Unique Users": 159,
+      "Transaction Volume USD": 708210.66,
+      "Average Transaction Volume USD": 2963.224518828
+    },
+    {
+      "Date": "2021-05-23 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 332,
+      "Number of Unique Users": 205,
+      "Transaction Volume USD": 1697780.27,
+      "Average Transaction Volume USD": 4921.102231884
+    },
+    {
+      "Date": "2021-05-24 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 537,
+      "Number of Unique Users": 331,
+      "Transaction Volume USD": 5860561.66,
+      "Average Transaction Volume USD": 10559.570558559
+    },
+    {
+      "Date": "2021-05-25 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 606,
+      "Number of Unique Users": 330,
+      "Transaction Volume USD": 6045563.21,
+      "Average Transaction Volume USD": 9642.046586922
+    },
+    {
+      "Date": "2021-05-26 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 830,
+      "Number of Unique Users": 415,
+      "Transaction Volume USD": 5691161.24,
+      "Average Transaction Volume USD": 6594.624843569
+    },
+    {
+      "Date": "2021-05-27 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 412,
+      "Number of Unique Users": 253,
+      "Transaction Volume USD": 3158587.37,
+      "Average Transaction Volume USD": 7311.544837963
+    },
+    {
+      "Date": "2021-05-28 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 544,
+      "Number of Unique Users": 313,
+      "Transaction Volume USD": 5492120.15,
+      "Average Transaction Volume USD": 9737.801684397
+    },
+    {
+      "Date": "2021-05-29 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 471,
+      "Number of Unique Users": 280,
+      "Transaction Volume USD": 4585908.19,
+      "Average Transaction Volume USD": 9283.214959514
+    },
+    {
+      "Date": "2021-05-30 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 415,
+      "Number of Unique Users": 252,
+      "Transaction Volume USD": 2991350.75,
+      "Average Transaction Volume USD": 6845.196224256
+    },
+    {
+      "Date": "2021-05-31 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 455,
+      "Number of Unique Users": 286,
+      "Transaction Volume USD": 3930085.33,
+      "Average Transaction Volume USD": 8221.93583682
+    },
+    {
+      "Date": "2021-06-01 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 438,
+      "Number of Unique Users": 287,
+      "Transaction Volume USD": 3716793.24,
+      "Average Transaction Volume USD": 8010.330258621
+    },
+    {
+      "Date": "2021-06-02 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 318,
+      "Number of Unique Users": 229,
+      "Transaction Volume USD": 2330682.45,
+      "Average Transaction Volume USD": 7020.127861446
+    },
+    {
+      "Date": "2021-06-03 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 362,
+      "Number of Unique Users": 240,
+      "Transaction Volume USD": 3364052.06,
+      "Average Transaction Volume USD": 9241.901263736
+    },
+    {
+      "Date": "2021-06-04 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 551,
+      "Number of Unique Users": 295,
+      "Transaction Volume USD": 5219924.66,
+      "Average Transaction Volume USD": 9206.21633157
+    },
+    {
+      "Date": "2021-06-05 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 470,
+      "Number of Unique Users": 275,
+      "Transaction Volume USD": 3902862.49,
+      "Average Transaction Volume USD": 7997.669036885
+    },
+    {
+      "Date": "2021-06-06 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 406,
+      "Number of Unique Users": 265,
+      "Transaction Volume USD": 2670945.16,
+      "Average Transaction Volume USD": 6284.576847059
+    },
+    {
+      "Date": "2021-06-07 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 565,
+      "Number of Unique Users": 314,
+      "Transaction Volume USD": 6241054.69,
+      "Average Transaction Volume USD": 10614.038588435
+    },
+    {
+      "Date": "2021-06-08 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 896,
+      "Number of Unique Users": 452,
+      "Transaction Volume USD": 13276736.26,
+      "Average Transaction Volume USD": 14322.261337648
+    },
+    {
+      "Date": "2021-06-09 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 748,
+      "Number of Unique Users": 421,
+      "Transaction Volume USD": 11419410.62,
+      "Average Transaction Volume USD": 14436.675878635
+    },
+    {
+      "Date": "2021-06-10 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 979,
+      "Number of Unique Users": 465,
+      "Transaction Volume USD": 10530471.88,
+      "Average Transaction Volume USD": 10334.123532875
+    },
+    {
+      "Date": "2021-06-11 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 848,
+      "Number of Unique Users": 387,
+      "Transaction Volume USD": 10976010.22,
+      "Average Transaction Volume USD": 12318.754455668
+    },
+    {
+      "Date": "2021-06-12 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 574,
+      "Number of Unique Users": 285,
+      "Transaction Volume USD": 8602396.78,
+      "Average Transaction Volume USD": 14337.327966667
+    },
+    {
+      "Date": "2021-06-13 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 615,
+      "Number of Unique Users": 327,
+      "Transaction Volume USD": 10522589.29,
+      "Average Transaction Volume USD": 16415.895928237
+    },
+    {
+      "Date": "2021-06-14 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 558,
+      "Number of Unique Users": 281,
+      "Transaction Volume USD": 9358311.97,
+      "Average Transaction Volume USD": 16162.887685665
+    },
+    {
+      "Date": "2021-06-15 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 625,
+      "Number of Unique Users": 341,
+      "Transaction Volume USD": 8888979.6,
+      "Average Transaction Volume USD": 13550.273780488
+    },
+    {
+      "Date": "2021-06-16 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 716,
+      "Number of Unique Users": 435,
+      "Transaction Volume USD": 8924550.26,
+      "Average Transaction Volume USD": 11681.348507853
+    },
+    {
+      "Date": "2021-06-17 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 611,
+      "Number of Unique Users": 349,
+      "Transaction Volume USD": 7302689.77,
+      "Average Transaction Volume USD": 11269.582978395
+    },
+    {
+      "Date": "2021-06-18 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 901,
+      "Number of Unique Users": 474,
+      "Transaction Volume USD": 12359954.02,
+      "Average Transaction Volume USD": 13051.693790919
+    },
+    {
+      "Date": "2021-06-19 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 697,
+      "Number of Unique Users": 346,
+      "Transaction Volume USD": 8159527.23,
+      "Average Transaction Volume USD": 11332.676708333
+    },
+    {
+      "Date": "2021-06-20 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 895,
+      "Number of Unique Users": 445,
+      "Transaction Volume USD": 11633789.38,
+      "Average Transaction Volume USD": 12563.487451404
+    },
+    {
+      "Date": "2021-06-21 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1556,
+      "Number of Unique Users": 662,
+      "Transaction Volume USD": 33973684.94,
+      "Average Transaction Volume USD": 21154.224744707
+    },
+    {
+      "Date": "2021-06-22 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1660,
+      "Number of Unique Users": 704,
+      "Transaction Volume USD": 36514928.45,
+      "Average Transaction Volume USD": 21021.835607369
+    },
+    {
+      "Date": "2021-06-23 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1252,
+      "Number of Unique Users": 679,
+      "Transaction Volume USD": 16124493.7,
+      "Average Transaction Volume USD": 12215.525530303
+    },
+    {
+      "Date": "2021-06-24 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1140,
+      "Number of Unique Users": 397,
+      "Transaction Volume USD": 11974141.78,
+      "Average Transaction Volume USD": 10138.985419136
+    },
+    {
+      "Date": "2021-06-25 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1391,
+      "Number of Unique Users": 418,
+      "Transaction Volume USD": 19607348.72,
+      "Average Transaction Volume USD": 13682.72764829
+    },
+    {
+      "Date": "2021-06-26 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1379,
+      "Number of Unique Users": 424,
+      "Transaction Volume USD": 15909623.35,
+      "Average Transaction Volume USD": 11110.072171788
+    },
+    {
+      "Date": "2021-06-27 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1209,
+      "Number of Unique Users": 405,
+      "Transaction Volume USD": 13731026.39,
+      "Average Transaction Volume USD": 10976.040279776
+    },
+    {
+      "Date": "2021-06-28 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1840,
+      "Number of Unique Users": 657,
+      "Transaction Volume USD": 24571055.24,
+      "Average Transaction Volume USD": 12817.451872718
+    },
+    {
+      "Date": "2021-06-29 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1510,
+      "Number of Unique Users": 605,
+      "Transaction Volume USD": 18454107.52,
+      "Average Transaction Volume USD": 11702.033937857
+    },
+    {
+      "Date": "2021-06-30 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1622,
+      "Number of Unique Users": 630,
+      "Transaction Volume USD": 20957684.44,
+      "Average Transaction Volume USD": 12992.984773714
+    },
+    {
+      "Date": "2021-07-01 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1459,
+      "Number of Unique Users": 621,
+      "Transaction Volume USD": 17910714.05,
+      "Average Transaction Volume USD": 11892.904415671
+    },
+    {
+      "Date": "2021-07-02 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1327,
+      "Number of Unique Users": 542,
+      "Transaction Volume USD": 15030608.01,
+      "Average Transaction Volume USD": 10947.274588492
+    },
+    {
+      "Date": "2021-07-03 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1304,
+      "Number of Unique Users": 541,
+      "Transaction Volume USD": 12350098.99,
+      "Average Transaction Volume USD": 9041.068074671
+    },
+    {
+      "Date": "2021-07-04 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1839,
+      "Number of Unique Users": 664,
+      "Transaction Volume USD": 17678649.31,
+      "Average Transaction Volume USD": 9070.625608004
+    },
+    {
+      "Date": "2021-07-05 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1775,
+      "Number of Unique Users": 614,
+      "Transaction Volume USD": 20763289.78,
+      "Average Transaction Volume USD": 11061.955130527
+    },
+    {
+      "Date": "2021-07-06 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1465,
+      "Number of Unique Users": 588,
+      "Transaction Volume USD": 21956107.93,
+      "Average Transaction Volume USD": 14473.373717864
+    },
+    {
+      "Date": "2021-07-07 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1013,
+      "Number of Unique Users": 473,
+      "Transaction Volume USD": 13607508.29,
+      "Average Transaction Volume USD": 12495.416244261
+    },
+    {
+      "Date": "2021-07-08 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1068,
+      "Number of Unique Users": 452,
+      "Transaction Volume USD": 17694971.09,
+      "Average Transaction Volume USD": 15481.16455818
+    },
+    {
+      "Date": "2021-07-09 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1308,
+      "Number of Unique Users": 513,
+      "Transaction Volume USD": 18049189,
+      "Average Transaction Volume USD": 13489.677877429
+    },
+    {
+      "Date": "2021-07-10 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 958,
+      "Number of Unique Users": 441,
+      "Transaction Volume USD": 11225714.95,
+      "Average Transaction Volume USD": 12044.758530043
+    },
+    {
+      "Date": "2021-07-11 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 867,
+      "Number of Unique Users": 395,
+      "Transaction Volume USD": 7701244.42,
+      "Average Transaction Volume USD": 8575.996013363
+    },
+    {
+      "Date": "2021-07-12 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 898,
+      "Number of Unique Users": 421,
+      "Transaction Volume USD": 25137054.5,
+      "Average Transaction Volume USD": 26855.827457265
+    },
+    {
+      "Date": "2021-07-13 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 805,
+      "Number of Unique Users": 361,
+      "Transaction Volume USD": 14688796.32,
+      "Average Transaction Volume USD": 16672.867559591
+    },
+    {
+      "Date": "2021-07-14 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 901,
+      "Number of Unique Users": 420,
+      "Transaction Volume USD": 16996003.06,
+      "Average Transaction Volume USD": 17064.260100402
+    },
+    {
+      "Date": "2021-07-15 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 996,
+      "Number of Unique Users": 404,
+      "Transaction Volume USD": 19119930.11,
+      "Average Transaction Volume USD": 17525.142172319
+    },
+    {
+      "Date": "2021-07-16 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1021,
+      "Number of Unique Users": 463,
+      "Transaction Volume USD": 24922929.07,
+      "Average Transaction Volume USD": 22432.879450945
+    },
+    {
+      "Date": "2021-07-17 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 995,
+      "Number of Unique Users": 457,
+      "Transaction Volume USD": 12022486.84,
+      "Average Transaction Volume USD": 11537.895239923
+    },
+    {
+      "Date": "2021-07-18 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1058,
+      "Number of Unique Users": 454,
+      "Transaction Volume USD": 13892713.67,
+      "Average Transaction Volume USD": 12143.980480769
+    },
+    {
+      "Date": "2021-07-19 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1002,
+      "Number of Unique Users": 530,
+      "Transaction Volume USD": 11691381.24,
+      "Average Transaction Volume USD": 10131.179584055
+    },
+    {
+      "Date": "2021-07-20 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1460,
+      "Number of Unique Users": 598,
+      "Transaction Volume USD": 19996498.52,
+      "Average Transaction Volume USD": 12328.297484587
+    },
+    {
+      "Date": "2021-07-21 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1934,
+      "Number of Unique Users": 720,
+      "Transaction Volume USD": 23615706.71,
+      "Average Transaction Volume USD": 10897.880346101
+    },
+    {
+      "Date": "2021-07-22 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1210,
+      "Number of Unique Users": 459,
+      "Transaction Volume USD": 15265891.68,
+      "Average Transaction Volume USD": 11504.063059533
+    },
+    {
+      "Date": "2021-07-23 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1305,
+      "Number of Unique Users": 482,
+      "Transaction Volume USD": 13699375.13,
+      "Average Transaction Volume USD": 9688.384108911
+    },
+    {
+      "Date": "2021-07-24 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1291,
+      "Number of Unique Users": 511,
+      "Transaction Volume USD": 10823321.84,
+      "Average Transaction Volume USD": 7814.672808664
+    },
+    {
+      "Date": "2021-07-25 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 985,
+      "Number of Unique Users": 364,
+      "Transaction Volume USD": 9811680.98,
+      "Average Transaction Volume USD": 9461.60171649
+    },
+    {
+      "Date": "2021-07-26 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1817,
+      "Number of Unique Users": 526,
+      "Transaction Volume USD": 42028457.97,
+      "Average Transaction Volume USD": 21045.797681522
+    },
+    {
+      "Date": "2021-07-27 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1232,
+      "Number of Unique Users": 409,
+      "Transaction Volume USD": 21115100.51,
+      "Average Transaction Volume USD": 15745.787106637
+    },
+    {
+      "Date": "2021-07-28 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 957,
+      "Number of Unique Users": 304,
+      "Transaction Volume USD": 17270527.25,
+      "Average Transaction Volume USD": 16654.317502411
+    },
+    {
+      "Date": "2021-07-29 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 936,
+      "Number of Unique Users": 346,
+      "Transaction Volume USD": 14410603.51,
+      "Average Transaction Volume USD": 14100.394823875
+    },
+    {
+      "Date": "2021-07-30 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1186,
+      "Number of Unique Users": 351,
+      "Transaction Volume USD": 20764674.98,
+      "Average Transaction Volume USD": 16311.606425766
+    },
+    {
+      "Date": "2021-07-31 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 917,
+      "Number of Unique Users": 313,
+      "Transaction Volume USD": 13932260.76,
+      "Average Transaction Volume USD": 14392.831363636
+    },
+    {
+      "Date": "2021-08-01 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1334,
+      "Number of Unique Users": 391,
+      "Transaction Volume USD": 25679502.25,
+      "Average Transaction Volume USD": 18199.505492558
+    },
+    {
+      "Date": "2021-08-02 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 930,
+      "Number of Unique Users": 346,
+      "Transaction Volume USD": 16661149.83,
+      "Average Transaction Volume USD": 16846.460899899
+    },
+    {
+      "Date": "2021-08-03 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 956,
+      "Number of Unique Users": 368,
+      "Transaction Volume USD": 22053823.54,
+      "Average Transaction Volume USD": 21124.352049808
+    },
+    {
+      "Date": "2021-08-04 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1091,
+      "Number of Unique Users": 428,
+      "Transaction Volume USD": 26557681.79,
+      "Average Transaction Volume USD": 22914.306980155
+    },
+    {
+      "Date": "2021-08-05 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1220,
+      "Number of Unique Users": 384,
+      "Transaction Volume USD": 38289129.32,
+      "Average Transaction Volume USD": 29773.817511664
+    },
+    {
+      "Date": "2021-08-06 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1024,
+      "Number of Unique Users": 380,
+      "Transaction Volume USD": 24980748.22,
+      "Average Transaction Volume USD": 22384.182992832
+    },
+    {
+      "Date": "2021-08-07 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1138,
+      "Number of Unique Users": 367,
+      "Transaction Volume USD": 30275531.76,
+      "Average Transaction Volume USD": 24047.284956315
+    },
+    {
+      "Date": "2021-08-08 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 900,
+      "Number of Unique Users": 408,
+      "Transaction Volume USD": 21175649.63,
+      "Average Transaction Volume USD": 21519.969136179
+    },
+    {
+      "Date": "2021-08-09 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1087,
+      "Number of Unique Users": 409,
+      "Transaction Volume USD": 26839648.3,
+      "Average Transaction Volume USD": 21627.4361805
+    },
+    {
+      "Date": "2021-08-10 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 995,
+      "Number of Unique Users": 431,
+      "Transaction Volume USD": 20470060.29,
+      "Average Transaction Volume USD": 18866.415013825
+    },
+    {
+      "Date": "2021-08-11 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1002,
+      "Number of Unique Users": 413,
+      "Transaction Volume USD": 18215476.97,
+      "Average Transaction Volume USD": 16514.485013599
+    },
+    {
+      "Date": "2021-08-12 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1210,
+      "Number of Unique Users": 403,
+      "Transaction Volume USD": 21242156.05,
+      "Average Transaction Volume USD": 16153.730836502
+    },
+    {
+      "Date": "2021-08-13 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1025,
+      "Number of Unique Users": 326,
+      "Transaction Volume USD": 22587177.23,
+      "Average Transaction Volume USD": 18854.071143573
+    },
+    {
+      "Date": "2021-08-14 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 716,
+      "Number of Unique Users": 276,
+      "Transaction Volume USD": 12407913.67,
+      "Average Transaction Volume USD": 16135.128309493
+    },
+    {
+      "Date": "2021-08-15 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1121,
+      "Number of Unique Users": 352,
+      "Transaction Volume USD": 20916226.8,
+      "Average Transaction Volume USD": 17907.728424658
+    },
+    {
+      "Date": "2021-08-16 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1141,
+      "Number of Unique Users": 325,
+      "Transaction Volume USD": 26997274.66,
+      "Average Transaction Volume USD": 22516.492627189
+    },
+    {
+      "Date": "2021-08-17 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1622,
+      "Number of Unique Users": 403,
+      "Transaction Volume USD": 38333965.55,
+      "Average Transaction Volume USD": 22417.52371345
+    },
+    {
+      "Date": "2021-08-18 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1393,
+      "Number of Unique Users": 380,
+      "Transaction Volume USD": 30447647.95,
+      "Average Transaction Volume USD": 20840.279226557
+    },
+    {
+      "Date": "2021-08-19 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1077,
+      "Number of Unique Users": 339,
+      "Transaction Volume USD": 23448963.05,
+      "Average Transaction Volume USD": 21512.810137615
+    },
+    {
+      "Date": "2021-08-20 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 911,
+      "Number of Unique Users": 303,
+      "Transaction Volume USD": 18693052.38,
+      "Average Transaction Volume USD": 19739.231657867
+    },
+    {
+      "Date": "2021-08-21 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1373,
+      "Number of Unique Users": 430,
+      "Transaction Volume USD": 25742397.52,
+      "Average Transaction Volume USD": 18413.732131617
+    },
+    {
+      "Date": "2021-08-22 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 865,
+      "Number of Unique Users": 303,
+      "Transaction Volume USD": 14550244.36,
+      "Average Transaction Volume USD": 16184.921423804
+    },
+    {
+      "Date": "2021-08-23 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 824,
+      "Number of Unique Users": 282,
+      "Transaction Volume USD": 22369930.96,
+      "Average Transaction Volume USD": 26410.780354191
+    },
+    {
+      "Date": "2021-08-24 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 702,
+      "Number of Unique Users": 269,
+      "Transaction Volume USD": 23773643.93,
+      "Average Transaction Volume USD": 29828.913337516
+    },
+    {
+      "Date": "2021-08-25 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 579,
+      "Number of Unique Users": 238,
+      "Transaction Volume USD": 19090139.57,
+      "Average Transaction Volume USD": 29597.115612403
+    },
+    {
+      "Date": "2021-08-26 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 509,
+      "Number of Unique Users": 193,
+      "Transaction Volume USD": 16803678.93,
+      "Average Transaction Volume USD": 30832.43840367
+    },
+    {
+      "Date": "2021-08-27 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 559,
+      "Number of Unique Users": 179,
+      "Transaction Volume USD": 18412456.71,
+      "Average Transaction Volume USD": 30333.536589786
+    },
+    {
+      "Date": "2021-08-28 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 469,
+      "Number of Unique Users": 180,
+      "Transaction Volume USD": 12416493.23,
+      "Average Transaction Volume USD": 25083.824707071
+    },
+    {
+      "Date": "2021-08-29 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 465,
+      "Number of Unique Users": 212,
+      "Transaction Volume USD": 13885717.87,
+      "Average Transaction Volume USD": 30318.16128821
+    },
+    {
+      "Date": "2021-08-30 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 850,
+      "Number of Unique Users": 295,
+      "Transaction Volume USD": 31426554.63,
+      "Average Transaction Volume USD": 33326.144888653
+    },
+    {
+      "Date": "2021-08-31 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 706,
+      "Number of Unique Users": 222,
+      "Transaction Volume USD": 29431353,
+      "Average Transaction Volume USD": 40097.211171662
+    },
+    {
+      "Date": "2021-09-01 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 759,
+      "Number of Unique Users": 256,
+      "Transaction Volume USD": 41376077.24,
+      "Average Transaction Volume USD": 52176.642168979
+    },
+    {
+      "Date": "2021-09-02 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 723,
+      "Number of Unique Users": 242,
+      "Transaction Volume USD": 34000029.31,
+      "Average Transaction Volume USD": 45273.00840213
+    },
+    {
+      "Date": "2021-09-03 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 609,
+      "Number of Unique Users": 192,
+      "Transaction Volume USD": 39556740.96,
+      "Average Transaction Volume USD": 60025.403581184
+    },
+    {
+      "Date": "2021-09-04 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 459,
+      "Number of Unique Users": 189,
+      "Transaction Volume USD": 22373218.55,
+      "Average Transaction Volume USD": 44303.403069307
+    },
+    {
+      "Date": "2021-09-05 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 465,
+      "Number of Unique Users": 171,
+      "Transaction Volume USD": 18636300.49,
+      "Average Transaction Volume USD": 38825.626020833
+    },
+    {
+      "Date": "2021-09-06 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 626,
+      "Number of Unique Users": 231,
+      "Transaction Volume USD": 27079896.7,
+      "Average Transaction Volume USD": 42712.770820189
+    },
+    {
+      "Date": "2021-09-07 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1395,
+      "Number of Unique Users": 375,
+      "Transaction Volume USD": 101803658.56,
+      "Average Transaction Volume USD": 68879.335967524
+    },
+    {
+      "Date": "2021-09-08 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1122,
+      "Number of Unique Users": 291,
+      "Transaction Volume USD": 69845071.11,
+      "Average Transaction Volume USD": 56600.543849271
+    },
+    {
+      "Date": "2021-09-09 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 862,
+      "Number of Unique Users": 253,
+      "Transaction Volume USD": 57494924.4,
+      "Average Transaction Volume USD": 62835.98295082
+    },
+    {
+      "Date": "2021-09-10 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 973,
+      "Number of Unique Users": 344,
+      "Transaction Volume USD": 44405798.63,
+      "Average Transaction Volume USD": 47240.211308511
+    },
+    {
+      "Date": "2021-09-11 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 782,
+      "Number of Unique Users": 343,
+      "Transaction Volume USD": 28211923.55,
+      "Average Transaction Volume USD": 41982.029092262
+    },
+    {
+      "Date": "2021-09-12 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 891,
+      "Number of Unique Users": 286,
+      "Transaction Volume USD": 36261903.53,
+      "Average Transaction Volume USD": 44007.164478155
+    },
+    {
+      "Date": "2021-09-13 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 850,
+      "Number of Unique Users": 314,
+      "Transaction Volume USD": 35006301.88,
+      "Average Transaction Volume USD": 40329.840875576
+    },
+    {
+      "Date": "2021-09-14 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1247,
+      "Number of Unique Users": 553,
+      "Transaction Volume USD": 29887842.3,
+      "Average Transaction Volume USD": 23349.876796875
+    },
+    {
+      "Date": "2021-09-15 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2057,
+      "Number of Unique Users": 964,
+      "Transaction Volume USD": 46490023.28,
+      "Average Transaction Volume USD": 20310.189287899
+    },
+    {
+      "Date": "2021-09-16 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2850,
+      "Number of Unique Users": 1568,
+      "Transaction Volume USD": 56502041.26,
+      "Average Transaction Volume USD": 16487.318721914
+    },
+    {
+      "Date": "2021-09-17 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2445,
+      "Number of Unique Users": 1526,
+      "Transaction Volume USD": 57936629.36,
+      "Average Transaction Volume USD": 20501.284274593
+    },
+    {
+      "Date": "2021-09-18 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1114,
+      "Number of Unique Users": 715,
+      "Transaction Volume USD": 25561850.86,
+      "Average Transaction Volume USD": 22721.645208889
+    },
+    {
+      "Date": "2021-09-19 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1027,
+      "Number of Unique Users": 613,
+      "Transaction Volume USD": 23557655.96,
+      "Average Transaction Volume USD": 22329.53171564
+    },
+    {
+      "Date": "2021-09-20 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1108,
+      "Number of Unique Users": 398,
+      "Transaction Volume USD": 46521087.16,
+      "Average Transaction Volume USD": 40104.385482759
+    },
+    {
+      "Date": "2021-09-21 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1069,
+      "Number of Unique Users": 355,
+      "Transaction Volume USD": 51635048.28,
+      "Average Transaction Volume USD": 45979.562137133
+    },
+    {
+      "Date": "2021-09-22 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 991,
+      "Number of Unique Users": 377,
+      "Transaction Volume USD": 38360723.35,
+      "Average Transaction Volume USD": 37461.643896484
+    },
+    {
+      "Date": "2021-09-23 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 658,
+      "Number of Unique Users": 266,
+      "Transaction Volume USD": 23476805.66,
+      "Average Transaction Volume USD": 33731.042614943
+    },
+    {
+      "Date": "2021-09-24 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1078,
+      "Number of Unique Users": 380,
+      "Transaction Volume USD": 57205799.93,
+      "Average Transaction Volume USD": 50669.441922055
+    },
+    {
+      "Date": "2021-09-25 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 899,
+      "Number of Unique Users": 314,
+      "Transaction Volume USD": 32081236.87,
+      "Average Transaction Volume USD": 33948.398804233
+    },
+    {
+      "Date": "2021-09-26 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1319,
+      "Number of Unique Users": 349,
+      "Transaction Volume USD": 50769982.81,
+      "Average Transaction Volume USD": 35379.778961672
+    },
+    {
+      "Date": "2021-09-27 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 664,
+      "Number of Unique Users": 282,
+      "Transaction Volume USD": 23950794.77,
+      "Average Transaction Volume USD": 34362.689770445
+    },
+    {
+      "Date": "2021-09-28 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 675,
+      "Number of Unique Users": 326,
+      "Transaction Volume USD": 27455153.57,
+      "Average Transaction Volume USD": 38132.157736111
+    },
+    {
+      "Date": "2021-09-29 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1088,
+      "Number of Unique Users": 691,
+      "Transaction Volume USD": 30723623.96,
+      "Average Transaction Volume USD": 25080.509355102
+    },
+    {
+      "Date": "2021-09-30 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1369,
+      "Number of Unique Users": 834,
+      "Transaction Volume USD": 40802264.49,
+      "Average Transaction Volume USD": 25873.344635384
+    },
+    {
+      "Date": "2021-10-01 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2289,
+      "Number of Unique Users": 1546,
+      "Transaction Volume USD": 56784636.72,
+      "Average Transaction Volume USD": 19669.08095601
+    },
+    {
+      "Date": "2021-10-02 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1106,
+      "Number of Unique Users": 564,
+      "Transaction Volume USD": 35973339.73,
+      "Average Transaction Volume USD": 29583.33859375
+    },
+    {
+      "Date": "2021-10-03 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 784,
+      "Number of Unique Users": 454,
+      "Transaction Volume USD": 19289543.25,
+      "Average Transaction Volume USD": 25857.296581769
+    },
+    {
+      "Date": "2021-10-04 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 664,
+      "Number of Unique Users": 374,
+      "Transaction Volume USD": 30043033.19,
+      "Average Transaction Volume USD": 39950.842007979
+    },
+    {
+      "Date": "2021-10-05 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 519,
+      "Number of Unique Users": 297,
+      "Transaction Volume USD": 18291123.79,
+      "Average Transaction Volume USD": 32662.721053571
+    },
+    {
+      "Date": "2021-10-06 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 657,
+      "Number of Unique Users": 286,
+      "Transaction Volume USD": 41380538.9,
+      "Average Transaction Volume USD": 58946.636609687
+    },
+    {
+      "Date": "2021-10-07 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 581,
+      "Number of Unique Users": 303,
+      "Transaction Volume USD": 34231573.34,
+      "Average Transaction Volume USD": 56025.488281506
+    },
+    {
+      "Date": "2021-10-08 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 600,
+      "Number of Unique Users": 336,
+      "Transaction Volume USD": 20845166.08,
+      "Average Transaction Volume USD": 33087.565206349
+    },
+    {
+      "Date": "2021-10-09 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 852,
+      "Number of Unique Users": 570,
+      "Transaction Volume USD": 20222817.16,
+      "Average Transaction Volume USD": 25827.352694764
+    },
+    {
+      "Date": "2021-10-10 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1031,
+      "Number of Unique Users": 688,
+      "Transaction Volume USD": 26791232.11,
+      "Average Transaction Volume USD": 27676.89267562
+    },
+    {
+      "Date": "2021-10-11 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1160,
+      "Number of Unique Users": 816,
+      "Transaction Volume USD": 28434999.45,
+      "Average Transaction Volume USD": 24282.663919727
+    },
+    {
+      "Date": "2021-10-12 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1423,
+      "Number of Unique Users": 933,
+      "Transaction Volume USD": 73060850.58,
+      "Average Transaction Volume USD": 49870.887767918
+    },
+    {
+      "Date": "2021-10-13 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1122,
+      "Number of Unique Users": 756,
+      "Transaction Volume USD": 47056697.96,
+      "Average Transaction Volume USD": 43490.4787061
+    },
+    {
+      "Date": "2021-10-14 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 950,
+      "Number of Unique Users": 569,
+      "Transaction Volume USD": 82817037.12,
+      "Average Transaction Volume USD": 84853.521639344
+    },
+    {
+      "Date": "2021-10-15 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1154,
+      "Number of Unique Users": 541,
+      "Transaction Volume USD": 126761624.28,
+      "Average Transaction Volume USD": 105811.038631052
+    },
+    {
+      "Date": "2021-10-16 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1040,
+      "Number of Unique Users": 671,
+      "Transaction Volume USD": 88611677.29,
+      "Average Transaction Volume USD": 85615.147140097
+    },
+    {
+      "Date": "2021-10-17 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1375,
+      "Number of Unique Users": 1003,
+      "Transaction Volume USD": 71137558.27,
+      "Average Transaction Volume USD": 51774.059876274
+    },
+    {
+      "Date": "2021-10-18 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1045,
+      "Number of Unique Users": 664,
+      "Transaction Volume USD": 66229218.61,
+      "Average Transaction Volume USD": 60705.058304308
+    },
+    {
+      "Date": "2021-10-19 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1337,
+      "Number of Unique Users": 865,
+      "Transaction Volume USD": 77755494.4,
+      "Average Transaction Volume USD": 58995.064036419
+    },
+    {
+      "Date": "2021-10-20 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1878,
+      "Number of Unique Users": 1315,
+      "Transaction Volume USD": 92707690.8,
+      "Average Transaction Volume USD": 53097.188316151
+    },
+    {
+      "Date": "2021-10-21 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1429,
+      "Number of Unique Users": 858,
+      "Transaction Volume USD": 102187124.47,
+      "Average Transaction Volume USD": 72782.85218661
+    },
+    {
+      "Date": "2021-10-22 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1199,
+      "Number of Unique Users": 803,
+      "Transaction Volume USD": 55651703.83,
+      "Average Transaction Volume USD": 48860.143836699
+    },
+    {
+      "Date": "2021-10-23 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1570,
+      "Number of Unique Users": 1070,
+      "Transaction Volume USD": 49647320.69,
+      "Average Transaction Volume USD": 36912.506089219
+    },
+    {
+      "Date": "2021-10-24 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1677,
+      "Number of Unique Users": 1149,
+      "Transaction Volume USD": 58341596.52,
+      "Average Transaction Volume USD": 37042.283504762
+    },
+    {
+      "Date": "2021-10-25 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1849,
+      "Number of Unique Users": 1155,
+      "Transaction Volume USD": 93364820.07,
+      "Average Transaction Volume USD": 44206.827684659
+    },
+    {
+      "Date": "2021-10-26 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1990,
+      "Number of Unique Users": 1237,
+      "Transaction Volume USD": 107897796.34,
+      "Average Transaction Volume USD": 45164.418727501
+    },
+    {
+      "Date": "2021-10-27 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1221,
+      "Number of Unique Users": 469,
+      "Transaction Volume USD": 119190441.1,
+      "Average Transaction Volume USD": 92827.446339564
+    },
+    {
+      "Date": "2021-10-28 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3356,
+      "Number of Unique Users": 1764,
+      "Transaction Volume USD": 155041146.19,
+      "Average Transaction Volume USD": 45560.136993829
+    },
+    {
+      "Date": "2021-10-29 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3414,
+      "Number of Unique Users": 2263,
+      "Transaction Volume USD": 186161167.97,
+      "Average Transaction Volume USD": 48555.338541993
+    },
+    {
+      "Date": "2021-10-30 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 544,
+      "Number of Unique Users": 290,
+      "Transaction Volume USD": 82560044.85,
+      "Average Transaction Volume USD": 151486.320825688
+    },
+    {
+      "Date": "2021-10-31 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 586,
+      "Number of Unique Users": 293,
+      "Transaction Volume USD": 84470553.23,
+      "Average Transaction Volume USD": 140550.005374376
+    },
+    {
+      "Date": "2021-11-01 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 595,
+      "Number of Unique Users": 266,
+      "Transaction Volume USD": 101624184.91,
+      "Average Transaction Volume USD": 162080.039728868
+    },
+    {
+      "Date": "2021-11-02 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1507,
+      "Number of Unique Users": 844,
+      "Transaction Volume USD": 104543821.15,
+      "Average Transaction Volume USD": 63941.175015291
+    },
+    {
+      "Date": "2021-11-03 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2813,
+      "Number of Unique Users": 1734,
+      "Transaction Volume USD": 140474647.72,
+      "Average Transaction Volume USD": 40978.60201867
+    },
+    {
+      "Date": "2021-11-04 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2580,
+      "Number of Unique Users": 1794,
+      "Transaction Volume USD": 120813055.82,
+      "Average Transaction Volume USD": 36743.630115572
+    },
+    {
+      "Date": "2021-11-05 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2551,
+      "Number of Unique Users": 1888,
+      "Transaction Volume USD": 106964685.06,
+      "Average Transaction Volume USD": 33426.46408125
+    },
+    {
+      "Date": "2021-11-06 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 611,
+      "Number of Unique Users": 345,
+      "Transaction Volume USD": 50548470.09,
+      "Average Transaction Volume USD": 85385.929206081
+    },
+    {
+      "Date": "2021-11-07 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 845,
+      "Number of Unique Users": 509,
+      "Transaction Volume USD": 57336737.03,
+      "Average Transaction Volume USD": 71850.547656642
+    },
+    {
+      "Date": "2021-11-08 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 970,
+      "Number of Unique Users": 428,
+      "Transaction Volume USD": 97646393.38,
+      "Average Transaction Volume USD": 100150.14705641
+    },
+    {
+      "Date": "2021-11-09 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 608,
+      "Number of Unique Users": 319,
+      "Transaction Volume USD": 65644903.17,
+      "Average Transaction Volume USD": 107791.302413793
+    },
+    {
+      "Date": "2021-11-10 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1678,
+      "Number of Unique Users": 1106,
+      "Transaction Volume USD": 98813537.53,
+      "Average Transaction Volume USD": 47460.872973103
+    },
+    {
+      "Date": "2021-11-11 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1389,
+      "Number of Unique Users": 1063,
+      "Transaction Volume USD": 74688114.57,
+      "Average Transaction Volume USD": 44141.911684397
+    },
+    {
+      "Date": "2021-11-12 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1677,
+      "Number of Unique Users": 1268,
+      "Transaction Volume USD": 70554647.98,
+      "Average Transaction Volume USD": 34416.901453659
+    },
+    {
+      "Date": "2021-11-13 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1629,
+      "Number of Unique Users": 1259,
+      "Transaction Volume USD": 46033979.13,
+      "Average Transaction Volume USD": 22891.088577822
+    },
+    {
+      "Date": "2021-11-14 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1305,
+      "Number of Unique Users": 881,
+      "Transaction Volume USD": 33721873.81,
+      "Average Transaction Volume USD": 22815.88214479
+    },
+    {
+      "Date": "2021-11-15 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2154,
+      "Number of Unique Users": 1357,
+      "Transaction Volume USD": 59853370.44,
+      "Average Transaction Volume USD": 23610.797017751
+    },
+    {
+      "Date": "2021-11-16 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2031,
+      "Number of Unique Users": 1012,
+      "Transaction Volume USD": 137489285.84,
+      "Average Transaction Volume USD": 65752.886580583
+    },
+    {
+      "Date": "2021-11-17 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1979,
+      "Number of Unique Users": 1155,
+      "Transaction Volume USD": 83964072.6,
+      "Average Transaction Volume USD": 40001.940257265
+    },
+    {
+      "Date": "2021-11-18 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3040,
+      "Number of Unique Users": 1944,
+      "Transaction Volume USD": 93930102.42,
+      "Average Transaction Volume USD": 27505.154442167
+    },
+    {
+      "Date": "2021-11-19 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1279,
+      "Number of Unique Users": 707,
+      "Transaction Volume USD": 71526607.51,
+      "Average Transaction Volume USD": 54434.252290715
+    },
+    {
+      "Date": "2021-11-20 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1315,
+      "Number of Unique Users": 721,
+      "Transaction Volume USD": 67898673.22,
+      "Average Transaction Volume USD": 50295.313496296
+    },
+    {
+      "Date": "2021-11-21 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1212,
+      "Number of Unique Users": 688,
+      "Transaction Volume USD": 57628735.52,
+      "Average Transaction Volume USD": 46738.633836172
+    },
+    {
+      "Date": "2021-11-22 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 971,
+      "Number of Unique Users": 456,
+      "Transaction Volume USD": 74428619.88,
+      "Average Transaction Volume USD": 74206.001874377
+    },
+    {
+      "Date": "2021-11-23 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1960,
+      "Number of Unique Users": 1028,
+      "Transaction Volume USD": 95866531.13,
+      "Average Transaction Volume USD": 45672.477908528
+    },
+    {
+      "Date": "2021-11-24 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1869,
+      "Number of Unique Users": 1140,
+      "Transaction Volume USD": 80200628.82,
+      "Average Transaction Volume USD": 36823.061900826
+    },
+    {
+      "Date": "2021-11-25 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2726,
+      "Number of Unique Users": 1735,
+      "Transaction Volume USD": 95591186.85,
+      "Average Transaction Volume USD": 29241.721275619
+    },
+    {
+      "Date": "2021-11-26 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3244,
+      "Number of Unique Users": 1997,
+      "Transaction Volume USD": 110713459.27,
+      "Average Transaction Volume USD": 28028.723865823
+    },
+    {
+      "Date": "2021-11-27 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1296,
+      "Number of Unique Users": 516,
+      "Transaction Volume USD": 42780050.71,
+      "Average Transaction Volume USD": 31830.394873512
+    },
+    {
+      "Date": "2021-11-28 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1189,
+      "Number of Unique Users": 586,
+      "Transaction Volume USD": 58930942.84,
+      "Average Transaction Volume USD": 49983.836166243
+    },
+    {
+      "Date": "2021-11-29 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 823,
+      "Number of Unique Users": 423,
+      "Transaction Volume USD": 53349325.83,
+      "Average Transaction Volume USD": 62251.255344224
+    },
+    {
+      "Date": "2021-11-30 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1012,
+      "Number of Unique Users": 464,
+      "Transaction Volume USD": 74593491.39,
+      "Average Transaction Volume USD": 70504.245170132
+    },
+    {
+      "Date": "2021-12-01 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3589,
+      "Number of Unique Users": 2289,
+      "Transaction Volume USD": 123565237.54,
+      "Average Transaction Volume USD": 28159.808008204
+    },
+    {
+      "Date": "2021-12-02 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3539,
+      "Number of Unique Users": 2340,
+      "Transaction Volume USD": 122872004.86,
+      "Average Transaction Volume USD": 27611.686485393
+    },
+    {
+      "Date": "2021-12-03 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 4267,
+      "Number of Unique Users": 2945,
+      "Transaction Volume USD": 135399294.77,
+      "Average Transaction Volume USD": 24613.578398473
+    },
+    {
+      "Date": "2021-12-04 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 5982,
+      "Number of Unique Users": 3965,
+      "Transaction Volume USD": 232417844.57,
+      "Average Transaction Volume USD": 31005.582253202
+    },
+    {
+      "Date": "2021-12-05 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2247,
+      "Number of Unique Users": 1363,
+      "Transaction Volume USD": 81975956.14,
+      "Average Transaction Volume USD": 31098.617655539
+    },
+    {
+      "Date": "2021-12-06 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2368,
+      "Number of Unique Users": 1449,
+      "Transaction Volume USD": 100687634.52,
+      "Average Transaction Volume USD": 35478.377209302
+    },
+    {
+      "Date": "2021-12-07 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3144,
+      "Number of Unique Users": 2285,
+      "Transaction Volume USD": 71276697.47,
+      "Average Transaction Volume USD": 17712.896985586
+    },
+    {
+      "Date": "2021-12-08 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2349,
+      "Number of Unique Users": 1458,
+      "Transaction Volume USD": 58343454.3,
+      "Average Transaction Volume USD": 21001.963390929
+    },
+    {
+      "Date": "2021-12-09 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2572,
+      "Number of Unique Users": 1589,
+      "Transaction Volume USD": 69858276.9,
+      "Average Transaction Volume USD": 22593.233150065
+    },
+    {
+      "Date": "2021-12-10 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3960,
+      "Number of Unique Users": 2742,
+      "Transaction Volume USD": 89745775.16,
+      "Average Transaction Volume USD": 16952.356471477
+    },
+    {
+      "Date": "2021-12-11 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3856,
+      "Number of Unique Users": 2749,
+      "Transaction Volume USD": 64709302.21,
+      "Average Transaction Volume USD": 12928.93151049
+    },
+    {
+      "Date": "2021-12-12 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1993,
+      "Number of Unique Users": 1266,
+      "Transaction Volume USD": 37298223.94,
+      "Average Transaction Volume USD": 17828.978938815
+    },
+    {
+      "Date": "2021-12-13 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1901,
+      "Number of Unique Users": 948,
+      "Transaction Volume USD": 82707577.35,
+      "Average Transaction Volume USD": 40364.849853587
+    },
+    {
+      "Date": "2021-12-14 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1855,
+      "Number of Unique Users": 965,
+      "Transaction Volume USD": 75145190.61,
+      "Average Transaction Volume USD": 37311.415397219
+    },
+    {
+      "Date": "2021-12-15 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2490,
+      "Number of Unique Users": 1441,
+      "Transaction Volume USD": 80865517.95,
+      "Average Transaction Volume USD": 26946.190586471
+    },
+    {
+      "Date": "2021-12-16 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2418,
+      "Number of Unique Users": 1432,
+      "Transaction Volume USD": 61897638.92,
+      "Average Transaction Volume USD": 20598.215946755
+    },
+    {
+      "Date": "2021-12-17 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2623,
+      "Number of Unique Users": 1520,
+      "Transaction Volume USD": 82748136.32,
+      "Average Transaction Volume USD": 26814.042877511
+    },
+    {
+      "Date": "2021-12-18 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2209,
+      "Number of Unique Users": 1253,
+      "Transaction Volume USD": 63477441.69,
+      "Average Transaction Volume USD": 24292.935970149
+    },
+    {
+      "Date": "2021-12-19 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2794,
+      "Number of Unique Users": 1946,
+      "Transaction Volume USD": 55143608.44,
+      "Average Transaction Volume USD": 16455.866439869
+    },
+    {
+      "Date": "2021-12-20 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3418,
+      "Number of Unique Users": 2405,
+      "Transaction Volume USD": 65050721.98,
+      "Average Transaction Volume USD": 15212.984560337
+    },
+    {
+      "Date": "2021-12-21 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1018,
+      "Number of Unique Users": 514,
+      "Transaction Volume USD": 41590915.7,
+      "Average Transaction Volume USD": 38942.804962547
+    },
+    {
+      "Date": "2021-12-22 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1130,
+      "Number of Unique Users": 570,
+      "Transaction Volume USD": 44348924.73,
+      "Average Transaction Volume USD": 36232.781642157
+    },
+    {
+      "Date": "2021-12-23 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1171,
+      "Number of Unique Users": 543,
+      "Transaction Volume USD": 46609041.76,
+      "Average Transaction Volume USD": 34834.859312407
+    },
+    {
+      "Date": "2021-12-24 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 956,
+      "Number of Unique Users": 433,
+      "Transaction Volume USD": 30891397.39,
+      "Average Transaction Volume USD": 30860.536853147
+    },
+    {
+      "Date": "2021-12-25 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 634,
+      "Number of Unique Users": 299,
+      "Transaction Volume USD": 20225462.5,
+      "Average Transaction Volume USD": 31020.648006135
+    },
+    {
+      "Date": "2021-12-26 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1345,
+      "Number of Unique Users": 669,
+      "Transaction Volume USD": 32766847.56,
+      "Average Transaction Volume USD": 23205.982691218
+    },
+    {
+      "Date": "2021-12-27 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1023,
+      "Number of Unique Users": 499,
+      "Transaction Volume USD": 27479366.24,
+      "Average Transaction Volume USD": 23287.598508475
+    },
+    {
+      "Date": "2021-12-28 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1394,
+      "Number of Unique Users": 720,
+      "Transaction Volume USD": 49794264.13,
+      "Average Transaction Volume USD": 30014.62575648
+    },
+    {
+      "Date": "2021-12-29 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1399,
+      "Number of Unique Users": 802,
+      "Transaction Volume USD": 62226001.5,
+      "Average Transaction Volume USD": 36346.963492991
+    },
+    {
+      "Date": "2021-12-30 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2288,
+      "Number of Unique Users": 1491,
+      "Transaction Volume USD": 61256345.63,
+      "Average Transaction Volume USD": 20317.195897181
+    },
+    {
+      "Date": "2021-12-31 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3765,
+      "Number of Unique Users": 2511,
+      "Transaction Volume USD": 105847426.22,
+      "Average Transaction Volume USD": 20335.720695485
+    },
+    {
+      "Date": "2022-01-01 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1082,
+      "Number of Unique Users": 495,
+      "Transaction Volume USD": 46052782.51,
+      "Average Transaction Volume USD": 40790.772816652
+    },
+    {
+      "Date": "2022-01-02 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 988,
+      "Number of Unique Users": 458,
+      "Transaction Volume USD": 36504085.33,
+      "Average Transaction Volume USD": 35823.439970559
+    },
+    {
+      "Date": "2022-01-03 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1560,
+      "Number of Unique Users": 870,
+      "Transaction Volume USD": 43965850.45,
+      "Average Transaction Volume USD": 26743.21803528
+    },
+    {
+      "Date": "2022-01-04 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 871,
+      "Number of Unique Users": 425,
+      "Transaction Volume USD": 36970398.13,
+      "Average Transaction Volume USD": 40537.717247807
+    },
+    {
+      "Date": "2022-01-05 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1142,
+      "Number of Unique Users": 447,
+      "Transaction Volume USD": 61025387.2,
+      "Average Transaction Volume USD": 49413.268987854
+    },
+    {
+      "Date": "2022-01-06 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1122,
+      "Number of Unique Users": 402,
+      "Transaction Volume USD": 55060417.6,
+      "Average Transaction Volume USD": 45655.404311774
+    },
+    {
+      "Date": "2022-01-07 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1504,
+      "Number of Unique Users": 555,
+      "Transaction Volume USD": 90526445.08,
+      "Average Transaction Volume USD": 57150.533510101
+    },
+    {
+      "Date": "2022-01-08 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1181,
+      "Number of Unique Users": 415,
+      "Transaction Volume USD": 50082687.15,
+      "Average Transaction Volume USD": 39188.331103286
+    },
+    {
+      "Date": "2022-01-09 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 670,
+      "Number of Unique Users": 219,
+      "Transaction Volume USD": 26566961.91,
+      "Average Transaction Volume USD": 38336.164372294
+    },
+    {
+      "Date": "2022-01-10 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 679,
+      "Number of Unique Users": 272,
+      "Transaction Volume USD": 52903148.87,
+      "Average Transaction Volume USD": 73681.265835655
+    },
+    {
+      "Date": "2022-01-11 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 485,
+      "Number of Unique Users": 212,
+      "Transaction Volume USD": 27699607.75,
+      "Average Transaction Volume USD": 53268.476442308
+    },
+    {
+      "Date": "2022-01-12 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 577,
+      "Number of Unique Users": 251,
+      "Transaction Volume USD": 34813168.29,
+      "Average Transaction Volume USD": 59206.068520408
+    },
+    {
+      "Date": "2022-01-13 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 577,
+      "Number of Unique Users": 274,
+      "Transaction Volume USD": 41313147.94,
+      "Average Transaction Volume USD": 69550.754107744
+    },
+    {
+      "Date": "2022-01-14 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 500,
+      "Number of Unique Users": 265,
+      "Transaction Volume USD": 24631087.59,
+      "Average Transaction Volume USD": 46212.171838649
+    },
+    {
+      "Date": "2022-01-15 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 567,
+      "Number of Unique Users": 347,
+      "Transaction Volume USD": 18000037.87,
+      "Average Transaction Volume USD": 29801.387201987
+    },
+    {
+      "Date": "2022-01-16 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 593,
+      "Number of Unique Users": 279,
+      "Transaction Volume USD": 28292788.31,
+      "Average Transaction Volume USD": 46764.939355372
+    },
+    {
+      "Date": "2022-01-17 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1001,
+      "Number of Unique Users": 475,
+      "Transaction Volume USD": 65676014.13,
+      "Average Transaction Volume USD": 57711.787460457
+    },
+    {
+      "Date": "2022-01-18 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1021,
+      "Number of Unique Users": 513,
+      "Transaction Volume USD": 36744556.81,
+      "Average Transaction Volume USD": 31165.866675148
+    },
+    {
+      "Date": "2022-01-19 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1237,
+      "Number of Unique Users": 757,
+      "Transaction Volume USD": 51334630.16,
+      "Average Transaction Volume USD": 36615.285420827
+    },
+    {
+      "Date": "2022-01-20 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2010,
+      "Number of Unique Users": 1288,
+      "Transaction Volume USD": 56037617.05,
+      "Average Transaction Volume USD": 23223.214691256
+    },
+    {
+      "Date": "2022-01-21 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2764,
+      "Number of Unique Users": 1572,
+      "Transaction Volume USD": 166072025.18,
+      "Average Transaction Volume USD": 49455.635848719
+    },
+    {
+      "Date": "2022-01-22 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 4644,
+      "Number of Unique Users": 2365,
+      "Transaction Volume USD": 215696088.88,
+      "Average Transaction Volume USD": 40605.438418675
+    },
+    {
+      "Date": "2022-01-23 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2927,
+      "Number of Unique Users": 1842,
+      "Transaction Volume USD": 83633578.72,
+      "Average Transaction Volume USD": 21521.764981987
+    },
+    {
+      "Date": "2022-01-24 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 5240,
+      "Number of Unique Users": 3485,
+      "Transaction Volume USD": 141625346.01,
+      "Average Transaction Volume USD": 19785.602963118
+    },
+    {
+      "Date": "2022-01-25 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 860,
+      "Number of Unique Users": 330,
+      "Transaction Volume USD": 49525375.9,
+      "Average Transaction Volume USD": 54906.181707317
+    },
+    {
+      "Date": "2022-01-26 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1193,
+      "Number of Unique Users": 505,
+      "Transaction Volume USD": 103905420.81,
+      "Average Transaction Volume USD": 85168.377713115
+    },
+    {
+      "Date": "2022-01-27 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1066,
+      "Number of Unique Users": 523,
+      "Transaction Volume USD": 73530434.86,
+      "Average Transaction Volume USD": 63828.502482639
+    },
+    {
+      "Date": "2022-01-28 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1294,
+      "Number of Unique Users": 731,
+      "Transaction Volume USD": 52592361.74,
+      "Average Transaction Volume USD": 36624.207339833
+    },
+    {
+      "Date": "2022-01-29 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 691,
+      "Number of Unique Users": 320,
+      "Transaction Volume USD": 39445424.89,
+      "Average Transaction Volume USD": 52314.887122016
+    },
+    {
+      "Date": "2022-01-30 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1115,
+      "Number of Unique Users": 615,
+      "Transaction Volume USD": 37686076.54,
+      "Average Transaction Volume USD": 28314.107092412
+    },
+    {
+      "Date": "2022-01-31 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1153,
+      "Number of Unique Users": 657,
+      "Transaction Volume USD": 50461125.51,
+      "Average Transaction Volume USD": 37770.303525449
+    },
+    {
+      "Date": "2022-02-01 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 615,
+      "Number of Unique Users": 275,
+      "Transaction Volume USD": 38150039.24,
+      "Average Transaction Volume USD": 57890.803095599
+    },
+    {
+      "Date": "2022-02-02 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 644,
+      "Number of Unique Users": 251,
+      "Transaction Volume USD": 30909245.37,
+      "Average Transaction Volume USD": 46832.189954545
+    },
+    {
+      "Date": "2022-02-03 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 638,
+      "Number of Unique Users": 234,
+      "Transaction Volume USD": 32221056.34,
+      "Average Transaction Volume USD": 47805.7215727
+    },
+    {
+      "Date": "2022-02-04 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 858,
+      "Number of Unique Users": 317,
+      "Transaction Volume USD": 68292134.72,
+      "Average Transaction Volume USD": 74230.581217391
+    },
+    {
+      "Date": "2022-02-05 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 781,
+      "Number of Unique Users": 347,
+      "Transaction Volume USD": 41419643.95,
+      "Average Transaction Volume USD": 53034.115172855
+    },
+    {
+      "Date": "2022-02-06 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 669,
+      "Number of Unique Users": 279,
+      "Transaction Volume USD": 18356022.58,
+      "Average Transaction Volume USD": 26680.265377907
+    },
+    {
+      "Date": "2022-02-07 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 592,
+      "Number of Unique Users": 240,
+      "Transaction Volume USD": 38345308.6,
+      "Average Transaction Volume USD": 62553.52137031
+    },
+    {
+      "Date": "2022-02-08 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 807,
+      "Number of Unique Users": 337,
+      "Transaction Volume USD": 43730516.33,
+      "Average Transaction Volume USD": 51387.210728555
+    },
+    {
+      "Date": "2022-02-09 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 719,
+      "Number of Unique Users": 327,
+      "Transaction Volume USD": 34143422.59,
+      "Average Transaction Volume USD": 45463.944860186
+    },
+    {
+      "Date": "2022-02-10 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1097,
+      "Number of Unique Users": 589,
+      "Transaction Volume USD": 41335960.98,
+      "Average Transaction Volume USD": 31993.777848297
+    },
+    {
+      "Date": "2022-02-11 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 872,
+      "Number of Unique Users": 353,
+      "Transaction Volume USD": 91183947.05,
+      "Average Transaction Volume USD": 100422.849174009
+    },
+    {
+      "Date": "2022-02-12 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 973,
+      "Number of Unique Users": 458,
+      "Transaction Volume USD": 51971969.47,
+      "Average Transaction Volume USD": 49638.939321872
+    },
+    {
+      "Date": "2022-02-13 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1135,
+      "Number of Unique Users": 578,
+      "Transaction Volume USD": 28628816.42,
+      "Average Transaction Volume USD": 21606.653901887
+    },
+    {
+      "Date": "2022-02-14 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1469,
+      "Number of Unique Users": 727,
+      "Transaction Volume USD": 48141167.44,
+      "Average Transaction Volume USD": 26909.540212409
+    },
+    {
+      "Date": "2022-02-15 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1204,
+      "Number of Unique Users": 584,
+      "Transaction Volume USD": 51182870.67,
+      "Average Transaction Volume USD": 36690.229870968
+    },
+    {
+      "Date": "2022-02-16 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1175,
+      "Number of Unique Users": 604,
+      "Transaction Volume USD": 42789553.72,
+      "Average Transaction Volume USD": 32100.190337584
+    },
+    {
+      "Date": "2022-02-17 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1317,
+      "Number of Unique Users": 747,
+      "Transaction Volume USD": 47747725.11,
+      "Average Transaction Volume USD": 31330.528287402
+    },
+    {
+      "Date": "2022-02-18 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 666,
+      "Number of Unique Users": 297,
+      "Transaction Volume USD": 53681240.24,
+      "Average Transaction Volume USD": 73737.967362637
+    },
+    {
+      "Date": "2022-02-19 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 492,
+      "Number of Unique Users": 208,
+      "Transaction Volume USD": 30129576.56,
+      "Average Transaction Volume USD": 56848.257660377
+    },
+    {
+      "Date": "2022-02-20 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 850,
+      "Number of Unique Users": 323,
+      "Transaction Volume USD": 46482613.58,
+      "Average Transaction Volume USD": 50800.670579235
+    },
+    {
+      "Date": "2022-02-21 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 961,
+      "Number of Unique Users": 298,
+      "Transaction Volume USD": 74257379.1,
+      "Average Transaction Volume USD": 72024.61600388
+    },
+    {
+      "Date": "2022-02-22 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 907,
+      "Number of Unique Users": 290,
+      "Transaction Volume USD": 54198289.05,
+      "Average Transaction Volume USD": 56222.291545643
+    },
+    {
+      "Date": "2022-02-23 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 988,
+      "Number of Unique Users": 426,
+      "Transaction Volume USD": 43990598.01,
+      "Average Transaction Volume USD": 39738.570921409
+    },
+    {
+      "Date": "2022-02-24 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2062,
+      "Number of Unique Users": 731,
+      "Transaction Volume USD": 144460819.88,
+      "Average Transaction Volume USD": 63639.127700441
+    },
+    {
+      "Date": "2022-02-25 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1751,
+      "Number of Unique Users": 759,
+      "Transaction Volume USD": 84832825.87,
+      "Average Transaction Volume USD": 44160.763076523
+    },
+    {
+      "Date": "2022-02-26 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 831,
+      "Number of Unique Users": 300,
+      "Transaction Volume USD": 38345802.89,
+      "Average Transaction Volume USD": 43674.035182232
+    },
+    {
+      "Date": "2022-02-27 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1207,
+      "Number of Unique Users": 396,
+      "Transaction Volume USD": 50786544.55,
+      "Average Transaction Volume USD": 39615.089352574
+    },
+    {
+      "Date": "2022-02-28 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1033,
+      "Number of Unique Users": 360,
+      "Transaction Volume USD": 53254689.34,
+      "Average Transaction Volume USD": 48237.943242754
+    },
+    {
+      "Date": "2022-03-01 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1131,
+      "Number of Unique Users": 377,
+      "Transaction Volume USD": 74023400.57,
+      "Average Transaction Volume USD": 60083.929034091
+    },
+    {
+      "Date": "2022-03-02 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1238,
+      "Number of Unique Users": 502,
+      "Transaction Volume USD": 51459898.85,
+      "Average Transaction Volume USD": 39554.111337433
+    },
+    {
+      "Date": "2022-03-03 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1171,
+      "Number of Unique Users": 590,
+      "Transaction Volume USD": 64649619.02,
+      "Average Transaction Volume USD": 49961.065703246
+    },
+    {
+      "Date": "2022-03-04 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1075,
+      "Number of Unique Users": 390,
+      "Transaction Volume USD": 80087688.42,
+      "Average Transaction Volume USD": 70811.395596817
+    },
+    {
+      "Date": "2022-03-05 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 719,
+      "Number of Unique Users": 294,
+      "Transaction Volume USD": 19975514.02,
+      "Average Transaction Volume USD": 26145.960759162
+    },
+    {
+      "Date": "2022-03-06 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 939,
+      "Number of Unique Users": 409,
+      "Transaction Volume USD": 31837473.83,
+      "Average Transaction Volume USD": 33129.525317378
+    },
+    {
+      "Date": "2022-03-07 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1154,
+      "Number of Unique Users": 418,
+      "Transaction Volume USD": 47468492.48,
+      "Average Transaction Volume USD": 39133.134773289
+    },
+    {
+      "Date": "2022-03-08 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1220,
+      "Number of Unique Users": 401,
+      "Transaction Volume USD": 56312394.88,
+      "Average Transaction Volume USD": 44235.973982718
+    },
+    {
+      "Date": "2022-03-09 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1203,
+      "Number of Unique Users": 403,
+      "Transaction Volume USD": 39242419.86,
+      "Average Transaction Volume USD": 30186.476815385
+    },
+    {
+      "Date": "2022-03-10 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1246,
+      "Number of Unique Users": 428,
+      "Transaction Volume USD": 59867324.83,
+      "Average Transaction Volume USD": 45630.582949695
+    },
+    {
+      "Date": "2022-03-11 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1136,
+      "Number of Unique Users": 398,
+      "Transaction Volume USD": 51742417.73,
+      "Average Transaction Volume USD": 43886.698668363
+    },
+    {
+      "Date": "2022-03-12 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 726,
+      "Number of Unique Users": 337,
+      "Transaction Volume USD": 18979821.7,
+      "Average Transaction Volume USD": 25822.886666667
+    },
+    {
+      "Date": "2022-03-13 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 789,
+      "Number of Unique Users": 396,
+      "Transaction Volume USD": 24103468.97,
+      "Average Transaction Volume USD": 32137.958626667
+    },
+    {
+      "Date": "2022-03-14 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 870,
+      "Number of Unique Users": 395,
+      "Transaction Volume USD": 37737953.8,
+      "Average Transaction Volume USD": 43577.313856813
+    },
+    {
+      "Date": "2022-03-15 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 893,
+      "Number of Unique Users": 339,
+      "Transaction Volume USD": 29179472.78,
+      "Average Transaction Volume USD": 31613.729989166
+    },
+    {
+      "Date": "2022-03-16 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1200,
+      "Number of Unique Users": 427,
+      "Transaction Volume USD": 57392182.03,
+      "Average Transaction Volume USD": 44046.187283193
+    },
+    {
+      "Date": "2022-03-17 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 835,
+      "Number of Unique Users": 360,
+      "Transaction Volume USD": 37418044.07,
+      "Average Transaction Volume USD": 43661.661691949
+    },
+    {
+      "Date": "2022-03-18 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1094,
+      "Number of Unique Users": 429,
+      "Transaction Volume USD": 56634559.71,
+      "Average Transaction Volume USD": 48865.021320104
+    },
+    {
+      "Date": "2022-03-19 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1338,
+      "Number of Unique Users": 455,
+      "Transaction Volume USD": 27593441.72,
+      "Average Transaction Volume USD": 19865.688783297
+    },
+    {
+      "Date": "2022-03-20 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1497,
+      "Number of Unique Users": 609,
+      "Transaction Volume USD": 28107322.1,
+      "Average Transaction Volume USD": 18052.229993577
+    },
+    {
+      "Date": "2022-03-21 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1220,
+      "Number of Unique Users": 399,
+      "Transaction Volume USD": 31700678.06,
+      "Average Transaction Volume USD": 25421.554178027
+    },
+    {
+      "Date": "2022-03-22 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1003,
+      "Number of Unique Users": 424,
+      "Transaction Volume USD": 33413139.48,
+      "Average Transaction Volume USD": 30966.765041705
+    },
+    {
+      "Date": "2022-03-23 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1277,
+      "Number of Unique Users": 407,
+      "Transaction Volume USD": 33672546.31,
+      "Average Transaction Volume USD": 25317.703992481
+    },
+    {
+      "Date": "2022-03-24 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1171,
+      "Number of Unique Users": 472,
+      "Transaction Volume USD": 46936257.28,
+      "Average Transaction Volume USD": 37974.318187702
+    },
+    {
+      "Date": "2022-03-25 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1082,
+      "Number of Unique Users": 435,
+      "Transaction Volume USD": 31944757.14,
+      "Average Transaction Volume USD": 28598.708272158
+    },
+    {
+      "Date": "2022-03-26 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 670,
+      "Number of Unique Users": 327,
+      "Transaction Volume USD": 17232655.45,
+      "Average Transaction Volume USD": 24067.954539106
+    },
+    {
+      "Date": "2022-03-27 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1080,
+      "Number of Unique Users": 460,
+      "Transaction Volume USD": 27413248.23,
+      "Average Transaction Volume USD": 24389.010880783
+    },
+    {
+      "Date": "2022-03-28 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2161,
+      "Number of Unique Users": 651,
+      "Transaction Volume USD": 66822774.06,
+      "Average Transaction Volume USD": 26665.113351955
+    },
+    {
+      "Date": "2022-03-29 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2594,
+      "Number of Unique Users": 707,
+      "Transaction Volume USD": 73416721.61,
+      "Average Transaction Volume USD": 23440.843425926
+    },
+    {
+      "Date": "2022-03-30 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1971,
+      "Number of Unique Users": 542,
+      "Transaction Volume USD": 55450556.88,
+      "Average Transaction Volume USD": 24352.462397892
+    },
+    {
+      "Date": "2022-03-31 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1492,
+      "Number of Unique Users": 483,
+      "Transaction Volume USD": 45086034.41,
+      "Average Transaction Volume USD": 25792.925863844
+    },
+    {
+      "Date": "2022-04-01 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1906,
+      "Number of Unique Users": 737,
+      "Transaction Volume USD": 54937557.01,
+      "Average Transaction Volume USD": 30537.830466926
+    },
+    {
+      "Date": "2022-04-02 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1308,
+      "Number of Unique Users": 537,
+      "Transaction Volume USD": 38735903.09,
+      "Average Transaction Volume USD": 29981.349140867
+    },
+    {
+      "Date": "2022-04-03 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1013,
+      "Number of Unique Users": 484,
+      "Transaction Volume USD": 22741958.35,
+      "Average Transaction Volume USD": 23088.282588832
+    },
+    {
+      "Date": "2022-04-04 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 940,
+      "Number of Unique Users": 417,
+      "Transaction Volume USD": 34218179.07,
+      "Average Transaction Volume USD": 32190.19667921
+    },
+    {
+      "Date": "2022-04-05 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 891,
+      "Number of Unique Users": 362,
+      "Transaction Volume USD": 44368470.58,
+      "Average Transaction Volume USD": 43455.896748286
+    },
+    {
+      "Date": "2022-04-06 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1592,
+      "Number of Unique Users": 578,
+      "Transaction Volume USD": 107786308.37,
+      "Average Transaction Volume USD": 60930.643510458
+    },
+    {
+      "Date": "2022-04-07 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1896,
+      "Number of Unique Users": 830,
+      "Transaction Volume USD": 151033338.59,
+      "Average Transaction Volume USD": 73746.747358398
+    },
+    {
+      "Date": "2022-04-08 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1601,
+      "Number of Unique Users": 575,
+      "Transaction Volume USD": 204349630.88,
+      "Average Transaction Volume USD": 116704.529343232
+    },
+    {
+      "Date": "2022-04-09 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1340,
+      "Number of Unique Users": 561,
+      "Transaction Volume USD": 51328602.83,
+      "Average Transaction Volume USD": 39302.146117917
+    },
+    {
+      "Date": "2022-04-10 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1322,
+      "Number of Unique Users": 696,
+      "Transaction Volume USD": 47601355.88,
+      "Average Transaction Volume USD": 41828.959472759
+    },
+    {
+      "Date": "2022-04-11 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1920,
+      "Number of Unique Users": 692,
+      "Transaction Volume USD": 173546903.83,
+      "Average Transaction Volume USD": 84781.096155349
+    },
+    {
+      "Date": "2022-04-12 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1311,
+      "Number of Unique Users": 497,
+      "Transaction Volume USD": 122078468.97,
+      "Average Transaction Volume USD": 87826.236669065
+    },
+    {
+      "Date": "2022-04-13 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1030,
+      "Number of Unique Users": 437,
+      "Transaction Volume USD": 95742272.04,
+      "Average Transaction Volume USD": 88160.471491713
+    },
+    {
+      "Date": "2022-04-14 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1411,
+      "Number of Unique Users": 616,
+      "Transaction Volume USD": 79562214.05,
+      "Average Transaction Volume USD": 59956.45369254
+    },
+    {
+      "Date": "2022-04-15 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1171,
+      "Number of Unique Users": 515,
+      "Transaction Volume USD": 64236821.13,
+      "Average Transaction Volume USD": 53935.198261965
+    },
+    {
+      "Date": "2022-04-16 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 894,
+      "Number of Unique Users": 497,
+      "Transaction Volume USD": 45192016.72,
+      "Average Transaction Volume USD": 52305.574907407
+    },
+    {
+      "Date": "2022-04-17 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1295,
+      "Number of Unique Users": 661,
+      "Transaction Volume USD": 56606416.09,
+      "Average Transaction Volume USD": 43013.993989362
+    },
+    {
+      "Date": "2022-04-18 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1759,
+      "Number of Unique Users": 795,
+      "Transaction Volume USD": 74654498.6,
+      "Average Transaction Volume USD": 36739.418602362
+    },
+    {
+      "Date": "2022-04-19 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2682,
+      "Number of Unique Users": 1351,
+      "Transaction Volume USD": 83502713.01,
+      "Average Transaction Volume USD": 27695.758875622
+    },
+    {
+      "Date": "2022-04-20 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 4259,
+      "Number of Unique Users": 2077,
+      "Transaction Volume USD": 94736549.27,
+      "Average Transaction Volume USD": 18204.563656802
+    },
+    {
+      "Date": "2022-04-21 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 6470,
+      "Number of Unique Users": 2836,
+      "Transaction Volume USD": 110316981.04,
+      "Average Transaction Volume USD": 13990.739510463
+    },
+    {
+      "Date": "2022-04-22 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3534,
+      "Number of Unique Users": 1527,
+      "Transaction Volume USD": 85843410,
+      "Average Transaction Volume USD": 20901.73119065
+    },
+    {
+      "Date": "2022-04-23 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1836,
+      "Number of Unique Users": 990,
+      "Transaction Volume USD": 33742741.58,
+      "Average Transaction Volume USD": 15969.115750118
+    },
+    {
+      "Date": "2022-04-24 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1108,
+      "Number of Unique Users": 504,
+      "Transaction Volume USD": 26426230.84,
+      "Average Transaction Volume USD": 22021.859033333
+    },
+    {
+      "Date": "2022-04-25 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1759,
+      "Number of Unique Users": 728,
+      "Transaction Volume USD": 98372345.31,
+      "Average Transaction Volume USD": 48892.815760437
+    },
+    {
+      "Date": "2022-04-26 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1929,
+      "Number of Unique Users": 862,
+      "Transaction Volume USD": 67475819.26,
+      "Average Transaction Volume USD": 30532.044914027
+    },
+    {
+      "Date": "2022-04-27 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1978,
+      "Number of Unique Users": 986,
+      "Transaction Volume USD": 83747038.3,
+      "Average Transaction Volume USD": 35321.399536061
+    },
+    {
+      "Date": "2022-04-28 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2424,
+      "Number of Unique Users": 1313,
+      "Transaction Volume USD": 101093540.17,
+      "Average Transaction Volume USD": 33878.532228552
+    },
+    {
+      "Date": "2022-04-29 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2905,
+      "Number of Unique Users": 1832,
+      "Transaction Volume USD": 107741959.83,
+      "Average Transaction Volume USD": 28301.013877069
+    },
+    {
+      "Date": "2022-04-30 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1424,
+      "Number of Unique Users": 603,
+      "Transaction Volume USD": 94904473.87,
+      "Average Transaction Volume USD": 58402.753150769
+    },
+    {
+      "Date": "2022-05-01 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 846,
+      "Number of Unique Users": 394,
+      "Transaction Volume USD": 49459596.68,
+      "Average Transaction Volume USD": 51735.979790795
+    },
+    {
+      "Date": "2022-05-02 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 871,
+      "Number of Unique Users": 345,
+      "Transaction Volume USD": 43639695.35,
+      "Average Transaction Volume USD": 46924.403602151
+    },
+    {
+      "Date": "2022-05-03 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 821,
+      "Number of Unique Users": 350,
+      "Transaction Volume USD": 50995157.93,
+      "Average Transaction Volume USD": 57491.722581736
+    },
+    {
+      "Date": "2022-05-04 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1124,
+      "Number of Unique Users": 448,
+      "Transaction Volume USD": 77784585.7,
+      "Average Transaction Volume USD": 64605.137624585
+    },
+    {
+      "Date": "2022-05-05 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1257,
+      "Number of Unique Users": 545,
+      "Transaction Volume USD": 83499040.49,
+      "Average Transaction Volume USD": 60418.987329957
+    },
+    {
+      "Date": "2022-05-06 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1420,
+      "Number of Unique Users": 521,
+      "Transaction Volume USD": 133740856.63,
+      "Average Transaction Volume USD": 87756.467604987
+    },
+    {
+      "Date": "2022-05-07 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1129,
+      "Number of Unique Users": 484,
+      "Transaction Volume USD": 92200087.76,
+      "Average Transaction Volume USD": 75760.137847165
+    },
+    {
+      "Date": "2022-05-08 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1785,
+      "Number of Unique Users": 718,
+      "Transaction Volume USD": 198829545.16,
+      "Average Transaction Volume USD": 102173.455889003
+    },
+    {
+      "Date": "2022-05-09 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3380,
+      "Number of Unique Users": 1177,
+      "Transaction Volume USD": 359240211.16,
+      "Average Transaction Volume USD": 97328.694435112
+    },
+    {
+      "Date": "2022-05-10 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3308,
+      "Number of Unique Users": 940,
+      "Transaction Volume USD": 309352010.95,
+      "Average Transaction Volume USD": 86194.486193926
+    },
+    {
+      "Date": "2022-05-11 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 4003,
+      "Number of Unique Users": 1090,
+      "Transaction Volume USD": 690049429.92,
+      "Average Transaction Volume USD": 163325.308856805
+    },
+    {
+      "Date": "2022-05-12 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 4452,
+      "Number of Unique Users": 1242,
+      "Transaction Volume USD": 602874200.99,
+      "Average Transaction Volume USD": 127081.40830312
+    },
+    {
+      "Date": "2022-05-13 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2717,
+      "Number of Unique Users": 880,
+      "Transaction Volume USD": 290868121.28,
+      "Average Transaction Volume USD": 99408.107067669
+    },
+    {
+      "Date": "2022-05-14 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2106,
+      "Number of Unique Users": 696,
+      "Transaction Volume USD": 141330151.52,
+      "Average Transaction Volume USD": 62785.496010662
+    },
+    {
+      "Date": "2022-05-15 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2029,
+      "Number of Unique Users": 684,
+      "Transaction Volume USD": 84358681.07,
+      "Average Transaction Volume USD": 38678.900077946
+    },
+    {
+      "Date": "2022-05-16 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2248,
+      "Number of Unique Users": 681,
+      "Transaction Volume USD": 57248588.04,
+      "Average Transaction Volume USD": 23813.888535774
+    },
+    {
+      "Date": "2022-05-17 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1840,
+      "Number of Unique Users": 742,
+      "Transaction Volume USD": 123096595.1,
+      "Average Transaction Volume USD": 62580.882104728
+    },
+    {
+      "Date": "2022-05-18 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1830,
+      "Number of Unique Users": 716,
+      "Transaction Volume USD": 121407006.29,
+      "Average Transaction Volume USD": 61565.419011156
+    },
+    {
+      "Date": "2022-05-19 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2206,
+      "Number of Unique Users": 805,
+      "Transaction Volume USD": 134266183.53,
+      "Average Transaction Volume USD": 54847.297193627
+    },
+    {
+      "Date": "2022-05-20 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1569,
+      "Number of Unique Users": 670,
+      "Transaction Volume USD": 115636304.49,
+      "Average Transaction Volume USD": 65000.733271501
+    },
+    {
+      "Date": "2022-05-21 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1287,
+      "Number of Unique Users": 557,
+      "Transaction Volume USD": 57535018.74,
+      "Average Transaction Volume USD": 40574.766389281
+    },
+    {
+      "Date": "2022-05-22 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1087,
+      "Number of Unique Users": 464,
+      "Transaction Volume USD": 24530285.8,
+      "Average Transaction Volume USD": 20172.932401316
+    },
+    {
+      "Date": "2022-05-23 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1556,
+      "Number of Unique Users": 631,
+      "Transaction Volume USD": 50584663.06,
+      "Average Transaction Volume USD": 29461.073418754
+    },
+    {
+      "Date": "2022-05-24 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1368,
+      "Number of Unique Users": 608,
+      "Transaction Volume USD": 39568936.27,
+      "Average Transaction Volume USD": 25677.440798183
+    },
+    {
+      "Date": "2022-05-25 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1262,
+      "Number of Unique Users": 496,
+      "Transaction Volume USD": 33473746.29,
+      "Average Transaction Volume USD": 23926.909428163
+    },
+    {
+      "Date": "2022-05-26 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1803,
+      "Number of Unique Users": 652,
+      "Transaction Volume USD": 75987027.93,
+      "Average Transaction Volume USD": 38107.837477432
+    },
+    {
+      "Date": "2022-05-27 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2073,
+      "Number of Unique Users": 665,
+      "Transaction Volume USD": 76996877.37,
+      "Average Transaction Volume USD": 32946.88804878
+    },
+    {
+      "Date": "2022-05-28 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1200,
+      "Number of Unique Users": 522,
+      "Transaction Volume USD": 45901276.49,
+      "Average Transaction Volume USD": 33261.794557971
+    },
+    {
+      "Date": "2022-05-29 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 921,
+      "Number of Unique Users": 403,
+      "Transaction Volume USD": 26716825.85,
+      "Average Transaction Volume USD": 25566.340526316
+    },
+    {
+      "Date": "2022-05-30 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1797,
+      "Number of Unique Users": 648,
+      "Transaction Volume USD": 79547820.94,
+      "Average Transaction Volume USD": 39536.690328032
+    },
+    {
+      "Date": "2022-05-31 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1406,
+      "Number of Unique Users": 567,
+      "Transaction Volume USD": 47576055.83,
+      "Average Transaction Volume USD": 31279.458139382
+    },
+    {
+      "Date": "2022-06-01 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1361,
+      "Number of Unique Users": 551,
+      "Transaction Volume USD": 86218745.67,
+      "Average Transaction Volume USD": 55374.916936416
+    },
+    {
+      "Date": "2022-06-02 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 985,
+      "Number of Unique Users": 471,
+      "Transaction Volume USD": 56788133.69,
+      "Average Transaction Volume USD": 50658.460026762
+    },
+    {
+      "Date": "2022-06-03 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1155,
+      "Number of Unique Users": 521,
+      "Transaction Volume USD": 50704040.34,
+      "Average Transaction Volume USD": 39427.714105754
+    },
+    {
+      "Date": "2022-06-04 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 538,
+      "Number of Unique Users": 279,
+      "Transaction Volume USD": 10231027.2,
+      "Average Transaction Volume USD": 17488.935384615
+    },
+    {
+      "Date": "2022-06-05 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 530,
+      "Number of Unique Users": 249,
+      "Transaction Volume USD": 15079000.33,
+      "Average Transaction Volume USD": 27218.412148014
+    },
+    {
+      "Date": "2022-06-06 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 858,
+      "Number of Unique Users": 444,
+      "Transaction Volume USD": 32718748.81,
+      "Average Transaction Volume USD": 34082.030010417
+    },
+    {
+      "Date": "2022-06-07 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1501,
+      "Number of Unique Users": 648,
+      "Transaction Volume USD": 43526638.87,
+      "Average Transaction Volume USD": 25469.068970158
+    },
+    {
+      "Date": "2022-06-08 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1082,
+      "Number of Unique Users": 493,
+      "Transaction Volume USD": 38099050.84,
+      "Average Transaction Volume USD": 31617.469576763
+    },
+    {
+      "Date": "2022-06-09 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1692,
+      "Number of Unique Users": 812,
+      "Transaction Volume USD": 83702215.63,
+      "Average Transaction Volume USD": 42596.547394402
+    },
+    {
+      "Date": "2022-06-10 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2290,
+      "Number of Unique Users": 1049,
+      "Transaction Volume USD": 75765021.38,
+      "Average Transaction Volume USD": 29561.069598127
+    },
+    {
+      "Date": "2022-06-11 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2532,
+      "Number of Unique Users": 1156,
+      "Transaction Volume USD": 73831902.98,
+      "Average Transaction Volume USD": 25896.844258155
+    },
+    {
+      "Date": "2022-06-12 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3329,
+      "Number of Unique Users": 1235,
+      "Transaction Volume USD": 80118199.49,
+      "Average Transaction Volume USD": 20729.158988357
+    },
+    {
+      "Date": "2022-06-13 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 4868,
+      "Number of Unique Users": 1675,
+      "Transaction Volume USD": 226916176.81,
+      "Average Transaction Volume USD": 40326.315409632
+    },
+    {
+      "Date": "2022-06-14 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3634,
+      "Number of Unique Users": 1175,
+      "Transaction Volume USD": 233096000.91,
+      "Average Transaction Volume USD": 57998.507317741
+    },
+    {
+      "Date": "2022-06-15 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3759,
+      "Number of Unique Users": 1201,
+      "Transaction Volume USD": 142309577.69,
+      "Average Transaction Volume USD": 34217.258401058
+    },
+    {
+      "Date": "2022-06-16 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2619,
+      "Number of Unique Users": 1012,
+      "Transaction Volume USD": 124931870.73,
+      "Average Transaction Volume USD": 43866.527643961
+    },
+    {
+      "Date": "2022-06-17 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1766,
+      "Number of Unique Users": 722,
+      "Transaction Volume USD": 120453960.11,
+      "Average Transaction Volume USD": 63064.900581152
+    },
+    {
+      "Date": "2022-06-18 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2557,
+      "Number of Unique Users": 1044,
+      "Transaction Volume USD": 86237557.06,
+      "Average Transaction Volume USD": 30494.185664781
+    },
+    {
+      "Date": "2022-06-19 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3089,
+      "Number of Unique Users": 1053,
+      "Transaction Volume USD": 82171240.08,
+      "Average Transaction Volume USD": 24289.459083654
+    },
+    {
+      "Date": "2022-06-20 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2647,
+      "Number of Unique Users": 845,
+      "Transaction Volume USD": 70125192.22,
+      "Average Transaction Volume USD": 24467.9665806
+    },
+    {
+      "Date": "2022-06-21 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1794,
+      "Number of Unique Users": 694,
+      "Transaction Volume USD": 57901165.49,
+      "Average Transaction Volume USD": 29969.547355072
+    },
+    {
+      "Date": "2022-06-22 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1464,
+      "Number of Unique Users": 599,
+      "Transaction Volume USD": 44416354.37,
+      "Average Transaction Volume USD": 28147.246115336
+    },
+    {
+      "Date": "2022-06-23 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1264,
+      "Number of Unique Users": 522,
+      "Transaction Volume USD": 70552879.49,
+      "Average Transaction Volume USD": 52690.724040329
+    },
+    {
+      "Date": "2022-06-24 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1850,
+      "Number of Unique Users": 685,
+      "Transaction Volume USD": 54165149.76,
+      "Average Transaction Volume USD": 27992.325457364
+    },
+    {
+      "Date": "2022-06-25 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1279,
+      "Number of Unique Users": 550,
+      "Transaction Volume USD": 23552551.95,
+      "Average Transaction Volume USD": 17748.720384326
+    },
+    {
+      "Date": "2022-06-26 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1033,
+      "Number of Unique Users": 476,
+      "Transaction Volume USD": 37717176.49,
+      "Average Transaction Volume USD": 34133.191393665
+    },
+    {
+      "Date": "2022-06-27 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1175,
+      "Number of Unique Users": 517,
+      "Transaction Volume USD": 23219747.53,
+      "Average Transaction Volume USD": 18399.166030111
+    },
+    {
+      "Date": "2022-06-28 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2036,
+      "Number of Unique Users": 811,
+      "Transaction Volume USD": 53279771.39,
+      "Average Transaction Volume USD": 22283.467749895
+    },
+    {
+      "Date": "2022-06-29 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2162,
+      "Number of Unique Users": 824,
+      "Transaction Volume USD": 69433189.27,
+      "Average Transaction Volume USD": 27607.629928429
+    },
+    {
+      "Date": "2022-06-30 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2708,
+      "Number of Unique Users": 1092,
+      "Transaction Volume USD": 59440997.94,
+      "Average Transaction Volume USD": 19063.822302758
+    },
+    {
+      "Date": "2022-07-01 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2736,
+      "Number of Unique Users": 998,
+      "Transaction Volume USD": 37640166.06,
+      "Average Transaction Volume USD": 12268.633005215
+    },
+    {
+      "Date": "2022-07-02 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1774,
+      "Number of Unique Users": 809,
+      "Transaction Volume USD": 35694141.46,
+      "Average Transaction Volume USD": 18351.743681234
+    },
+    {
+      "Date": "2022-07-03 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1415,
+      "Number of Unique Users": 724,
+      "Transaction Volume USD": 18814598.01,
+      "Average Transaction Volume USD": 12526.363521971
+    },
+    {
+      "Date": "2022-07-04 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1968,
+      "Number of Unique Users": 928,
+      "Transaction Volume USD": 75115804.5,
+      "Average Transaction Volume USD": 33399.646287239
+    },
+    {
+      "Date": "2022-07-05 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1640,
+      "Number of Unique Users": 643,
+      "Transaction Volume USD": 95276795.87,
+      "Average Transaction Volume USD": 53167.85483817
+    },
+    {
+      "Date": "2022-07-06 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1030,
+      "Number of Unique Users": 540,
+      "Transaction Volume USD": 57779241.03,
+      "Average Transaction Volume USD": 50462.219240175
+    },
+    {
+      "Date": "2022-07-07 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1241,
+      "Number of Unique Users": 618,
+      "Transaction Volume USD": 80708895.96,
+      "Average Transaction Volume USD": 59962.032659733
+    },
+    {
+      "Date": "2022-07-08 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1668,
+      "Number of Unique Users": 659,
+      "Transaction Volume USD": 34517915.7,
+      "Average Transaction Volume USD": 19081.213764511
+    },
+    {
+      "Date": "2022-07-09 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1276,
+      "Number of Unique Users": 495,
+      "Transaction Volume USD": 13349184.18,
+      "Average Transaction Volume USD": 10174.683064024
+    },
+    {
+      "Date": "2022-07-10 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1302,
+      "Number of Unique Users": 569,
+      "Transaction Volume USD": 68445339.73,
+      "Average Transaction Volume USD": 51116.758573562
+    },
+    {
+      "Date": "2022-07-11 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1477,
+      "Number of Unique Users": 629,
+      "Transaction Volume USD": 24164841.41,
+      "Average Transaction Volume USD": 15265.218831333
+    },
+    {
+      "Date": "2022-07-12 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1532,
+      "Number of Unique Users": 683,
+      "Transaction Volume USD": 106719783.63,
+      "Average Transaction Volume USD": 65272.038917431
+    },
+    {
+      "Date": "2022-07-13 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2135,
+      "Number of Unique Users": 897,
+      "Transaction Volume USD": 44062148.04,
+      "Average Transaction Volume USD": 18878.383907455
+    },
+    {
+      "Date": "2022-07-14 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2078,
+      "Number of Unique Users": 900,
+      "Transaction Volume USD": 99027688.42,
+      "Average Transaction Volume USD": 45012.585645455
+    },
+    {
+      "Date": "2022-07-15 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2652,
+      "Number of Unique Users": 1050,
+      "Transaction Volume USD": 56352615.01,
+      "Average Transaction Volume USD": 19411.854981054
+    },
+    {
+      "Date": "2022-07-16 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2614,
+      "Number of Unique Users": 1136,
+      "Transaction Volume USD": 95585969.36,
+      "Average Transaction Volume USD": 33574.277962768
+    },
+    {
+      "Date": "2022-07-17 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2550,
+      "Number of Unique Users": 933,
+      "Transaction Volume USD": 39020136.88,
+      "Average Transaction Volume USD": 14101.964900614
+    },
+    {
+      "Date": "2022-07-18 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2805,
+      "Number of Unique Users": 1068,
+      "Transaction Volume USD": 84488733.93,
+      "Average Transaction Volume USD": 28060.024553305
+    },
+    {
+      "Date": "2022-07-19 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2717,
+      "Number of Unique Users": 1095,
+      "Transaction Volume USD": 50131515.55,
+      "Average Transaction Volume USD": 17346.54517301
+    },
+    {
+      "Date": "2022-07-20 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2583,
+      "Number of Unique Users": 914,
+      "Transaction Volume USD": 48612631.54,
+      "Average Transaction Volume USD": 17518.06541982
+    },
+    {
+      "Date": "2022-07-21 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2619,
+      "Number of Unique Users": 1020,
+      "Transaction Volume USD": 45095144.06,
+      "Average Transaction Volume USD": 15762.021691716
+    },
+    {
+      "Date": "2022-07-22 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2266,
+      "Number of Unique Users": 988,
+      "Transaction Volume USD": 72512233.07,
+      "Average Transaction Volume USD": 29596.82982449
+    },
+    {
+      "Date": "2022-07-23 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1828,
+      "Number of Unique Users": 684,
+      "Transaction Volume USD": 21940059.7,
+      "Average Transaction Volume USD": 11159.745523906
+    },
+    {
+      "Date": "2022-07-24 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2068,
+      "Number of Unique Users": 739,
+      "Transaction Volume USD": 25398273.49,
+      "Average Transaction Volume USD": 11409.826365678
+    },
+    {
+      "Date": "2022-07-25 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2144,
+      "Number of Unique Users": 732,
+      "Transaction Volume USD": 37039821.05,
+      "Average Transaction Volume USD": 15951.688652024
+    },
+    {
+      "Date": "2022-07-26 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1927,
+      "Number of Unique Users": 750,
+      "Transaction Volume USD": 47480476.75,
+      "Average Transaction Volume USD": 22816.182964921
+    },
+    {
+      "Date": "2022-07-27 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2525,
+      "Number of Unique Users": 862,
+      "Transaction Volume USD": 58785343.53,
+      "Average Transaction Volume USD": 20201.148979381
+    },
+    {
+      "Date": "2022-07-28 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2973,
+      "Number of Unique Users": 997,
+      "Transaction Volume USD": 55081750.58,
+      "Average Transaction Volume USD": 16767.656188737
+    },
+    {
+      "Date": "2022-07-29 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3061,
+      "Number of Unique Users": 879,
+      "Transaction Volume USD": 28669197.41,
+      "Average Transaction Volume USD": 8783.455088848
+    },
+    {
+      "Date": "2022-07-30 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2560,
+      "Number of Unique Users": 828,
+      "Transaction Volume USD": 19617188.76,
+      "Average Transaction Volume USD": 6944.137614159
+    },
+    {
+      "Date": "2022-07-31 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2021,
+      "Number of Unique Users": 794,
+      "Transaction Volume USD": 29886166.44,
+      "Average Transaction Volume USD": 13584.621109091
+    },
+    {
+      "Date": "2022-08-01 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1867,
+      "Number of Unique Users": 756,
+      "Transaction Volume USD": 16525813.43,
+      "Average Transaction Volume USD": 7991.205720503
+    },
+    {
+      "Date": "2022-08-02 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2518,
+      "Number of Unique Users": 858,
+      "Transaction Volume USD": 40674667.62,
+      "Average Transaction Volume USD": 14332.159133192
+    },
+    {
+      "Date": "2022-08-03 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2530,
+      "Number of Unique Users": 968,
+      "Transaction Volume USD": 21566738.37,
+      "Average Transaction Volume USD": 7647.77956383
+    },
+    {
+      "Date": "2022-08-04 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1927,
+      "Number of Unique Users": 753,
+      "Transaction Volume USD": 34063750.65,
+      "Average Transaction Volume USD": 15887.943400187
+    },
+    {
+      "Date": "2022-08-05 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1971,
+      "Number of Unique Users": 740,
+      "Transaction Volume USD": 43019692.3,
+      "Average Transaction Volume USD": 19282.694890184
+    },
+    {
+      "Date": "2022-08-06 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1462,
+      "Number of Unique Users": 565,
+      "Transaction Volume USD": 15291754.69,
+      "Average Transaction Volume USD": 9696.737279645
+    },
+    {
+      "Date": "2022-08-07 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1305,
+      "Number of Unique Users": 551,
+      "Transaction Volume USD": 14122986.65,
+      "Average Transaction Volume USD": 9917.827703652
+    },
+    {
+      "Date": "2022-08-08 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2181,
+      "Number of Unique Users": 961,
+      "Transaction Volume USD": 48969992.75,
+      "Average Transaction Volume USD": 20918.407838531
+    },
+    {
+      "Date": "2022-08-09 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1808,
+      "Number of Unique Users": 711,
+      "Transaction Volume USD": 63667981.1,
+      "Average Transaction Volume USD": 32302.374987316
+    },
+    {
+      "Date": "2022-08-10 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1725,
+      "Number of Unique Users": 677,
+      "Transaction Volume USD": 73649762.27,
+      "Average Transaction Volume USD": 38120.994963768
+    },
+    {
+      "Date": "2022-08-11 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1983,
+      "Number of Unique Users": 768,
+      "Transaction Volume USD": 116386811.5,
+      "Average Transaction Volume USD": 54183.804236499
+    },
+    {
+      "Date": "2022-08-12 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1908,
+      "Number of Unique Users": 706,
+      "Transaction Volume USD": 47837506.33,
+      "Average Transaction Volume USD": 22845.036451767
+    },
+    {
+      "Date": "2022-08-13 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1900,
+      "Number of Unique Users": 799,
+      "Transaction Volume USD": 90628893.46,
+      "Average Transaction Volume USD": 43592.541346801
+    },
+    {
+      "Date": "2022-08-14 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2013,
+      "Number of Unique Users": 824,
+      "Transaction Volume USD": 53429647.37,
+      "Average Transaction Volume USD": 23948.743778575
+    },
+    {
+      "Date": "2022-08-15 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1908,
+      "Number of Unique Users": 712,
+      "Transaction Volume USD": 78179929.92,
+      "Average Transaction Volume USD": 37731.626409266
+    },
+    {
+      "Date": "2022-08-16 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1669,
+      "Number of Unique Users": 723,
+      "Transaction Volume USD": 51846682.08,
+      "Average Transaction Volume USD": 28393.582738226
+    },
+    {
+      "Date": "2022-08-17 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1990,
+      "Number of Unique Users": 762,
+      "Transaction Volume USD": 34314714.67,
+      "Average Transaction Volume USD": 15690.313063557
+    },
+    {
+      "Date": "2022-08-18 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1593,
+      "Number of Unique Users": 636,
+      "Transaction Volume USD": 30257593.3,
+      "Average Transaction Volume USD": 17046.53143662
+    },
+    {
+      "Date": "2022-08-19 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2790,
+      "Number of Unique Users": 996,
+      "Transaction Volume USD": 60404297.01,
+      "Average Transaction Volume USD": 19441.357261023
+    },
+    {
+      "Date": "2022-08-20 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2322,
+      "Number of Unique Users": 807,
+      "Transaction Volume USD": 23588570.46,
+      "Average Transaction Volume USD": 9048.166651323
+    },
+    {
+      "Date": "2022-08-21 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2397,
+      "Number of Unique Users": 814,
+      "Transaction Volume USD": 27188524.28,
+      "Average Transaction Volume USD": 10054.927618343
+    },
+    {
+      "Date": "2022-08-22 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2307,
+      "Number of Unique Users": 778,
+      "Transaction Volume USD": 29206089.79,
+      "Average Transaction Volume USD": 11580.527275971
+    },
+    {
+      "Date": "2022-08-23 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1847,
+      "Number of Unique Users": 663,
+      "Transaction Volume USD": 30964199.98,
+      "Average Transaction Volume USD": 14341.91754516
+    },
+    {
+      "Date": "2022-08-24 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1793,
+      "Number of Unique Users": 611,
+      "Transaction Volume USD": 49552944.03,
+      "Average Transaction Volume USD": 23440.370875118
+    },
+    {
+      "Date": "2022-08-25 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1727,
+      "Number of Unique Users": 637,
+      "Transaction Volume USD": 72795664.5,
+      "Average Transaction Volume USD": 34997.915625
+    },
+    {
+      "Date": "2022-08-26 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2228,
+      "Number of Unique Users": 765,
+      "Transaction Volume USD": 48792965.31,
+      "Average Transaction Volume USD": 18941.368520963
+    },
+    {
+      "Date": "2022-08-27 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2112,
+      "Number of Unique Users": 800,
+      "Transaction Volume USD": 34988570.35,
+      "Average Transaction Volume USD": 14725.829271886
+    },
+    {
+      "Date": "2022-08-28 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1808,
+      "Number of Unique Users": 651,
+      "Transaction Volume USD": 33324113.86,
+      "Average Transaction Volume USD": 16472.621779535
+    },
+    {
+      "Date": "2022-08-29 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3997,
+      "Number of Unique Users": 1021,
+      "Transaction Volume USD": 104561011.2,
+      "Average Transaction Volume USD": 22247.023659574
+    },
+    {
+      "Date": "2022-08-30 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3789,
+      "Number of Unique Users": 925,
+      "Transaction Volume USD": 103819855.03,
+      "Average Transaction Volume USD": 23430.344172873
+    },
+    {
+      "Date": "2022-08-31 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1697,
+      "Number of Unique Users": 567,
+      "Transaction Volume USD": 52304649.4,
+      "Average Transaction Volume USD": 26933.393099897
+    },
+    {
+      "Date": "2022-09-01 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1646,
+      "Number of Unique Users": 586,
+      "Transaction Volume USD": 45623118.29,
+      "Average Transaction Volume USD": 24781.704665942
+    },
+    {
+      "Date": "2022-09-02 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1925,
+      "Number of Unique Users": 666,
+      "Transaction Volume USD": 41754530.61,
+      "Average Transaction Volume USD": 19241.719175115
+    },
+    {
+      "Date": "2022-09-03 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1225,
+      "Number of Unique Users": 496,
+      "Transaction Volume USD": 13982518.74,
+      "Average Transaction Volume USD": 10169.104538182
+    },
+    {
+      "Date": "2022-09-04 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1080,
+      "Number of Unique Users": 423,
+      "Transaction Volume USD": 25674795.25,
+      "Average Transaction Volume USD": 20589.250400962
+    },
+    {
+      "Date": "2022-09-05 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1539,
+      "Number of Unique Users": 544,
+      "Transaction Volume USD": 16957754.18,
+      "Average Transaction Volume USD": 9635.087602273
+    },
+    {
+      "Date": "2022-09-06 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2334,
+      "Number of Unique Users": 822,
+      "Transaction Volume USD": 85626078.09,
+      "Average Transaction Volume USD": 30822.922278618
+    },
+    {
+      "Date": "2022-09-07 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1982,
+      "Number of Unique Users": 707,
+      "Transaction Volume USD": 63676454.11,
+      "Average Transaction Volume USD": 28088.422633436
+    },
+    {
+      "Date": "2022-09-08 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1690,
+      "Number of Unique Users": 634,
+      "Transaction Volume USD": 50965677.99,
+      "Average Transaction Volume USD": 27563.914542996
+    },
+    {
+      "Date": "2022-09-09 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1605,
+      "Number of Unique Users": 635,
+      "Transaction Volume USD": 53524284.66,
+      "Average Transaction Volume USD": 30463.451713147
+    },
+    {
+      "Date": "2022-09-10 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1459,
+      "Number of Unique Users": 536,
+      "Transaction Volume USD": 23168532.26,
+      "Average Transaction Volume USD": 14301.563123457
+    },
+    {
+      "Date": "2022-09-11 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1568,
+      "Number of Unique Users": 611,
+      "Transaction Volume USD": 17947243.68,
+      "Average Transaction Volume USD": 10708.37928401
+    },
+    {
+      "Date": "2022-09-12 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1489,
+      "Number of Unique Users": 644,
+      "Transaction Volume USD": 53519132,
+      "Average Transaction Volume USD": 32793.585784314
+    },
+    {
+      "Date": "2022-09-13 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1919,
+      "Number of Unique Users": 776,
+      "Transaction Volume USD": 60555537.7,
+      "Average Transaction Volume USD": 28336.704585868
+    },
+    {
+      "Date": "2022-09-14 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1874,
+      "Number of Unique Users": 718,
+      "Transaction Volume USD": 57549411.87,
+      "Average Transaction Volume USD": 27681.294790765
+    },
+    {
+      "Date": "2022-09-15 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2244,
+      "Number of Unique Users": 899,
+      "Transaction Volume USD": 80650324.15,
+      "Average Transaction Volume USD": 31702.17144261
+    },
+    {
+      "Date": "2022-09-16 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1729,
+      "Number of Unique Users": 715,
+      "Transaction Volume USD": 41745403.46,
+      "Average Transaction Volume USD": 21596.173543714
+    },
+    {
+      "Date": "2022-09-17 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1926,
+      "Number of Unique Users": 730,
+      "Transaction Volume USD": 18101246.29,
+      "Average Transaction Volume USD": 8595.083708452
+    },
+    {
+      "Date": "2022-09-18 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2294,
+      "Number of Unique Users": 956,
+      "Transaction Volume USD": 18299573.53,
+      "Average Transaction Volume USD": 7302.303882682
+    },
+    {
+      "Date": "2022-09-19 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2385,
+      "Number of Unique Users": 916,
+      "Transaction Volume USD": 51059685.9,
+      "Average Transaction Volume USD": 19683.764803392
+    },
+    {
+      "Date": "2022-09-20 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1698,
+      "Number of Unique Users": 661,
+      "Transaction Volume USD": 42875023.76,
+      "Average Transaction Volume USD": 22203.533795961
+    },
+    {
+      "Date": "2022-09-21 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2351,
+      "Number of Unique Users": 853,
+      "Transaction Volume USD": 49946192.37,
+      "Average Transaction Volume USD": 19187.934064541
+    },
+    {
+      "Date": "2022-09-22 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2670,
+      "Number of Unique Users": 905,
+      "Transaction Volume USD": 54169664.68,
+      "Average Transaction Volume USD": 18487.940163823
+    },
+    {
+      "Date": "2022-09-23 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2941,
+      "Number of Unique Users": 886,
+      "Transaction Volume USD": 52305959.9,
+      "Average Transaction Volume USD": 15883.984178561
+    },
+    {
+      "Date": "2022-09-24 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2229,
+      "Number of Unique Users": 711,
+      "Transaction Volume USD": 27651762.02,
+      "Average Transaction Volume USD": 11213.204387672
+    },
+    {
+      "Date": "2022-09-25 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2022,
+      "Number of Unique Users": 645,
+      "Transaction Volume USD": 22406031.34,
+      "Average Transaction Volume USD": 9953.812234562
+    },
+    {
+      "Date": "2022-09-26 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1908,
+      "Number of Unique Users": 726,
+      "Transaction Volume USD": 23707368.1,
+      "Average Transaction Volume USD": 11225.079592803
+    },
+    {
+      "Date": "2022-09-27 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1813,
+      "Number of Unique Users": 636,
+      "Transaction Volume USD": 42743780.66,
+      "Average Transaction Volume USD": 21425.453964912
+    },
+    {
+      "Date": "2022-09-28 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1895,
+      "Number of Unique Users": 677,
+      "Transaction Volume USD": 46260047.12,
+      "Average Transaction Volume USD": 21986.714410646
+    },
+    {
+      "Date": "2022-09-29 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1644,
+      "Number of Unique Users": 575,
+      "Transaction Volume USD": 24432111.35,
+      "Average Transaction Volume USD": 13498.404060773
+    },
+    {
+      "Date": "2022-09-30 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1414,
+      "Number of Unique Users": 537,
+      "Transaction Volume USD": 46452494.16,
+      "Average Transaction Volume USD": 29587.575898089
+    },
+    {
+      "Date": "2022-10-01 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1864,
+      "Number of Unique Users": 606,
+      "Transaction Volume USD": 32499593.35,
+      "Average Transaction Volume USD": 15845.730546075
+    },
+    {
+      "Date": "2022-10-02 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2887,
+      "Number of Unique Users": 850,
+      "Transaction Volume USD": 33917873.92,
+      "Average Transaction Volume USD": 10902.563137255
+    },
+    {
+      "Date": "2022-10-03 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1173,
+      "Number of Unique Users": 514,
+      "Transaction Volume USD": 68046403.53,
+      "Average Transaction Volume USD": 52545.485351351
+    },
+    {
+      "Date": "2022-10-04 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1326,
+      "Number of Unique Users": 543,
+      "Transaction Volume USD": 49927388.2,
+      "Average Transaction Volume USD": 33440.983389149
+    },
+    {
+      "Date": "2022-10-05 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1714,
+      "Number of Unique Users": 635,
+      "Transaction Volume USD": 26316168.94,
+      "Average Transaction Volume USD": 13509.326971253
+    },
+    {
+      "Date": "2022-10-06 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1752,
+      "Number of Unique Users": 654,
+      "Transaction Volume USD": 42826503.6,
+      "Average Transaction Volume USD": 22305.470625
+    },
+    {
+      "Date": "2022-10-07 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1950,
+      "Number of Unique Users": 729,
+      "Transaction Volume USD": 44159115.05,
+      "Average Transaction Volume USD": 20683.426252927
+    },
+    {
+      "Date": "2022-10-08 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1332,
+      "Number of Unique Users": 533,
+      "Transaction Volume USD": 13095150.13,
+      "Average Transaction Volume USD": 9387.204394265
+    },
+    {
+      "Date": "2022-10-09 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 514,
+      "Number of Unique Users": 251,
+      "Transaction Volume USD": 13028524.92,
+      "Average Transaction Volume USD": 22777.141468531
+    },
+    {
+      "Date": "2022-10-10 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 828,
+      "Number of Unique Users": 353,
+      "Transaction Volume USD": 17031769.86,
+      "Average Transaction Volume USD": 18353.200280172
+    },
+    {
+      "Date": "2022-10-11 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1012,
+      "Number of Unique Users": 456,
+      "Transaction Volume USD": 42503073.92,
+      "Average Transaction Volume USD": 36452.035951973
+    },
+    {
+      "Date": "2022-10-12 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1019,
+      "Number of Unique Users": 525,
+      "Transaction Volume USD": 8224408,
+      "Average Transaction Volume USD": 7304.092362345
+    },
+    {
+      "Date": "2022-10-13 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2208,
+      "Number of Unique Users": 735,
+      "Transaction Volume USD": 49437060.51,
+      "Average Transaction Volume USD": 19774.824204
+    },
+    {
+      "Date": "2022-10-14 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1368,
+      "Number of Unique Users": 551,
+      "Transaction Volume USD": 39661595.21,
+      "Average Transaction Volume USD": 25473.086197816
+    },
+    {
+      "Date": "2022-10-15 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 948,
+      "Number of Unique Users": 364,
+      "Transaction Volume USD": 23702999.1,
+      "Average Transaction Volume USD": 22488.613946869
+    },
+    {
+      "Date": "2022-10-16 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1101,
+      "Number of Unique Users": 428,
+      "Transaction Volume USD": 8697355.61,
+      "Average Transaction Volume USD": 7123.141367731
+    },
+    {
+      "Date": "2022-10-17 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1303,
+      "Number of Unique Users": 509,
+      "Transaction Volume USD": 62530215.99,
+      "Average Transaction Volume USD": 43124.286889655
+    },
+    {
+      "Date": "2022-10-18 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1073,
+      "Number of Unique Users": 469,
+      "Transaction Volume USD": 36678018.58,
+      "Average Transaction Volume USD": 29746.973706407
+    },
+    {
+      "Date": "2022-10-19 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1679,
+      "Number of Unique Users": 559,
+      "Transaction Volume USD": 52956121.32,
+      "Average Transaction Volume USD": 28333.93329053
+    },
+    {
+      "Date": "2022-10-20 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1364,
+      "Number of Unique Users": 522,
+      "Transaction Volume USD": 47987547.45,
+      "Average Transaction Volume USD": 31906.613996011
+    },
+    {
+      "Date": "2022-10-21 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1010,
+      "Number of Unique Users": 423,
+      "Transaction Volume USD": 105137647.96,
+      "Average Transaction Volume USD": 90092.243324764
+    },
+    {
+      "Date": "2022-10-22 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 822,
+      "Number of Unique Users": 409,
+      "Transaction Volume USD": 22544783.97,
+      "Average Transaction Volume USD": 25161.589252232
+    },
+    {
+      "Date": "2022-10-23 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1055,
+      "Number of Unique Users": 503,
+      "Transaction Volume USD": 60426382.45,
+      "Average Transaction Volume USD": 51868.13944206
+    },
+    {
+      "Date": "2022-10-24 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1054,
+      "Number of Unique Users": 504,
+      "Transaction Volume USD": 67588623.79,
+      "Average Transaction Volume USD": 55445.9588105
+    },
+    {
+      "Date": "2022-10-25 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1571,
+      "Number of Unique Users": 651,
+      "Transaction Volume USD": 88701216.66,
+      "Average Transaction Volume USD": 49498.446796875
+    },
+    {
+      "Date": "2022-10-26 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1870,
+      "Number of Unique Users": 843,
+      "Transaction Volume USD": 89416430.08,
+      "Average Transaction Volume USD": 43238.118994197
+    },
+    {
+      "Date": "2022-10-27 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1592,
+      "Number of Unique Users": 629,
+      "Transaction Volume USD": 82983093.44,
+      "Average Transaction Volume USD": 48245.98455814
+    },
+    {
+      "Date": "2022-10-28 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1326,
+      "Number of Unique Users": 553,
+      "Transaction Volume USD": 72637504.64,
+      "Average Transaction Volume USD": 49112.579202164
+    },
+    {
+      "Date": "2022-10-29 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1922,
+      "Number of Unique Users": 695,
+      "Transaction Volume USD": 67115974.73,
+      "Average Transaction Volume USD": 31274.91832712
+    },
+    {
+      "Date": "2022-10-30 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1437,
+      "Number of Unique Users": 594,
+      "Transaction Volume USD": 64656404.02,
+      "Average Transaction Volume USD": 39788.55632
+    },
+    {
+      "Date": "2022-10-31 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1302,
+      "Number of Unique Users": 578,
+      "Transaction Volume USD": 98077904.21,
+      "Average Transaction Volume USD": 64524.936980263
+    },
+    {
+      "Date": "2022-11-01 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1351,
+      "Number of Unique Users": 562,
+      "Transaction Volume USD": 74788992.01,
+      "Average Transaction Volume USD": 48034.034688504
+    },
+    {
+      "Date": "2022-11-02 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1658,
+      "Number of Unique Users": 656,
+      "Transaction Volume USD": 50645982.08,
+      "Average Transaction Volume USD": 26641.758064177
+    },
+    {
+      "Date": "2022-11-03 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1247,
+      "Number of Unique Users": 466,
+      "Transaction Volume USD": 48047339.56,
+      "Average Transaction Volume USD": 33907.790797459
+    },
+    {
+      "Date": "2022-11-04 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1842,
+      "Number of Unique Users": 649,
+      "Transaction Volume USD": 58948057.65,
+      "Average Transaction Volume USD": 26613.118577878
+    },
+    {
+      "Date": "2022-11-05 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1459,
+      "Number of Unique Users": 558,
+      "Transaction Volume USD": 57164518.32,
+      "Average Transaction Volume USD": 35374.083118812
+    },
+    {
+      "Date": "2022-11-06 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1257,
+      "Number of Unique Users": 535,
+      "Transaction Volume USD": 58312882.64,
+      "Average Transaction Volume USD": 41652.059028571
+    },
+    {
+      "Date": "2022-11-07 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1549,
+      "Number of Unique Users": 625,
+      "Transaction Volume USD": 87335439.39,
+      "Average Transaction Volume USD": 49064.853589888
+    },
+    {
+      "Date": "2022-11-08 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3331,
+      "Number of Unique Users": 1160,
+      "Transaction Volume USD": 212041865.7,
+      "Average Transaction Volume USD": 50983.858066843
+    },
+    {
+      "Date": "2022-11-09 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 4405,
+      "Number of Unique Users": 1369,
+      "Transaction Volume USD": 355834282.48,
+      "Average Transaction Volume USD": 64933.263226277
+    },
+    {
+      "Date": "2022-11-10 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 4262,
+      "Number of Unique Users": 1304,
+      "Transaction Volume USD": 331170541.35,
+      "Average Transaction Volume USD": 65191.05144685
+    },
+    {
+      "Date": "2022-11-11 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 3253,
+      "Number of Unique Users": 989,
+      "Transaction Volume USD": 111393583.88,
+      "Average Transaction Volume USD": 29673.304176878
+    },
+    {
+      "Date": "2022-11-12 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2505,
+      "Number of Unique Users": 790,
+      "Transaction Volume USD": 96031046.28,
+      "Average Transaction Volume USD": 33367.285017373
+    },
+    {
+      "Date": "2022-11-13 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2340,
+      "Number of Unique Users": 703,
+      "Transaction Volume USD": 93578310.14,
+      "Average Transaction Volume USD": 36005.506017699
+    },
+    {
+      "Date": "2022-11-14 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2575,
+      "Number of Unique Users": 865,
+      "Transaction Volume USD": 76510609.79,
+      "Average Transaction Volume USD": 26492.59341759
+    },
+    {
+      "Date": "2022-11-15 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2135,
+      "Number of Unique Users": 673,
+      "Transaction Volume USD": 47199692.16,
+      "Average Transaction Volume USD": 20205.347671233
+    },
+    {
+      "Date": "2022-11-16 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2106,
+      "Number of Unique Users": 733,
+      "Transaction Volume USD": 67372862.23,
+      "Average Transaction Volume USD": 28915.391515021
+    },
+    {
+      "Date": "2022-11-17 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1966,
+      "Number of Unique Users": 783,
+      "Transaction Volume USD": 57122045.92,
+      "Average Transaction Volume USD": 25152.816345222
+    },
+    {
+      "Date": "2022-11-18 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1581,
+      "Number of Unique Users": 662,
+      "Transaction Volume USD": 65709530.08,
+      "Average Transaction Volume USD": 37082.12758465
+    },
+    {
+      "Date": "2022-11-19 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1544,
+      "Number of Unique Users": 692,
+      "Transaction Volume USD": 28516495.49,
+      "Average Transaction Volume USD": 16579.357843023
+    },
+    {
+      "Date": "2022-11-20 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2413,
+      "Number of Unique Users": 980,
+      "Transaction Volume USD": 59337664.77,
+      "Average Transaction Volume USD": 22215.524062149
+    },
+    {
+      "Date": "2022-11-21 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2734,
+      "Number of Unique Users": 949,
+      "Transaction Volume USD": 105626161.98,
+      "Average Transaction Volume USD": 33194.896913891
+    },
+    {
+      "Date": "2022-11-22 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2354,
+      "Number of Unique Users": 1000,
+      "Transaction Volume USD": 89976928.28,
+      "Average Transaction Volume USD": 33586.012795819
+    },
+    {
+      "Date": "2022-11-23 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 2257,
+      "Number of Unique Users": 968,
+      "Transaction Volume USD": 88053144.23,
+      "Average Transaction Volume USD": 33958.019371385
+    },
+    {
+      "Date": "2022-11-24 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1897,
+      "Number of Unique Users": 675,
+      "Transaction Volume USD": 123130315.87,
+      "Average Transaction Volume USD": 57216.689530669
+    },
+    {
+      "Date": "2022-11-25 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1534,
+      "Number of Unique Users": 601,
+      "Transaction Volume USD": 57501607.66,
+      "Average Transaction Volume USD": 33027.919391155
+    },
+    {
+      "Date": "2022-11-26 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1322,
+      "Number of Unique Users": 566,
+      "Transaction Volume USD": 45951968.56,
+      "Average Transaction Volume USD": 28191.391754601
+    },
+    {
+      "Date": "2022-11-27 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1033,
+      "Number of Unique Users": 460,
+      "Transaction Volume USD": 36912719.66,
+      "Average Transaction Volume USD": 30915.17559464
+    },
+    {
+      "Date": "2022-11-28 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1945,
+      "Number of Unique Users": 893,
+      "Transaction Volume USD": 81085468.3,
+      "Average Transaction Volume USD": 37452.872193995
+    },
+    {
+      "Date": "2022-11-29 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1448,
+      "Number of Unique Users": 615,
+      "Transaction Volume USD": 56583819.88,
+      "Average Transaction Volume USD": 33943.503227355
+    },
+    {
+      "Date": "2022-11-30 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1754,
+      "Number of Unique Users": 691,
+      "Transaction Volume USD": 69601368.09,
+      "Average Transaction Volume USD": 33672.650261248
+    },
+    {
+      "Date": "2022-12-01 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1375,
+      "Number of Unique Users": 628,
+      "Transaction Volume USD": 100466088.67,
+      "Average Transaction Volume USD": 60485.303232992
+    },
+    {
+      "Date": "2022-12-02 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1392,
+      "Number of Unique Users": 559,
+      "Transaction Volume USD": 69624908.53,
+      "Average Transaction Volume USD": 39694.930746864
+    },
+    {
+      "Date": "2022-12-03 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 850,
+      "Number of Unique Users": 410,
+      "Transaction Volume USD": 35494534.28,
+      "Average Transaction Volume USD": 30259.62001705
+    },
+    {
+      "Date": "2022-12-04 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 867,
+      "Number of Unique Users": 405,
+      "Transaction Volume USD": 41263241.05,
+      "Average Transaction Volume USD": 36006.318542757
+    },
+    {
+      "Date": "2022-12-05 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1461,
+      "Number of Unique Users": 592,
+      "Transaction Volume USD": 159112025.44,
+      "Average Transaction Volume USD": 75088.261179802
+    },
+    {
+      "Date": "2022-12-06 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1430,
+      "Number of Unique Users": 537,
+      "Transaction Volume USD": 183259893,
+      "Average Transaction Volume USD": 95298.956318253
+    },
+    {
+      "Date": "2022-12-07 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1061,
+      "Number of Unique Users": 488,
+      "Transaction Volume USD": 175661414.34,
+      "Average Transaction Volume USD": 115795.263243243
+    },
+    {
+      "Date": "2022-12-08 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1120,
+      "Number of Unique Users": 481,
+      "Transaction Volume USD": 93202377.84,
+      "Average Transaction Volume USD": 59937.220475884
+    },
+    {
+      "Date": "2022-12-09 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 926,
+      "Number of Unique Users": 425,
+      "Transaction Volume USD": 154707796.28,
+      "Average Transaction Volume USD": 122395.408449367
+    },
+    {
+      "Date": "2022-12-10 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 612,
+      "Number of Unique Users": 323,
+      "Transaction Volume USD": 40379687.77,
+      "Average Transaction Volume USD": 51048.909949431
+    },
+    {
+      "Date": "2022-12-11 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 667,
+      "Number of Unique Users": 352,
+      "Transaction Volume USD": 43040199.53,
+      "Average Transaction Volume USD": 50046.743639535
+    },
+    {
+      "Date": "2022-12-12 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1111,
+      "Number of Unique Users": 479,
+      "Transaction Volume USD": 171269183,
+      "Average Transaction Volume USD": 111940.64248366
+    },
+    {
+      "Date": "2022-12-13 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1601,
+      "Number of Unique Users": 723,
+      "Transaction Volume USD": 415246939.78,
+      "Average Transaction Volume USD": 168662.445077173
+    },
+    {
+      "Date": "2022-12-14 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1038,
+      "Number of Unique Users": 496,
+      "Transaction Volume USD": 160837979.25,
+      "Average Transaction Volume USD": 104304.785505837
+    },
+    {
+      "Date": "2022-12-15 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1297,
+      "Number of Unique Users": 589,
+      "Transaction Volume USD": 115987637.22,
+      "Average Transaction Volume USD": 65529.738542373
+    },
+    {
+      "Date": "2022-12-16 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1689,
+      "Number of Unique Users": 707,
+      "Transaction Volume USD": 95108410.31,
+      "Average Transaction Volume USD": 40266.050088908
+    },
+    {
+      "Date": "2022-12-17 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 948,
+      "Number of Unique Users": 445,
+      "Transaction Volume USD": 85823578.83,
+      "Average Transaction Volume USD": 62371.786940407
+    },
+    {
+      "Date": "2022-12-18 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 743,
+      "Number of Unique Users": 369,
+      "Transaction Volume USD": 63769837.91,
+      "Average Transaction Volume USD": 60388.104081439
+    },
+    {
+      "Date": "2022-12-19 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1032,
+      "Number of Unique Users": 465,
+      "Transaction Volume USD": 229637604.37,
+      "Average Transaction Volume USD": 143433.856570893
+    },
+    {
+      "Date": "2022-12-20 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 1114,
+      "Number of Unique Users": 499,
+      "Transaction Volume USD": 215855565.34,
+      "Average Transaction Volume USD": 125424.500488088
+    },
+    {
+      "Date": "2022-12-21 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 769,
+      "Number of Unique Users": 369,
+      "Transaction Volume USD": 190933022.41,
+      "Average Transaction Volume USD": 177282.28636026
+    },
+    {
+      "Date": "2022-12-22 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 864,
+      "Number of Unique Users": 431,
+      "Transaction Volume USD": 126782846.83,
+      "Average Transaction Volume USD": 98586.972651633
+    },
+    {
+      "Date": "2022-12-23 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 708,
+      "Number of Unique Users": 338,
+      "Transaction Volume USD": 132658030.18,
+      "Average Transaction Volume USD": 127924.812131148
+    },
+    {
+      "Date": "2022-12-24 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 541,
+      "Number of Unique Users": 271,
+      "Transaction Volume USD": 14746041.32,
+      "Average Transaction Volume USD": 20769.07228169
+    },
+    {
+      "Date": "2022-12-25 00:00:00.000",
+      "PLATFORM": "balancer",
+      "Number of Transactions": 286,
+      "Number of Unique Users": 166,
+      "Transaction Volume USD": 59032873.83,
+      "Average Transaction Volume USD": 157002.324015957
+    }
+  ]

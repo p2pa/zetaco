@@ -1,0 +1,2874 @@
+[
+  {
+    "Date": "2022-01-01 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 16607,
+    "Number of Unique Users": 9696,
+    "Transaction Volume USD": 341097326.045696,
+    "Average Transaction Volume USD": 17230.618612129
+  },
+  {
+    "Date": "2022-01-02 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 13586,
+    "Number of Unique Users": 7987,
+    "Transaction Volume USD": 250980998.304314,
+    "Average Transaction Volume USD": 15964.696794372
+  },
+  {
+    "Date": "2022-01-03 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 16211,
+    "Number of Unique Users": 8832,
+    "Transaction Volume USD": 361759120.395855,
+    "Average Transaction Volume USD": 19933.828542862
+  },
+  {
+    "Date": "2022-01-04 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 15735,
+    "Number of Unique Users": 8654,
+    "Transaction Volume USD": 325278830.320551,
+    "Average Transaction Volume USD": 17927.625127896
+  },
+  {
+    "Date": "2022-01-05 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 18643,
+    "Number of Unique Users": 9170,
+    "Transaction Volume USD": 602387961.840312,
+    "Average Transaction Volume USD": 26813.316204056
+  },
+  {
+    "Date": "2022-01-06 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 16599,
+    "Number of Unique Users": 8560,
+    "Transaction Volume USD": 464726687.65389,
+    "Average Transaction Volume USD": 23719.016365737
+  },
+  {
+    "Date": "2022-01-07 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 15613,
+    "Number of Unique Users": 7804,
+    "Transaction Volume USD": 547666001.728204,
+    "Average Transaction Volume USD": 29378.071115127
+  },
+  {
+    "Date": "2022-01-08 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 13538,
+    "Number of Unique Users": 7400,
+    "Transaction Volume USD": 318769511.787234,
+    "Average Transaction Volume USD": 20302.497406995
+  },
+  {
+    "Date": "2022-01-09 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10202,
+    "Number of Unique Users": 6012,
+    "Transaction Volume USD": 182120935.456751,
+    "Average Transaction Volume USD": 16272.420966472
+  },
+  {
+    "Date": "2022-01-10 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 12980,
+    "Number of Unique Users": 6559,
+    "Transaction Volume USD": 555925914.406734,
+    "Average Transaction Volume USD": 34680.344005411
+  },
+  {
+    "Date": "2022-01-11 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 13677,
+    "Number of Unique Users": 7468,
+    "Transaction Volume USD": 301019280.479731,
+    "Average Transaction Volume USD": 21093.075501348
+  },
+  {
+    "Date": "2022-01-12 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 14527,
+    "Number of Unique Users": 7585,
+    "Transaction Volume USD": 314781530.825468,
+    "Average Transaction Volume USD": 19015.436198228
+  },
+  {
+    "Date": "2022-01-13 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 11965,
+    "Number of Unique Users": 6598,
+    "Transaction Volume USD": 279025237.955076,
+    "Average Transaction Volume USD": 20211.896990589
+  },
+  {
+    "Date": "2022-01-14 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 11617,
+    "Number of Unique Users": 6616,
+    "Transaction Volume USD": 218940511.97759,
+    "Average Transaction Volume USD": 16732.175160687
+  },
+  {
+    "Date": "2022-01-15 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10492,
+    "Number of Unique Users": 6131,
+    "Transaction Volume USD": 182113818.933736,
+    "Average Transaction Volume USD": 15219.272850889
+  },
+  {
+    "Date": "2022-01-16 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 11685,
+    "Number of Unique Users": 6519,
+    "Transaction Volume USD": 248435386.549246,
+    "Average Transaction Volume USD": 18315.790810177
+  },
+  {
+    "Date": "2022-01-17 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 15954,
+    "Number of Unique Users": 8211,
+    "Transaction Volume USD": 568460130.168278,
+    "Average Transaction Volume USD": 28260.508584056
+  },
+  {
+    "Date": "2022-01-18 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 12759,
+    "Number of Unique Users": 6929,
+    "Transaction Volume USD": 311589653.730748,
+    "Average Transaction Volume USD": 20192.447263998
+  },
+  {
+    "Date": "2022-01-19 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 12159,
+    "Number of Unique Users": 6587,
+    "Transaction Volume USD": 226782522.634002,
+    "Average Transaction Volume USD": 16410.921386063
+  },
+  {
+    "Date": "2022-01-20 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 12792,
+    "Number of Unique Users": 6935,
+    "Transaction Volume USD": 247029216.392715,
+    "Average Transaction Volume USD": 17158.381356721
+  },
+  {
+    "Date": "2022-01-21 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 16002,
+    "Number of Unique Users": 7423,
+    "Transaction Volume USD": 646034030.321126,
+    "Average Transaction Volume USD": 34862.340419898
+  },
+  {
+    "Date": "2022-01-22 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 18099,
+    "Number of Unique Users": 7507,
+    "Transaction Volume USD": 520566701.723583,
+    "Average Transaction Volume USD": 24760.592737994
+  },
+  {
+    "Date": "2022-01-23 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 11779,
+    "Number of Unique Users": 5668,
+    "Transaction Volume USD": 191053717.900358,
+    "Average Transaction Volume USD": 14741.799220707
+  },
+  {
+    "Date": "2022-01-24 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 16513,
+    "Number of Unique Users": 7103,
+    "Transaction Volume USD": 336276215.635994,
+    "Average Transaction Volume USD": 19842.816760252
+  },
+  {
+    "Date": "2022-01-25 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 13570,
+    "Number of Unique Users": 6628,
+    "Transaction Volume USD": 176497806.667256,
+    "Average Transaction Volume USD": 13945.781184202
+  },
+  {
+    "Date": "2022-01-26 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 14118,
+    "Number of Unique Users": 6506,
+    "Transaction Volume USD": 272395178.045624,
+    "Average Transaction Volume USD": 19019.353305797
+  },
+  {
+    "Date": "2022-01-27 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 15263,
+    "Number of Unique Users": 6630,
+    "Transaction Volume USD": 331016331.854096,
+    "Average Transaction Volume USD": 20251.840431575
+  },
+  {
+    "Date": "2022-01-28 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 11531,
+    "Number of Unique Users": 5928,
+    "Transaction Volume USD": 176012646.896662,
+    "Average Transaction Volume USD": 14745.132520454
+  },
+  {
+    "Date": "2022-01-29 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10799,
+    "Number of Unique Users": 5845,
+    "Transaction Volume USD": 144423751.050565,
+    "Average Transaction Volume USD": 13232.889046231
+  },
+  {
+    "Date": "2022-01-30 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 12416,
+    "Number of Unique Users": 7113,
+    "Transaction Volume USD": 140323899.921176,
+    "Average Transaction Volume USD": 11083.16088154
+  },
+  {
+    "Date": "2022-01-31 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 11743,
+    "Number of Unique Users": 6524,
+    "Transaction Volume USD": 142902994.400244,
+    "Average Transaction Volume USD": 11868.03375137
+  },
+  {
+    "Date": "2022-02-01 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9384,
+    "Number of Unique Users": 5629,
+    "Transaction Volume USD": 129093860.716316,
+    "Average Transaction Volume USD": 12987.309931219
+  },
+  {
+    "Date": "2022-02-02 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8785,
+    "Number of Unique Users": 5077,
+    "Transaction Volume USD": 130299874.872631,
+    "Average Transaction Volume USD": 14155.336759656
+  },
+  {
+    "Date": "2022-02-03 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9926,
+    "Number of Unique Users": 5363,
+    "Transaction Volume USD": 124314830.069547,
+    "Average Transaction Volume USD": 12079.956279229
+  },
+  {
+    "Date": "2022-02-04 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 11046,
+    "Number of Unique Users": 5866,
+    "Transaction Volume USD": 166352540.745761,
+    "Average Transaction Volume USD": 14096.478327749
+  },
+  {
+    "Date": "2022-02-05 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10156,
+    "Number of Unique Users": 5766,
+    "Transaction Volume USD": 122367063.211765,
+    "Average Transaction Volume USD": 11385.100782635
+  },
+  {
+    "Date": "2022-02-06 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9321,
+    "Number of Unique Users": 5543,
+    "Transaction Volume USD": 94231318.4074061,
+    "Average Transaction Volume USD": 9581.222003803
+  },
+  {
+    "Date": "2022-02-07 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8902,
+    "Number of Unique Users": 5097,
+    "Transaction Volume USD": 128048759.182321,
+    "Average Transaction Volume USD": 13474.561631308
+  },
+  {
+    "Date": "2022-02-08 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10761,
+    "Number of Unique Users": 5841,
+    "Transaction Volume USD": 139541314.842627,
+    "Average Transaction Volume USD": 12242.61404129
+  },
+  {
+    "Date": "2022-02-09 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9132,
+    "Number of Unique Users": 5207,
+    "Transaction Volume USD": 138431326.934725,
+    "Average Transaction Volume USD": 13756.466951677
+  },
+  {
+    "Date": "2022-02-10 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9740,
+    "Number of Unique Users": 5308,
+    "Transaction Volume USD": 155307500.662906,
+    "Average Transaction Volume USD": 14274.586457988
+  },
+  {
+    "Date": "2022-02-11 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10120,
+    "Number of Unique Users": 5324,
+    "Transaction Volume USD": 166411215.494005,
+    "Average Transaction Volume USD": 14767.167938061
+  },
+  {
+    "Date": "2022-02-12 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8895,
+    "Number of Unique Users": 4670,
+    "Transaction Volume USD": 116737961.193089,
+    "Average Transaction Volume USD": 12114.773888864
+  },
+  {
+    "Date": "2022-02-13 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8243,
+    "Number of Unique Users": 4727,
+    "Transaction Volume USD": 80285629.9167875,
+    "Average Transaction Volume USD": 8995.588786195
+  },
+  {
+    "Date": "2022-02-14 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8330,
+    "Number of Unique Users": 4552,
+    "Transaction Volume USD": 96490466.6320914,
+    "Average Transaction Volume USD": 10634.902086641
+  },
+  {
+    "Date": "2022-02-15 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9000,
+    "Number of Unique Users": 5024,
+    "Transaction Volume USD": 116607334.062006,
+    "Average Transaction Volume USD": 11967.090934114
+  },
+  {
+    "Date": "2022-02-16 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7581,
+    "Number of Unique Users": 4423,
+    "Transaction Volume USD": 93027923.7555207,
+    "Average Transaction Volume USD": 11492.022699879
+  },
+  {
+    "Date": "2022-02-17 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8808,
+    "Number of Unique Users": 4585,
+    "Transaction Volume USD": 114742317.350096,
+    "Average Transaction Volume USD": 12030.018594055
+  },
+  {
+    "Date": "2022-02-18 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7012,
+    "Number of Unique Users": 3918,
+    "Transaction Volume USD": 93734063.1501316,
+    "Average Transaction Volume USD": 12416.752304958
+  },
+  {
+    "Date": "2022-02-19 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7144,
+    "Number of Unique Users": 4217,
+    "Transaction Volume USD": 66605982.2255423,
+    "Average Transaction Volume USD": 8752.428676155
+  },
+  {
+    "Date": "2022-02-20 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8502,
+    "Number of Unique Users": 4427,
+    "Transaction Volume USD": 106017316.608034,
+    "Average Transaction Volume USD": 11308.513771524
+  },
+  {
+    "Date": "2022-02-21 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8281,
+    "Number of Unique Users": 4043,
+    "Transaction Volume USD": 129616074.051275,
+    "Average Transaction Volume USD": 14901.82502314
+  },
+  {
+    "Date": "2022-02-22 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10087,
+    "Number of Unique Users": 5017,
+    "Transaction Volume USD": 131071175.055313,
+    "Average Transaction Volume USD": 12563.133811494
+  },
+  {
+    "Date": "2022-02-23 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8897,
+    "Number of Unique Users": 4579,
+    "Transaction Volume USD": 95769637.8044192,
+    "Average Transaction Volume USD": 11399.790239783
+  },
+  {
+    "Date": "2022-02-24 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 14586,
+    "Number of Unique Users": 6372,
+    "Transaction Volume USD": 268156622.685973,
+    "Average Transaction Volume USD": 16514.141069465
+  },
+  {
+    "Date": "2022-02-25 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9236,
+    "Number of Unique Users": 4616,
+    "Transaction Volume USD": 115772307.33149,
+    "Average Transaction Volume USD": 11885.053621958
+  },
+  {
+    "Date": "2022-02-26 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9448,
+    "Number of Unique Users": 4836,
+    "Transaction Volume USD": 89652381.8394683,
+    "Average Transaction Volume USD": 9454.010528258
+  },
+  {
+    "Date": "2022-02-27 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10585,
+    "Number of Unique Users": 5161,
+    "Transaction Volume USD": 106354469.959349,
+    "Average Transaction Volume USD": 10041.018689516
+  },
+  {
+    "Date": "2022-02-28 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9219,
+    "Number of Unique Users": 4674,
+    "Transaction Volume USD": 116003226.963492,
+    "Average Transaction Volume USD": 11812.955902596
+  },
+  {
+    "Date": "2022-03-01 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 11742,
+    "Number of Unique Users": 5525,
+    "Transaction Volume USD": 130024525.171844,
+    "Average Transaction Volume USD": 10731.637930987
+  },
+  {
+    "Date": "2022-03-02 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9819,
+    "Number of Unique Users": 4847,
+    "Transaction Volume USD": 135142064.154409,
+    "Average Transaction Volume USD": 12787.856184179
+  },
+  {
+    "Date": "2022-03-03 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8804,
+    "Number of Unique Users": 4536,
+    "Transaction Volume USD": 90194295.357513,
+    "Average Transaction Volume USD": 9586.978673205
+  },
+  {
+    "Date": "2022-03-04 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 11101,
+    "Number of Unique Users": 5108,
+    "Transaction Volume USD": 129070509.910472,
+    "Average Transaction Volume USD": 11102.839562191
+  },
+  {
+    "Date": "2022-03-05 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9021,
+    "Number of Unique Users": 4661,
+    "Transaction Volume USD": 62411901.7075667,
+    "Average Transaction Volume USD": 6746.50326533
+  },
+  {
+    "Date": "2022-03-06 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10920,
+    "Number of Unique Users": 4866,
+    "Transaction Volume USD": 116987689.037543,
+    "Average Transaction Volume USD": 9748.974086462
+  },
+  {
+    "Date": "2022-03-07 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 11821,
+    "Number of Unique Users": 5120,
+    "Transaction Volume USD": 125748154.025744,
+    "Average Transaction Volume USD": 9573.517626627
+  },
+  {
+    "Date": "2022-03-08 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9621,
+    "Number of Unique Users": 4467,
+    "Transaction Volume USD": 86217206.8135704,
+    "Average Transaction Volume USD": 8138.305343928
+  },
+  {
+    "Date": "2022-03-09 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9096,
+    "Number of Unique Users": 4376,
+    "Transaction Volume USD": 103418979.176672,
+    "Average Transaction Volume USD": 10438.980435719
+  },
+  {
+    "Date": "2022-03-10 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8613,
+    "Number of Unique Users": 3997,
+    "Transaction Volume USD": 80557754.1260882,
+    "Average Transaction Volume USD": 8626.874504828
+  },
+  {
+    "Date": "2022-03-11 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8629,
+    "Number of Unique Users": 4145,
+    "Transaction Volume USD": 74538125.3157767,
+    "Average Transaction Volume USD": 7950.733367016
+  },
+  {
+    "Date": "2022-03-12 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8526,
+    "Number of Unique Users": 4423,
+    "Transaction Volume USD": 46804669.6818312,
+    "Average Transaction Volume USD": 5158.107745408
+  },
+  {
+    "Date": "2022-03-13 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9207,
+    "Number of Unique Users": 4201,
+    "Transaction Volume USD": 60847079.5327636,
+    "Average Transaction Volume USD": 6078.629323952
+  },
+  {
+    "Date": "2022-03-14 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9769,
+    "Number of Unique Users": 4505,
+    "Transaction Volume USD": 76723625.7782342,
+    "Average Transaction Volume USD": 7193.96397358
+  },
+  {
+    "Date": "2022-03-15 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9455,
+    "Number of Unique Users": 4223,
+    "Transaction Volume USD": 79022787.4394061,
+    "Average Transaction Volume USD": 7558.372782344
+  },
+  {
+    "Date": "2022-03-16 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9642,
+    "Number of Unique Users": 4370,
+    "Transaction Volume USD": 99169760.0372699,
+    "Average Transaction Volume USD": 9507.215035689
+  },
+  {
+    "Date": "2022-03-17 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9895,
+    "Number of Unique Users": 5215,
+    "Transaction Volume USD": 83034090.6740259,
+    "Average Transaction Volume USD": 7861.587831284
+  },
+  {
+    "Date": "2022-03-18 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 11832,
+    "Number of Unique Users": 6192,
+    "Transaction Volume USD": 112435239.847763,
+    "Average Transaction Volume USD": 8642.881070625
+  },
+  {
+    "Date": "2022-03-19 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 11203,
+    "Number of Unique Users": 5317,
+    "Transaction Volume USD": 82160378.5257603,
+    "Average Transaction Volume USD": 6859.273545313
+  },
+  {
+    "Date": "2022-03-20 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 11264,
+    "Number of Unique Users": 4932,
+    "Transaction Volume USD": 78833140.6747655,
+    "Average Transaction Volume USD": 6471.811893503
+  },
+  {
+    "Date": "2022-03-21 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10487,
+    "Number of Unique Users": 4434,
+    "Transaction Volume USD": 84950626.3170965,
+    "Average Transaction Volume USD": 7637.384367266
+  },
+  {
+    "Date": "2022-03-22 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9039,
+    "Number of Unique Users": 4492,
+    "Transaction Volume USD": 85332922.7724743,
+    "Average Transaction Volume USD": 8681.750205766
+  },
+  {
+    "Date": "2022-03-23 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9373,
+    "Number of Unique Users": 4611,
+    "Transaction Volume USD": 88686246.067431,
+    "Average Transaction Volume USD": 8738.422117197
+  },
+  {
+    "Date": "2022-03-24 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10614,
+    "Number of Unique Users": 5381,
+    "Transaction Volume USD": 127836823.491397,
+    "Average Transaction Volume USD": 10729.966719103
+  },
+  {
+    "Date": "2022-03-25 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 11148,
+    "Number of Unique Users": 5179,
+    "Transaction Volume USD": 143329852.081823,
+    "Average Transaction Volume USD": 11366.364161921
+  },
+  {
+    "Date": "2022-03-26 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9514,
+    "Number of Unique Users": 4493,
+    "Transaction Volume USD": 91123930.1486197,
+    "Average Transaction Volume USD": 8924.968672735
+  },
+  {
+    "Date": "2022-03-27 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 11116,
+    "Number of Unique Users": 5199,
+    "Transaction Volume USD": 108664929.862475,
+    "Average Transaction Volume USD": 8915.731035648
+  },
+  {
+    "Date": "2022-03-28 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 11372,
+    "Number of Unique Users": 5423,
+    "Transaction Volume USD": 159812886.947405,
+    "Average Transaction Volume USD": 12753.402517549
+  },
+  {
+    "Date": "2022-03-29 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10860,
+    "Number of Unique Users": 5141,
+    "Transaction Volume USD": 138613509.706003,
+    "Average Transaction Volume USD": 11541.507885596
+  },
+  {
+    "Date": "2022-03-30 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10116,
+    "Number of Unique Users": 4734,
+    "Transaction Volume USD": 116045137.965555,
+    "Average Transaction Volume USD": 10268.572512659
+  },
+  {
+    "Date": "2022-03-31 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10390,
+    "Number of Unique Users": 4793,
+    "Transaction Volume USD": 128883296.672973,
+    "Average Transaction Volume USD": 11009.079753393
+  },
+  {
+    "Date": "2022-04-01 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10236,
+    "Number of Unique Users": 4346,
+    "Transaction Volume USD": 155483245.340249,
+    "Average Transaction Volume USD": 13406.039432682
+  },
+  {
+    "Date": "2022-04-02 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 12096,
+    "Number of Unique Users": 4930,
+    "Transaction Volume USD": 196913969.857187,
+    "Average Transaction Volume USD": 13875.975608286
+  },
+  {
+    "Date": "2022-04-03 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10799,
+    "Number of Unique Users": 4541,
+    "Transaction Volume USD": 123026692.175688,
+    "Average Transaction Volume USD": 10418.0448959
+  },
+  {
+    "Date": "2022-04-04 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8869,
+    "Number of Unique Users": 4202,
+    "Transaction Volume USD": 132516836.12482,
+    "Average Transaction Volume USD": 13384.18706442
+  },
+  {
+    "Date": "2022-04-05 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8299,
+    "Number of Unique Users": 4055,
+    "Transaction Volume USD": 133916594.812397,
+    "Average Transaction Volume USD": 14211.673014157
+  },
+  {
+    "Date": "2022-04-06 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 11496,
+    "Number of Unique Users": 4990,
+    "Transaction Volume USD": 219613512.641363,
+    "Average Transaction Volume USD": 16502.367947202
+  },
+  {
+    "Date": "2022-04-07 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8567,
+    "Number of Unique Users": 4140,
+    "Transaction Volume USD": 117221802.232802,
+    "Average Transaction Volume USD": 12168.774237808
+  },
+  {
+    "Date": "2022-04-08 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8778,
+    "Number of Unique Users": 4117,
+    "Transaction Volume USD": 124514657.520386,
+    "Average Transaction Volume USD": 12982.447869918
+  },
+  {
+    "Date": "2022-04-09 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8103,
+    "Number of Unique Users": 4201,
+    "Transaction Volume USD": 90930458.0829409,
+    "Average Transaction Volume USD": 10163.234389509
+  },
+  {
+    "Date": "2022-04-10 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7865,
+    "Number of Unique Users": 4228,
+    "Transaction Volume USD": 89678118.6854911,
+    "Average Transaction Volume USD": 10335.152551053
+  },
+  {
+    "Date": "2022-04-11 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10567,
+    "Number of Unique Users": 4669,
+    "Transaction Volume USD": 147918751.053157,
+    "Average Transaction Volume USD": 12356.423945632
+  },
+  {
+    "Date": "2022-04-12 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9386,
+    "Number of Unique Users": 4205,
+    "Transaction Volume USD": 104942910.879518,
+    "Average Transaction Volume USD": 9989.805890482
+  },
+  {
+    "Date": "2022-04-13 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9669,
+    "Number of Unique Users": 4329,
+    "Transaction Volume USD": 103141558.668258,
+    "Average Transaction Volume USD": 9452.988604918
+  },
+  {
+    "Date": "2022-04-14 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9112,
+    "Number of Unique Users": 4215,
+    "Transaction Volume USD": 89155074.9155718,
+    "Average Transaction Volume USD": 8874.683945408
+  },
+  {
+    "Date": "2022-04-15 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8269,
+    "Number of Unique Users": 4009,
+    "Transaction Volume USD": 70302500.5944357,
+    "Average Transaction Volume USD": 7849.765586694
+  },
+  {
+    "Date": "2022-04-16 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6760,
+    "Number of Unique Users": 3833,
+    "Transaction Volume USD": 42345528.3909294,
+    "Average Transaction Volume USD": 5811.105858505
+  },
+  {
+    "Date": "2022-04-17 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7944,
+    "Number of Unique Users": 4151,
+    "Transaction Volume USD": 66795793.5482758,
+    "Average Transaction Volume USD": 7827.020570457
+  },
+  {
+    "Date": "2022-04-18 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8921,
+    "Number of Unique Users": 4230,
+    "Transaction Volume USD": 90163253.4624018,
+    "Average Transaction Volume USD": 9197.516419708
+  },
+  {
+    "Date": "2022-04-19 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8585,
+    "Number of Unique Users": 4249,
+    "Transaction Volume USD": 93296897.4185139,
+    "Average Transaction Volume USD": 9682.118868671
+  },
+  {
+    "Date": "2022-04-20 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8232,
+    "Number of Unique Users": 4038,
+    "Transaction Volume USD": 122627126.625125,
+    "Average Transaction Volume USD": 13151.772482317
+  },
+  {
+    "Date": "2022-04-21 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8400,
+    "Number of Unique Users": 3950,
+    "Transaction Volume USD": 127917190.380463,
+    "Average Transaction Volume USD": 13788.637531579
+  },
+  {
+    "Date": "2022-04-22 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7841,
+    "Number of Unique Users": 3780,
+    "Transaction Volume USD": 86979110.8316581,
+    "Average Transaction Volume USD": 10068.192016629
+  },
+  {
+    "Date": "2022-04-23 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6854,
+    "Number of Unique Users": 3857,
+    "Transaction Volume USD": 42838001.7322557,
+    "Average Transaction Volume USD": 5774.093777093
+  },
+  {
+    "Date": "2022-04-24 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6813,
+    "Number of Unique Users": 3596,
+    "Transaction Volume USD": 44633527.9948873,
+    "Average Transaction Volume USD": 6008.012921643
+  },
+  {
+    "Date": "2022-04-25 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8021,
+    "Number of Unique Users": 3732,
+    "Transaction Volume USD": 99525235.5259669,
+    "Average Transaction Volume USD": 11156.286910208
+  },
+  {
+    "Date": "2022-04-26 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8478,
+    "Number of Unique Users": 4137,
+    "Transaction Volume USD": 92388385.1888232,
+    "Average Transaction Volume USD": 9921.433117356
+  },
+  {
+    "Date": "2022-04-27 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 11230,
+    "Number of Unique Users": 4650,
+    "Transaction Volume USD": 105346880.566584,
+    "Average Transaction Volume USD": 7688.430927352
+  },
+  {
+    "Date": "2022-04-28 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9000,
+    "Number of Unique Users": 4511,
+    "Transaction Volume USD": 94201130.4897819,
+    "Average Transaction Volume USD": 8997.242644678
+  },
+  {
+    "Date": "2022-04-29 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10222,
+    "Number of Unique Users": 5072,
+    "Transaction Volume USD": 101202729.471178,
+    "Average Transaction Volume USD": 8375.629352907
+  },
+  {
+    "Date": "2022-04-30 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 11171,
+    "Number of Unique Users": 5103,
+    "Transaction Volume USD": 119836285.969186,
+    "Average Transaction Volume USD": 9175.123341948
+  },
+  {
+    "Date": "2022-05-01 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8121,
+    "Number of Unique Users": 3800,
+    "Transaction Volume USD": 83280146.48006,
+    "Average Transaction Volume USD": 9334.246411125
+  },
+  {
+    "Date": "2022-05-02 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7122,
+    "Number of Unique Users": 3327,
+    "Transaction Volume USD": 71062697.598057,
+    "Average Transaction Volume USD": 9307.491499418
+  },
+  {
+    "Date": "2022-05-03 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6715,
+    "Number of Unique Users": 3239,
+    "Transaction Volume USD": 65298189.2044539,
+    "Average Transaction Volume USD": 8807.416941523
+  },
+  {
+    "Date": "2022-05-04 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8949,
+    "Number of Unique Users": 3874,
+    "Transaction Volume USD": 102906782.994288,
+    "Average Transaction Volume USD": 10391.475612874
+  },
+  {
+    "Date": "2022-05-05 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8117,
+    "Number of Unique Users": 3774,
+    "Transaction Volume USD": 96029609.6182336,
+    "Average Transaction Volume USD": 10712.807855671
+  },
+  {
+    "Date": "2022-05-06 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8014,
+    "Number of Unique Users": 3792,
+    "Transaction Volume USD": 96465978.9014979,
+    "Average Transaction Volume USD": 11044.879654396
+  },
+  {
+    "Date": "2022-05-07 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6818,
+    "Number of Unique Users": 3332,
+    "Transaction Volume USD": 60084348.0445795,
+    "Average Transaction Volume USD": 7962.410289502
+  },
+  {
+    "Date": "2022-05-08 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8611,
+    "Number of Unique Users": 4015,
+    "Transaction Volume USD": 82414820.4493884,
+    "Average Transaction Volume USD": 8591.141504158
+  },
+  {
+    "Date": "2022-05-09 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 13531,
+    "Number of Unique Users": 5104,
+    "Transaction Volume USD": 248488336.178822,
+    "Average Transaction Volume USD": 16135.606245378
+  },
+  {
+    "Date": "2022-05-10 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 13492,
+    "Number of Unique Users": 4653,
+    "Transaction Volume USD": 193988376.167764,
+    "Average Transaction Volume USD": 12864.803777954
+  },
+  {
+    "Date": "2022-05-11 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 21951,
+    "Number of Unique Users": 5640,
+    "Transaction Volume USD": 442996290.802662,
+    "Average Transaction Volume USD": 17778.877505424
+  },
+  {
+    "Date": "2022-05-12 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 19464,
+    "Number of Unique Users": 5433,
+    "Transaction Volume USD": 488705747.2843,
+    "Average Transaction Volume USD": 22345.941805409
+  },
+  {
+    "Date": "2022-05-13 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 17798,
+    "Number of Unique Users": 5230,
+    "Transaction Volume USD": 185425976.720862,
+    "Average Transaction Volume USD": 9461.474472949
+  },
+  {
+    "Date": "2022-05-14 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 15952,
+    "Number of Unique Users": 5827,
+    "Transaction Volume USD": 94575294.6325037,
+    "Average Transaction Volume USD": 5426.940645694
+  },
+  {
+    "Date": "2022-05-15 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 15210,
+    "Number of Unique Users": 5259,
+    "Transaction Volume USD": 82107882.3105965,
+    "Average Transaction Volume USD": 4852.711720484
+  },
+  {
+    "Date": "2022-05-16 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 13295,
+    "Number of Unique Users": 4317,
+    "Transaction Volume USD": 75110657.6323248,
+    "Average Transaction Volume USD": 5117.226981355
+  },
+  {
+    "Date": "2022-05-17 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9794,
+    "Number of Unique Users": 3678,
+    "Transaction Volume USD": 64070233.8381908,
+    "Average Transaction Volume USD": 5883.941026558
+  },
+  {
+    "Date": "2022-05-18 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10388,
+    "Number of Unique Users": 3879,
+    "Transaction Volume USD": 68212782.2124418,
+    "Average Transaction Volume USD": 5924.33404659
+  },
+  {
+    "Date": "2022-05-19 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 11680,
+    "Number of Unique Users": 3816,
+    "Transaction Volume USD": 80198990.8186823,
+    "Average Transaction Volume USD": 6360.456088404
+  },
+  {
+    "Date": "2022-05-20 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9792,
+    "Number of Unique Users": 3365,
+    "Transaction Volume USD": 48755289.3982356,
+    "Average Transaction Volume USD": 4707.017705951
+  },
+  {
+    "Date": "2022-05-21 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10643,
+    "Number of Unique Users": 3381,
+    "Transaction Volume USD": 39605248.5879627,
+    "Average Transaction Volume USD": 3462.602604298
+  },
+  {
+    "Date": "2022-05-22 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9268,
+    "Number of Unique Users": 3534,
+    "Transaction Volume USD": 32866541.0290341,
+    "Average Transaction Volume USD": 3346.898271796
+  },
+  {
+    "Date": "2022-05-23 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10432,
+    "Number of Unique Users": 3821,
+    "Transaction Volume USD": 54735946.5887131,
+    "Average Transaction Volume USD": 4866.71526529
+  },
+  {
+    "Date": "2022-05-24 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8930,
+    "Number of Unique Users": 3211,
+    "Transaction Volume USD": 42198886.429136,
+    "Average Transaction Volume USD": 4310.847525706
+  },
+  {
+    "Date": "2022-05-25 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8058,
+    "Number of Unique Users": 3205,
+    "Transaction Volume USD": 46378142.7310848,
+    "Average Transaction Volume USD": 5285.258430893
+  },
+  {
+    "Date": "2022-05-26 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9786,
+    "Number of Unique Users": 3493,
+    "Transaction Volume USD": 81681145.2535899,
+    "Average Transaction Volume USD": 7615.957599402
+  },
+  {
+    "Date": "2022-05-27 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9393,
+    "Number of Unique Users": 3260,
+    "Transaction Volume USD": 67234032.7022842,
+    "Average Transaction Volume USD": 6506.729188259
+  },
+  {
+    "Date": "2022-05-28 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7683,
+    "Number of Unique Users": 3173,
+    "Transaction Volume USD": 33104039.0686288,
+    "Average Transaction Volume USD": 3930.662439875
+  },
+  {
+    "Date": "2022-05-29 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7039,
+    "Number of Unique Users": 3056,
+    "Transaction Volume USD": 25072192.3596754,
+    "Average Transaction Volume USD": 3274.414569632
+  },
+  {
+    "Date": "2022-05-30 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7762,
+    "Number of Unique Users": 3108,
+    "Transaction Volume USD": 51002085.5805226,
+    "Average Transaction Volume USD": 6008.728272917
+  },
+  {
+    "Date": "2022-05-31 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7748,
+    "Number of Unique Users": 3032,
+    "Transaction Volume USD": 45093036.5895581,
+    "Average Transaction Volume USD": 5303.191413567
+  },
+  {
+    "Date": "2022-06-01 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6624,
+    "Number of Unique Users": 2904,
+    "Transaction Volume USD": 45764049.4762623,
+    "Average Transaction Volume USD": 6350.825628124
+  },
+  {
+    "Date": "2022-06-02 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 4834,
+    "Number of Unique Users": 2388,
+    "Transaction Volume USD": 30295865.8220997,
+    "Average Transaction Volume USD": 5791.601189467
+  },
+  {
+    "Date": "2022-06-03 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 4934,
+    "Number of Unique Users": 2292,
+    "Transaction Volume USD": 30635953.0444303,
+    "Average Transaction Volume USD": 5823.218598067
+  },
+  {
+    "Date": "2022-06-04 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 4174,
+    "Number of Unique Users": 2077,
+    "Transaction Volume USD": 22442298.1201939,
+    "Average Transaction Volume USD": 4968.407819392
+  },
+  {
+    "Date": "2022-06-05 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 3615,
+    "Number of Unique Users": 2047,
+    "Transaction Volume USD": 14263185.8051819,
+    "Average Transaction Volume USD": 3731.864417892
+  },
+  {
+    "Date": "2022-06-06 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 5143,
+    "Number of Unique Users": 2455,
+    "Transaction Volume USD": 30184140.0457589,
+    "Average Transaction Volume USD": 5423.924536525
+  },
+  {
+    "Date": "2022-06-07 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6828,
+    "Number of Unique Users": 2827,
+    "Transaction Volume USD": 49321650.3843599,
+    "Average Transaction Volume USD": 6713.168692577
+  },
+  {
+    "Date": "2022-06-08 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 5276,
+    "Number of Unique Users": 2137,
+    "Transaction Volume USD": 35716612.7299691,
+    "Average Transaction Volume USD": 6347.363200634
+  },
+  {
+    "Date": "2022-06-09 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 4993,
+    "Number of Unique Users": 2240,
+    "Transaction Volume USD": 23398833.9205452,
+    "Average Transaction Volume USD": 4469.691293323
+  },
+  {
+    "Date": "2022-06-10 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 5671,
+    "Number of Unique Users": 2695,
+    "Transaction Volume USD": 47590028.2547441,
+    "Average Transaction Volume USD": 7940.935800892
+  },
+  {
+    "Date": "2022-06-11 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7702,
+    "Number of Unique Users": 3143,
+    "Transaction Volume USD": 63385529.0610258,
+    "Average Transaction Volume USD": 7443.110505052
+  },
+  {
+    "Date": "2022-06-12 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10465,
+    "Number of Unique Users": 3237,
+    "Transaction Volume USD": 69858644.7887257,
+    "Average Transaction Volume USD": 6063.592117761
+  },
+  {
+    "Date": "2022-06-13 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 14452,
+    "Number of Unique Users": 4413,
+    "Transaction Volume USD": 257764302.65839,
+    "Average Transaction Volume USD": 15891.757253908
+  },
+  {
+    "Date": "2022-06-14 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 12254,
+    "Number of Unique Users": 3589,
+    "Transaction Volume USD": 115429208.149258,
+    "Average Transaction Volume USD": 8415.661136575
+  },
+  {
+    "Date": "2022-06-15 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 12769,
+    "Number of Unique Users": 3548,
+    "Transaction Volume USD": 108724028.394006,
+    "Average Transaction Volume USD": 7679.335244668
+  },
+  {
+    "Date": "2022-06-16 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10131,
+    "Number of Unique Users": 3079,
+    "Transaction Volume USD": 57138814.4517238,
+    "Average Transaction Volume USD": 5138.844720903
+  },
+  {
+    "Date": "2022-06-17 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8299,
+    "Number of Unique Users": 2788,
+    "Transaction Volume USD": 39579033.7517162,
+    "Average Transaction Volume USD": 4372.890702874
+  },
+  {
+    "Date": "2022-06-18 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 12213,
+    "Number of Unique Users": 3706,
+    "Transaction Volume USD": 79649128.9579866,
+    "Average Transaction Volume USD": 5868.636085911
+  },
+  {
+    "Date": "2022-06-19 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 11502,
+    "Number of Unique Users": 3444,
+    "Transaction Volume USD": 53577045.5029352,
+    "Average Transaction Volume USD": 4199.157105019
+  },
+  {
+    "Date": "2022-06-20 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 12028,
+    "Number of Unique Users": 3151,
+    "Transaction Volume USD": 51963168.4958901,
+    "Average Transaction Volume USD": 3919.677792554
+  },
+  {
+    "Date": "2022-06-21 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9254,
+    "Number of Unique Users": 2941,
+    "Transaction Volume USD": 43116424.4750249,
+    "Average Transaction Volume USD": 4281.245603716
+  },
+  {
+    "Date": "2022-06-22 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7543,
+    "Number of Unique Users": 2768,
+    "Transaction Volume USD": 31039238.5557241,
+    "Average Transaction Volume USD": 3761.875961183
+  },
+  {
+    "Date": "2022-06-23 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6543,
+    "Number of Unique Users": 2639,
+    "Transaction Volume USD": 25081214.4748925,
+    "Average Transaction Volume USD": 3404.997892329
+  },
+  {
+    "Date": "2022-06-24 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10360,
+    "Number of Unique Users": 3008,
+    "Transaction Volume USD": 47958563.5414499,
+    "Average Transaction Volume USD": 4269.054970754
+  },
+  {
+    "Date": "2022-06-25 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9323,
+    "Number of Unique Users": 2733,
+    "Transaction Volume USD": 35847249.0868992,
+    "Average Transaction Volume USD": 3548.529903672
+  },
+  {
+    "Date": "2022-06-26 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8713,
+    "Number of Unique Users": 2668,
+    "Transaction Volume USD": 34534805.9448969,
+    "Average Transaction Volume USD": 3680.179661647
+  },
+  {
+    "Date": "2022-06-27 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6594,
+    "Number of Unique Users": 2595,
+    "Transaction Volume USD": 22634434.2227759,
+    "Average Transaction Volume USD": 3174.980252879
+  },
+  {
+    "Date": "2022-06-28 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7665,
+    "Number of Unique Users": 2754,
+    "Transaction Volume USD": 29893736.1327808,
+    "Average Transaction Volume USD": 3520.637867481
+  },
+  {
+    "Date": "2022-06-29 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9878,
+    "Number of Unique Users": 3337,
+    "Transaction Volume USD": 32248913.0648158,
+    "Average Transaction Volume USD": 2903.737895265
+  },
+  {
+    "Date": "2022-06-30 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10887,
+    "Number of Unique Users": 3458,
+    "Transaction Volume USD": 47648234.3068778,
+    "Average Transaction Volume USD": 3923.602956759
+  },
+  {
+    "Date": "2022-07-01 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10904,
+    "Number of Unique Users": 3263,
+    "Transaction Volume USD": 44619935.1646848,
+    "Average Transaction Volume USD": 3706.898327215
+  },
+  {
+    "Date": "2022-07-02 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9496,
+    "Number of Unique Users": 3321,
+    "Transaction Volume USD": 23623802.2472995,
+    "Average Transaction Volume USD": 2264.768694018
+  },
+  {
+    "Date": "2022-07-03 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8600,
+    "Number of Unique Users": 3116,
+    "Transaction Volume USD": 22241956.6473932,
+    "Average Transaction Volume USD": 2389.809460341
+  },
+  {
+    "Date": "2022-07-04 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8590,
+    "Number of Unique Users": 3015,
+    "Transaction Volume USD": 26732203.6167207,
+    "Average Transaction Volume USD": 2829.403431067
+  },
+  {
+    "Date": "2022-07-05 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8717,
+    "Number of Unique Users": 3100,
+    "Transaction Volume USD": 28868485.2016858,
+    "Average Transaction Volume USD": 2983.206076438
+  },
+  {
+    "Date": "2022-07-06 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 5732,
+    "Number of Unique Users": 2376,
+    "Transaction Volume USD": 20865044.0501917,
+    "Average Transaction Volume USD": 3369.677656685
+  },
+  {
+    "Date": "2022-07-07 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7232,
+    "Number of Unique Users": 3043,
+    "Transaction Volume USD": 29290278.371173,
+    "Average Transaction Volume USD": 3658.997922695
+  },
+  {
+    "Date": "2022-07-08 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7697,
+    "Number of Unique Users": 2974,
+    "Transaction Volume USD": 29012075.3466932,
+    "Average Transaction Volume USD": 3409.97594578
+  },
+  {
+    "Date": "2022-07-09 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7557,
+    "Number of Unique Users": 2900,
+    "Transaction Volume USD": 18114576.0526257,
+    "Average Transaction Volume USD": 2180.115062297
+  },
+  {
+    "Date": "2022-07-10 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7676,
+    "Number of Unique Users": 2792,
+    "Transaction Volume USD": 21395769.6919466,
+    "Average Transaction Volume USD": 2507.708590242
+  },
+  {
+    "Date": "2022-07-11 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6853,
+    "Number of Unique Users": 2645,
+    "Transaction Volume USD": 21284279.8923622,
+    "Average Transaction Volume USD": 2773.557452745
+  },
+  {
+    "Date": "2022-07-12 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7240,
+    "Number of Unique Users": 2920,
+    "Transaction Volume USD": 21413083.5122535,
+    "Average Transaction Volume USD": 2655.392300627
+  },
+  {
+    "Date": "2022-07-13 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8982,
+    "Number of Unique Users": 3171,
+    "Transaction Volume USD": 41251915.2933263,
+    "Average Transaction Volume USD": 4130.147706581
+  },
+  {
+    "Date": "2022-07-14 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8298,
+    "Number of Unique Users": 2985,
+    "Transaction Volume USD": 30428776.2904803,
+    "Average Transaction Volume USD": 3299.585370904
+  },
+  {
+    "Date": "2022-07-15 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9512,
+    "Number of Unique Users": 3066,
+    "Transaction Volume USD": 42121038.3749288,
+    "Average Transaction Volume USD": 4026.867913473
+  },
+  {
+    "Date": "2022-07-16 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10102,
+    "Number of Unique Users": 3446,
+    "Transaction Volume USD": 45624858.1509377,
+    "Average Transaction Volume USD": 3977.062251651
+  },
+  {
+    "Date": "2022-07-17 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8435,
+    "Number of Unique Users": 3108,
+    "Transaction Volume USD": 37317162.8731083,
+    "Average Transaction Volume USD": 3931.433088191
+  },
+  {
+    "Date": "2022-07-18 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10302,
+    "Number of Unique Users": 3918,
+    "Transaction Volume USD": 53825037.5987086,
+    "Average Transaction Volume USD": 4668.259982542
+  },
+  {
+    "Date": "2022-07-19 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10247,
+    "Number of Unique Users": 3646,
+    "Transaction Volume USD": 57198549.9702813,
+    "Average Transaction Volume USD": 5121.646666393
+  },
+  {
+    "Date": "2022-07-20 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9513,
+    "Number of Unique Users": 3508,
+    "Transaction Volume USD": 47054041.3106813,
+    "Average Transaction Volume USD": 4449.554733871
+  },
+  {
+    "Date": "2022-07-21 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9147,
+    "Number of Unique Users": 3530,
+    "Transaction Volume USD": 36805317.4485537,
+    "Average Transaction Volume USD": 3663.314168265
+  },
+  {
+    "Date": "2022-07-22 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8299,
+    "Number of Unique Users": 3404,
+    "Transaction Volume USD": 31642040.7849971,
+    "Average Transaction Volume USD": 3407.132635404
+  },
+  {
+    "Date": "2022-07-23 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8961,
+    "Number of Unique Users": 3300,
+    "Transaction Volume USD": 29784894.215422,
+    "Average Transaction Volume USD": 2996.769716815
+  },
+  {
+    "Date": "2022-07-24 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9166,
+    "Number of Unique Users": 3496,
+    "Transaction Volume USD": 27939214.2153254,
+    "Average Transaction Volume USD": 2758.066556301
+  },
+  {
+    "Date": "2022-07-25 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8892,
+    "Number of Unique Users": 3370,
+    "Transaction Volume USD": 34052315.6957181,
+    "Average Transaction Volume USD": 3470.830261514
+  },
+  {
+    "Date": "2022-07-26 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7669,
+    "Number of Unique Users": 3021,
+    "Transaction Volume USD": 29800078.1946827,
+    "Average Transaction Volume USD": 3526.636472744
+  },
+  {
+    "Date": "2022-07-27 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9570,
+    "Number of Unique Users": 3474,
+    "Transaction Volume USD": 40077242.0452664,
+    "Average Transaction Volume USD": 3761.002444188
+  },
+  {
+    "Date": "2022-07-28 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 12461,
+    "Number of Unique Users": 4045,
+    "Transaction Volume USD": 94251363.8000908,
+    "Average Transaction Volume USD": 6756.854527213
+  },
+  {
+    "Date": "2022-07-29 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 12215,
+    "Number of Unique Users": 3457,
+    "Transaction Volume USD": 67903369.1195209,
+    "Average Transaction Volume USD": 5010.948942478
+  },
+  {
+    "Date": "2022-07-30 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 11792,
+    "Number of Unique Users": 3558,
+    "Transaction Volume USD": 45469101.947375,
+    "Average Transaction Volume USD": 3523.643982283
+  },
+  {
+    "Date": "2022-07-31 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9029,
+    "Number of Unique Users": 3250,
+    "Transaction Volume USD": 29680526.1306584,
+    "Average Transaction Volume USD": 3046.343644736
+  },
+  {
+    "Date": "2022-08-01 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8051,
+    "Number of Unique Users": 3044,
+    "Transaction Volume USD": 30633940.7134808,
+    "Average Transaction Volume USD": 3440.855971412
+  },
+  {
+    "Date": "2022-08-02 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9531,
+    "Number of Unique Users": 3349,
+    "Transaction Volume USD": 42978235.8603741,
+    "Average Transaction Volume USD": 4058.3792125
+  },
+  {
+    "Date": "2022-08-03 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8644,
+    "Number of Unique Users": 3335,
+    "Transaction Volume USD": 35577260.0631576,
+    "Average Transaction Volume USD": 3697.106937874
+  },
+  {
+    "Date": "2022-08-04 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8428,
+    "Number of Unique Users": 3229,
+    "Transaction Volume USD": 36115134.1722928,
+    "Average Transaction Volume USD": 3819.282378627
+  },
+  {
+    "Date": "2022-08-05 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8214,
+    "Number of Unique Users": 3266,
+    "Transaction Volume USD": 35871627.9697714,
+    "Average Transaction Volume USD": 3887.259207821
+  },
+  {
+    "Date": "2022-08-06 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7673,
+    "Number of Unique Users": 3200,
+    "Transaction Volume USD": 25319589.0667007,
+    "Average Transaction Volume USD": 3014.236793655
+  },
+  {
+    "Date": "2022-08-07 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8049,
+    "Number of Unique Users": 3462,
+    "Transaction Volume USD": 17393370.9366019,
+    "Average Transaction Volume USD": 1958.712943311
+  },
+  {
+    "Date": "2022-08-08 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9196,
+    "Number of Unique Users": 3900,
+    "Transaction Volume USD": 39098224.1357216,
+    "Average Transaction Volume USD": 3822.665637047
+  },
+  {
+    "Date": "2022-08-09 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9843,
+    "Number of Unique Users": 3779,
+    "Transaction Volume USD": 42173208.6823286,
+    "Average Transaction Volume USD": 3853.546114979
+  },
+  {
+    "Date": "2022-08-10 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9485,
+    "Number of Unique Users": 3820,
+    "Transaction Volume USD": 43610619.0644921,
+    "Average Transaction Volume USD": 4235.685612324
+  },
+  {
+    "Date": "2022-08-11 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8882,
+    "Number of Unique Users": 3860,
+    "Transaction Volume USD": 44526847.3873886,
+    "Average Transaction Volume USD": 4585.669143912
+  },
+  {
+    "Date": "2022-08-12 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8061,
+    "Number of Unique Users": 3577,
+    "Transaction Volume USD": 27620091.9657969,
+    "Average Transaction Volume USD": 3134.72840379
+  },
+  {
+    "Date": "2022-08-13 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8530,
+    "Number of Unique Users": 3928,
+    "Transaction Volume USD": 30225901.3302345,
+    "Average Transaction Volume USD": 3274.390784339
+  },
+  {
+    "Date": "2022-08-14 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8122,
+    "Number of Unique Users": 3759,
+    "Transaction Volume USD": 26608681.1645725,
+    "Average Transaction Volume USD": 3025.43276459
+  },
+  {
+    "Date": "2022-08-15 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8221,
+    "Number of Unique Users": 3396,
+    "Transaction Volume USD": 37218510.7727363,
+    "Average Transaction Volume USD": 4140.911300927
+  },
+  {
+    "Date": "2022-08-16 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8030,
+    "Number of Unique Users": 3514,
+    "Transaction Volume USD": 25693123.6128897,
+    "Average Transaction Volume USD": 2978.222280386
+  },
+  {
+    "Date": "2022-08-17 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8952,
+    "Number of Unique Users": 3786,
+    "Transaction Volume USD": 35015955.5507858,
+    "Average Transaction Volume USD": 3612.499283069
+  },
+  {
+    "Date": "2022-08-18 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7845,
+    "Number of Unique Users": 3520,
+    "Transaction Volume USD": 25361953.241287,
+    "Average Transaction Volume USD": 2963.537420108
+  },
+  {
+    "Date": "2022-08-19 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10818,
+    "Number of Unique Users": 3978,
+    "Transaction Volume USD": 46994063.8565318,
+    "Average Transaction Volume USD": 3869.735166052
+  },
+  {
+    "Date": "2022-08-20 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9096,
+    "Number of Unique Users": 3542,
+    "Transaction Volume USD": 26294449.7351257,
+    "Average Transaction Volume USD": 2650.650174912
+  },
+  {
+    "Date": "2022-08-21 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9042,
+    "Number of Unique Users": 3386,
+    "Transaction Volume USD": 24002782.4780313,
+    "Average Transaction Volume USD": 2465.110658111
+  },
+  {
+    "Date": "2022-08-22 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8260,
+    "Number of Unique Users": 3188,
+    "Transaction Volume USD": 32710307.0629173,
+    "Average Transaction Volume USD": 3526.337544515
+  },
+  {
+    "Date": "2022-08-23 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6788,
+    "Number of Unique Users": 2825,
+    "Transaction Volume USD": 20612305.796168,
+    "Average Transaction Volume USD": 2729.022348228
+  },
+  {
+    "Date": "2022-08-24 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7293,
+    "Number of Unique Users": 3118,
+    "Transaction Volume USD": 24063079.3182061,
+    "Average Transaction Volume USD": 3061.460473054
+  },
+  {
+    "Date": "2022-08-25 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6619,
+    "Number of Unique Users": 3123,
+    "Transaction Volume USD": 20476973.2024757,
+    "Average Transaction Volume USD": 2882.456813412
+  },
+  {
+    "Date": "2022-08-26 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8114,
+    "Number of Unique Users": 3352,
+    "Transaction Volume USD": 33267581.5591424,
+    "Average Transaction Volume USD": 3673.134764176
+  },
+  {
+    "Date": "2022-08-27 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8016,
+    "Number of Unique Users": 3355,
+    "Transaction Volume USD": 19425334.8797076,
+    "Average Transaction Volume USD": 2192.723205746
+  },
+  {
+    "Date": "2022-08-28 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7260,
+    "Number of Unique Users": 3200,
+    "Transaction Volume USD": 15169892.5422203,
+    "Average Transaction Volume USD": 1937.159052767
+  },
+  {
+    "Date": "2022-08-29 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7100,
+    "Number of Unique Users": 3013,
+    "Transaction Volume USD": 26043601.3762938,
+    "Average Transaction Volume USD": 3349.228572054
+  },
+  {
+    "Date": "2022-08-30 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7095,
+    "Number of Unique Users": 3105,
+    "Transaction Volume USD": 26981292.7818893,
+    "Average Transaction Volume USD": 3537.138539839
+  },
+  {
+    "Date": "2022-08-31 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6311,
+    "Number of Unique Users": 3080,
+    "Transaction Volume USD": 22873834.6367857,
+    "Average Transaction Volume USD": 3342.173383516
+  },
+  {
+    "Date": "2022-09-01 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6785,
+    "Number of Unique Users": 3122,
+    "Transaction Volume USD": 27762420.4434344,
+    "Average Transaction Volume USD": 3706.103383184
+  },
+  {
+    "Date": "2022-09-02 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8112,
+    "Number of Unique Users": 3471,
+    "Transaction Volume USD": 24291098.0620306,
+    "Average Transaction Volume USD": 2754.71740327
+  },
+  {
+    "Date": "2022-09-03 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6306,
+    "Number of Unique Users": 3145,
+    "Transaction Volume USD": 11285983.0617456,
+    "Average Transaction Volume USD": 1658.483917964
+  },
+  {
+    "Date": "2022-09-04 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6236,
+    "Number of Unique Users": 3109,
+    "Transaction Volume USD": 11506887.1826988,
+    "Average Transaction Volume USD": 1693.93304618
+  },
+  {
+    "Date": "2022-09-05 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7521,
+    "Number of Unique Users": 3574,
+    "Transaction Volume USD": 22648503.586435,
+    "Average Transaction Volume USD": 2765.385053289
+  },
+  {
+    "Date": "2022-09-06 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9207,
+    "Number of Unique Users": 3965,
+    "Transaction Volume USD": 33607808.4132794,
+    "Average Transaction Volume USD": 3312.093073153
+  },
+  {
+    "Date": "2022-09-07 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8313,
+    "Number of Unique Users": 3628,
+    "Transaction Volume USD": 30677196.1771591,
+    "Average Transaction Volume USD": 3345.751573471
+  },
+  {
+    "Date": "2022-09-08 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8361,
+    "Number of Unique Users": 3714,
+    "Transaction Volume USD": 28351019.0242948,
+    "Average Transaction Volume USD": 3106.280160436
+  },
+  {
+    "Date": "2022-09-09 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8687,
+    "Number of Unique Users": 3817,
+    "Transaction Volume USD": 29598268.3813906,
+    "Average Transaction Volume USD": 3089.912139199
+  },
+  {
+    "Date": "2022-09-10 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8045,
+    "Number of Unique Users": 3466,
+    "Transaction Volume USD": 17402702.8400351,
+    "Average Transaction Volume USD": 1979.154195387
+  },
+  {
+    "Date": "2022-09-11 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9091,
+    "Number of Unique Users": 4002,
+    "Transaction Volume USD": 21116322.9919772,
+    "Average Transaction Volume USD": 2155.386648155
+  },
+  {
+    "Date": "2022-09-12 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8012,
+    "Number of Unique Users": 3325,
+    "Transaction Volume USD": 23855323.3740345,
+    "Average Transaction Volume USD": 2747.99255547
+  },
+  {
+    "Date": "2022-09-13 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8809,
+    "Number of Unique Users": 3768,
+    "Transaction Volume USD": 36939660.0498779,
+    "Average Transaction Volume USD": 3739.967606548
+  },
+  {
+    "Date": "2022-09-14 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7645,
+    "Number of Unique Users": 3347,
+    "Transaction Volume USD": 21251342.6959564,
+    "Average Transaction Volume USD": 2525.112012352
+  },
+  {
+    "Date": "2022-09-15 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10220,
+    "Number of Unique Users": 4453,
+    "Transaction Volume USD": 35978645.0123179,
+    "Average Transaction Volume USD": 3053.436731929
+  },
+  {
+    "Date": "2022-09-16 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9675,
+    "Number of Unique Users": 3841,
+    "Transaction Volume USD": 21341705.7823444,
+    "Average Transaction Volume USD": 1853.383046665
+  },
+  {
+    "Date": "2022-09-17 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 14586,
+    "Number of Unique Users": 4698,
+    "Transaction Volume USD": 18576456.6067304,
+    "Average Transaction Volume USD": 1537.913453658
+  },
+  {
+    "Date": "2022-09-18 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 12747,
+    "Number of Unique Users": 4203,
+    "Transaction Volume USD": 22153074.0079005,
+    "Average Transaction Volume USD": 1952.156680287
+  },
+  {
+    "Date": "2022-09-19 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10834,
+    "Number of Unique Users": 4147,
+    "Transaction Volume USD": 26398087.4692914,
+    "Average Transaction Volume USD": 2309.543960568
+  },
+  {
+    "Date": "2022-09-20 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8719,
+    "Number of Unique Users": 3622,
+    "Transaction Volume USD": 23186518.0883996,
+    "Average Transaction Volume USD": 2473.228596096
+  },
+  {
+    "Date": "2022-09-21 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10561,
+    "Number of Unique Users": 3902,
+    "Transaction Volume USD": 32289372.0716274,
+    "Average Transaction Volume USD": 2877.071377673
+  },
+  {
+    "Date": "2022-09-22 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9600,
+    "Number of Unique Users": 3691,
+    "Transaction Volume USD": 22134139.2558837,
+    "Average Transaction Volume USD": 2121.347446414
+  },
+  {
+    "Date": "2022-09-23 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10546,
+    "Number of Unique Users": 3900,
+    "Transaction Volume USD": 25515159.6707,
+    "Average Transaction Volume USD": 2164.870157025
+  },
+  {
+    "Date": "2022-09-24 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8130,
+    "Number of Unique Users": 3370,
+    "Transaction Volume USD": 15499216.0749603,
+    "Average Transaction Volume USD": 1733.499169552
+  },
+  {
+    "Date": "2022-09-25 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7440,
+    "Number of Unique Users": 2994,
+    "Transaction Volume USD": 14787174.1140418,
+    "Average Transaction Volume USD": 1812.153690446
+  },
+  {
+    "Date": "2022-09-26 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8003,
+    "Number of Unique Users": 3155,
+    "Transaction Volume USD": 19917821.9882177,
+    "Average Transaction Volume USD": 2261.0763978
+  },
+  {
+    "Date": "2022-09-27 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8071,
+    "Number of Unique Users": 3270,
+    "Transaction Volume USD": 21715564.9958559,
+    "Average Transaction Volume USD": 2523.891794033
+  },
+  {
+    "Date": "2022-09-28 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7893,
+    "Number of Unique Users": 3176,
+    "Transaction Volume USD": 21230604.6647611,
+    "Average Transaction Volume USD": 2538.331499852
+  },
+  {
+    "Date": "2022-09-29 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7268,
+    "Number of Unique Users": 2983,
+    "Transaction Volume USD": 18180006.9385325,
+    "Average Transaction Volume USD": 2396.204947744
+  },
+  {
+    "Date": "2022-09-30 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6006,
+    "Number of Unique Users": 2679,
+    "Transaction Volume USD": 15497834.9800508,
+    "Average Transaction Volume USD": 2413.241199011
+  },
+  {
+    "Date": "2022-10-01 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6592,
+    "Number of Unique Users": 2821,
+    "Transaction Volume USD": 11433070.4906727,
+    "Average Transaction Volume USD": 1611.199336341
+  },
+  {
+    "Date": "2022-10-02 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7709,
+    "Number of Unique Users": 3246,
+    "Transaction Volume USD": 12470946.0991269,
+    "Average Transaction Volume USD": 1512.546525061
+  },
+  {
+    "Date": "2022-10-03 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 5650,
+    "Number of Unique Users": 2644,
+    "Transaction Volume USD": 17459299.2655699,
+    "Average Transaction Volume USD": 2875.852292138
+  },
+  {
+    "Date": "2022-10-04 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6997,
+    "Number of Unique Users": 3165,
+    "Transaction Volume USD": 15699752.8378223,
+    "Average Transaction Volume USD": 2045.037493529
+  },
+  {
+    "Date": "2022-10-05 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6978,
+    "Number of Unique Users": 3140,
+    "Transaction Volume USD": 15909069.0202444,
+    "Average Transaction Volume USD": 2108.557855566
+  },
+  {
+    "Date": "2022-10-06 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7446,
+    "Number of Unique Users": 3198,
+    "Transaction Volume USD": 15113711.8036727,
+    "Average Transaction Volume USD": 1855.353769172
+  },
+  {
+    "Date": "2022-10-07 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7306,
+    "Number of Unique Users": 3122,
+    "Transaction Volume USD": 13569265.6619165,
+    "Average Transaction Volume USD": 1724.395178792
+  },
+  {
+    "Date": "2022-10-08 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 5224,
+    "Number of Unique Users": 2376,
+    "Transaction Volume USD": 8463323.17941805,
+    "Average Transaction Volume USD": 1511.577635188
+  },
+  {
+    "Date": "2022-10-09 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 3394,
+    "Number of Unique Users": 1846,
+    "Transaction Volume USD": 6647748.31592269,
+    "Average Transaction Volume USD": 1825.301569446
+  },
+  {
+    "Date": "2022-10-10 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 4427,
+    "Number of Unique Users": 2224,
+    "Transaction Volume USD": 12752446.2721341,
+    "Average Transaction Volume USD": 2670.110190983
+  },
+  {
+    "Date": "2022-10-11 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 5499,
+    "Number of Unique Users": 2650,
+    "Transaction Volume USD": 11864470.8626554,
+    "Average Transaction Volume USD": 1976.423598643
+  },
+  {
+    "Date": "2022-10-12 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 5101,
+    "Number of Unique Users": 2562,
+    "Transaction Volume USD": 15547279.0480071,
+    "Average Transaction Volume USD": 2822.67230356
+  },
+  {
+    "Date": "2022-10-13 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8952,
+    "Number of Unique Users": 3383,
+    "Transaction Volume USD": 28491144.3823037,
+    "Average Transaction Volume USD": 2919.174629334
+  },
+  {
+    "Date": "2022-10-14 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6311,
+    "Number of Unique Users": 2622,
+    "Transaction Volume USD": 16796441.5992677,
+    "Average Transaction Volume USD": 2471.518775643
+  },
+  {
+    "Date": "2022-10-15 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 5966,
+    "Number of Unique Users": 2340,
+    "Transaction Volume USD": 11517016.0904102,
+    "Average Transaction Volume USD": 1833.919759619
+  },
+  {
+    "Date": "2022-10-16 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6691,
+    "Number of Unique Users": 2520,
+    "Transaction Volume USD": 12093356.1927337,
+    "Average Transaction Volume USD": 1751.137589449
+  },
+  {
+    "Date": "2022-10-17 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 5962,
+    "Number of Unique Users": 2726,
+    "Transaction Volume USD": 16985292.1781163,
+    "Average Transaction Volume USD": 2618.358590738
+  },
+  {
+    "Date": "2022-10-18 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 5503,
+    "Number of Unique Users": 2502,
+    "Transaction Volume USD": 12994148.026239,
+    "Average Transaction Volume USD": 2150.280990607
+  },
+  {
+    "Date": "2022-10-19 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 5254,
+    "Number of Unique Users": 2457,
+    "Transaction Volume USD": 11831653.4862287,
+    "Average Transaction Volume USD": 2116.574863368
+  },
+  {
+    "Date": "2022-10-20 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 5335,
+    "Number of Unique Users": 2368,
+    "Transaction Volume USD": 38465810.2921464,
+    "Average Transaction Volume USD": 6852.985977578
+  },
+  {
+    "Date": "2022-10-21 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 4875,
+    "Number of Unique Users": 2302,
+    "Transaction Volume USD": 13953985.4836555,
+    "Average Transaction Volume USD": 2687.075964501
+  },
+  {
+    "Date": "2022-10-22 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6621,
+    "Number of Unique Users": 2355,
+    "Transaction Volume USD": 18577086.2507412,
+    "Average Transaction Volume USD": 2652.732579001
+  },
+  {
+    "Date": "2022-10-23 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6076,
+    "Number of Unique Users": 2679,
+    "Transaction Volume USD": 14540903.8786585,
+    "Average Transaction Volume USD": 2220.324305796
+  },
+  {
+    "Date": "2022-10-24 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 5210,
+    "Number of Unique Users": 2718,
+    "Transaction Volume USD": 12348112.3323598,
+    "Average Transaction Volume USD": 2182.802250726
+  },
+  {
+    "Date": "2022-10-25 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7620,
+    "Number of Unique Users": 3338,
+    "Transaction Volume USD": 29069113.4314365,
+    "Average Transaction Volume USD": 3481.330949873
+  },
+  {
+    "Date": "2022-10-26 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9172,
+    "Number of Unique Users": 3621,
+    "Transaction Volume USD": 40525746.8453589,
+    "Average Transaction Volume USD": 4082.376029552
+  },
+  {
+    "Date": "2022-10-27 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7358,
+    "Number of Unique Users": 2970,
+    "Transaction Volume USD": 25140722.2267635,
+    "Average Transaction Volume USD": 3199.786461342
+  },
+  {
+    "Date": "2022-10-28 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6222,
+    "Number of Unique Users": 2805,
+    "Transaction Volume USD": 17243066.2786055,
+    "Average Transaction Volume USD": 2644.642067271
+  },
+  {
+    "Date": "2022-10-29 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9406,
+    "Number of Unique Users": 3281,
+    "Transaction Volume USD": 34019700.0112456,
+    "Average Transaction Volume USD": 3419.065327763
+  },
+  {
+    "Date": "2022-10-30 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8167,
+    "Number of Unique Users": 3189,
+    "Transaction Volume USD": 15976291.7393347,
+    "Average Transaction Volume USD": 1836.566471932
+  },
+  {
+    "Date": "2022-10-31 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7686,
+    "Number of Unique Users": 3056,
+    "Transaction Volume USD": 24734853.9427363,
+    "Average Transaction Volume USD": 2941.823732485
+  },
+  {
+    "Date": "2022-11-01 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7276,
+    "Number of Unique Users": 3130,
+    "Transaction Volume USD": 15085496.4497705,
+    "Average Transaction Volume USD": 2035.280147028
+  },
+  {
+    "Date": "2022-11-02 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8101,
+    "Number of Unique Users": 3190,
+    "Transaction Volume USD": 27778992.4639577,
+    "Average Transaction Volume USD": 3169.670523044
+  },
+  {
+    "Date": "2022-11-03 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8888,
+    "Number of Unique Users": 3005,
+    "Transaction Volume USD": 22672436.4580285,
+    "Average Transaction Volume USD": 2371.841872375
+  },
+  {
+    "Date": "2022-11-04 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 11823,
+    "Number of Unique Users": 3588,
+    "Transaction Volume USD": 36738733.0502284,
+    "Average Transaction Volume USD": 2833.685541861
+  },
+  {
+    "Date": "2022-11-05 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8635,
+    "Number of Unique Users": 3166,
+    "Transaction Volume USD": 18799300.5686803,
+    "Average Transaction Volume USD": 2040.740400421
+  },
+  {
+    "Date": "2022-11-06 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9402,
+    "Number of Unique Users": 3391,
+    "Transaction Volume USD": 18727689.0850558,
+    "Average Transaction Volume USD": 1765.26431191
+  },
+  {
+    "Date": "2022-11-07 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8668,
+    "Number of Unique Users": 3371,
+    "Transaction Volume USD": 23821547.7737671,
+    "Average Transaction Volume USD": 2424.831817362
+  },
+  {
+    "Date": "2022-11-08 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 15284,
+    "Number of Unique Users": 4678,
+    "Transaction Volume USD": 87607757.8330222,
+    "Average Transaction Volume USD": 5153.700678453
+  },
+  {
+    "Date": "2022-11-09 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 17281,
+    "Number of Unique Users": 5145,
+    "Transaction Volume USD": 89302834.7040028,
+    "Average Transaction Volume USD": 4708.823343211
+  },
+  {
+    "Date": "2022-11-10 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 15788,
+    "Number of Unique Users": 4683,
+    "Transaction Volume USD": 61911283.543318,
+    "Average Transaction Volume USD": 3555.667559345
+  },
+  {
+    "Date": "2022-11-11 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 12961,
+    "Number of Unique Users": 3856,
+    "Transaction Volume USD": 45012184.9499537,
+    "Average Transaction Volume USD": 3156.977482813
+  },
+  {
+    "Date": "2022-11-12 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10791,
+    "Number of Unique Users": 3558,
+    "Transaction Volume USD": 38422080.9594108,
+    "Average Transaction Volume USD": 3506.944227767
+  },
+  {
+    "Date": "2022-11-13 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 12068,
+    "Number of Unique Users": 3774,
+    "Transaction Volume USD": 29921481.9814764,
+    "Average Transaction Volume USD": 2497.619531008
+  },
+  {
+    "Date": "2022-11-14 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 10556,
+    "Number of Unique Users": 3751,
+    "Transaction Volume USD": 27172687.3355096,
+    "Average Transaction Volume USD": 2446.667327166
+  },
+  {
+    "Date": "2022-11-15 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9156,
+    "Number of Unique Users": 3591,
+    "Transaction Volume USD": 22487523.1518597,
+    "Average Transaction Volume USD": 2245.384238828
+  },
+  {
+    "Date": "2022-11-16 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8614,
+    "Number of Unique Users": 3595,
+    "Transaction Volume USD": 20062210.2212925,
+    "Average Transaction Volume USD": 2138.144540264
+  },
+  {
+    "Date": "2022-11-17 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7683,
+    "Number of Unique Users": 3533,
+    "Transaction Volume USD": 14540240.8842241,
+    "Average Transaction Volume USD": 1767.810441851
+  },
+  {
+    "Date": "2022-11-18 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6894,
+    "Number of Unique Users": 3361,
+    "Transaction Volume USD": 9247948.80363935,
+    "Average Transaction Volume USD": 1246.186336564
+  },
+  {
+    "Date": "2022-11-19 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7989,
+    "Number of Unique Users": 3170,
+    "Transaction Volume USD": 10388056.5301414,
+    "Average Transaction Volume USD": 1189.517523204
+  },
+  {
+    "Date": "2022-11-20 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 14955,
+    "Number of Unique Users": 3663,
+    "Transaction Volume USD": 20305668.9639129,
+    "Average Transaction Volume USD": 1277.246758329
+  },
+  {
+    "Date": "2022-11-21 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 12369,
+    "Number of Unique Users": 3655,
+    "Transaction Volume USD": 20852403.4491392,
+    "Average Transaction Volume USD": 1555.569074908
+  },
+  {
+    "Date": "2022-11-22 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 9789,
+    "Number of Unique Users": 3357,
+    "Transaction Volume USD": 19640220.2048604,
+    "Average Transaction Volume USD": 1869.962887257
+  },
+  {
+    "Date": "2022-11-23 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7830,
+    "Number of Unique Users": 3044,
+    "Transaction Volume USD": 13664189.0652968,
+    "Average Transaction Volume USD": 1641.146897105
+  },
+  {
+    "Date": "2022-11-24 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7330,
+    "Number of Unique Users": 2738,
+    "Transaction Volume USD": 18733413.4284154,
+    "Average Transaction Volume USD": 2430.385758746
+  },
+  {
+    "Date": "2022-11-25 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7746,
+    "Number of Unique Users": 2620,
+    "Transaction Volume USD": 11095087.4310016,
+    "Average Transaction Volume USD": 1346.001144122
+  },
+  {
+    "Date": "2022-11-26 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8061,
+    "Number of Unique Users": 2704,
+    "Transaction Volume USD": 13720255.8719442,
+    "Average Transaction Volume USD": 1613.578251434
+  },
+  {
+    "Date": "2022-11-27 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6936,
+    "Number of Unique Users": 2479,
+    "Transaction Volume USD": 12449394.6794349,
+    "Average Transaction Volume USD": 1701.899477708
+  },
+  {
+    "Date": "2022-11-28 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7487,
+    "Number of Unique Users": 2905,
+    "Transaction Volume USD": 12742905.4139718,
+    "Average Transaction Volume USD": 1598.658313132
+  },
+  {
+    "Date": "2022-11-29 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8092,
+    "Number of Unique Users": 3151,
+    "Transaction Volume USD": 16588767.2668456,
+    "Average Transaction Volume USD": 1914.235779696
+  },
+  {
+    "Date": "2022-11-30 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 8341,
+    "Number of Unique Users": 3120,
+    "Transaction Volume USD": 16381594.4665469,
+    "Average Transaction Volume USD": 1855.640515014
+  },
+  {
+    "Date": "2022-12-01 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 7205,
+    "Number of Unique Users": 2744,
+    "Transaction Volume USD": 11942351.292105,
+    "Average Transaction Volume USD": 1567.854968111
+  },
+  {
+    "Date": "2022-12-02 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 5512,
+    "Number of Unique Users": 2425,
+    "Transaction Volume USD": 8777930.40429247,
+    "Average Transaction Volume USD": 1488.037023952
+  },
+  {
+    "Date": "2022-12-03 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 4966,
+    "Number of Unique Users": 2124,
+    "Transaction Volume USD": 7831850.63430195,
+    "Average Transaction Volume USD": 1495.198670161
+  },
+  {
+    "Date": "2022-12-04 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 5769,
+    "Number of Unique Users": 2251,
+    "Transaction Volume USD": 14354348.9292061,
+    "Average Transaction Volume USD": 2345.098665121
+  },
+  {
+    "Date": "2022-12-05 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6497,
+    "Number of Unique Users": 2741,
+    "Transaction Volume USD": 11938494.9928237,
+    "Average Transaction Volume USD": 1738.784589692
+  },
+  {
+    "Date": "2022-12-06 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 5793,
+    "Number of Unique Users": 2531,
+    "Transaction Volume USD": 15179229.4474686,
+    "Average Transaction Volume USD": 2482.700269458
+  },
+  {
+    "Date": "2022-12-07 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 5703,
+    "Number of Unique Users": 2577,
+    "Transaction Volume USD": 10827764.1536447,
+    "Average Transaction Volume USD": 1801.624651189
+  },
+  {
+    "Date": "2022-12-08 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6331,
+    "Number of Unique Users": 2843,
+    "Transaction Volume USD": 13201102.356946,
+    "Average Transaction Volume USD": 2015.12782124
+  },
+  {
+    "Date": "2022-12-09 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 5164,
+    "Number of Unique Users": 2324,
+    "Transaction Volume USD": 10153920.9966607,
+    "Average Transaction Volume USD": 1871.690506297
+  },
+  {
+    "Date": "2022-12-10 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 4891,
+    "Number of Unique Users": 2225,
+    "Transaction Volume USD": 5793376.40751734,
+    "Average Transaction Volume USD": 1137.070933762
+  },
+  {
+    "Date": "2022-12-11 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 4359,
+    "Number of Unique Users": 2160,
+    "Transaction Volume USD": 8542414.91830979,
+    "Average Transaction Volume USD": 1862.715856587
+  },
+  {
+    "Date": "2022-12-12 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 5510,
+    "Number of Unique Users": 2426,
+    "Transaction Volume USD": 14518958.8998571,
+    "Average Transaction Volume USD": 2501.543573373
+  },
+  {
+    "Date": "2022-12-13 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6153,
+    "Number of Unique Users": 2812,
+    "Transaction Volume USD": 14266717.857729,
+    "Average Transaction Volume USD": 2137.976600889
+  },
+  {
+    "Date": "2022-12-14 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 5427,
+    "Number of Unique Users": 2583,
+    "Transaction Volume USD": 10951394.1252629,
+    "Average Transaction Volume USD": 1860.267390057
+  },
+  {
+    "Date": "2022-12-15 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 4737,
+    "Number of Unique Users": 2355,
+    "Transaction Volume USD": 8101502.88693353,
+    "Average Transaction Volume USD": 1594.784032861
+  },
+  {
+    "Date": "2022-12-16 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6798,
+    "Number of Unique Users": 2830,
+    "Transaction Volume USD": 14871458.8198884,
+    "Average Transaction Volume USD": 2015.922301734
+  },
+  {
+    "Date": "2022-12-17 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6360,
+    "Number of Unique Users": 2583,
+    "Transaction Volume USD": 9800143.76025729,
+    "Average Transaction Volume USD": 1437.814518817
+  },
+  {
+    "Date": "2022-12-18 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 4547,
+    "Number of Unique Users": 2091,
+    "Transaction Volume USD": 6847148.6310583,
+    "Average Transaction Volume USD": 1421.750131034
+  },
+  {
+    "Date": "2022-12-19 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 5810,
+    "Number of Unique Users": 2561,
+    "Transaction Volume USD": 10815621.019162,
+    "Average Transaction Volume USD": 1738.286888326
+  },
+  {
+    "Date": "2022-12-20 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6516,
+    "Number of Unique Users": 2705,
+    "Transaction Volume USD": 11397942.8816669,
+    "Average Transaction Volume USD": 1612.840368143
+  },
+  {
+    "Date": "2022-12-21 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 5811,
+    "Number of Unique Users": 2668,
+    "Transaction Volume USD": 8909929.96071868,
+    "Average Transaction Volume USD": 1417.198975778
+  },
+  {
+    "Date": "2022-12-22 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 6866,
+    "Number of Unique Users": 2858,
+    "Transaction Volume USD": 11297770.2919411,
+    "Average Transaction Volume USD": 1483.036268304
+  },
+  {
+    "Date": "2022-12-23 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 4921,
+    "Number of Unique Users": 2299,
+    "Transaction Volume USD": 8361259.24056119,
+    "Average Transaction Volume USD": 1580.578306344
+  },
+  {
+    "Date": "2022-12-24 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 4362,
+    "Number of Unique Users": 2108,
+    "Transaction Volume USD": 5396507.89061365,
+    "Average Transaction Volume USD": 1163.792946003
+  },
+  {
+    "Date": "2022-12-25 00:00:00.000",
+    "PLATFORM": "sushiswap",
+    "Number of Transactions": 1569,
+    "Number of Unique Users": 869,
+    "Transaction Volume USD": 1336888.11261155,
+    "Average Transaction Volume USD": 938.16709657
+  }
+]
