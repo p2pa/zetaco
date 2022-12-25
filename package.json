@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:server": "nodemon index.js --ignore '../client/'",
-    "start:client": "npm run serve --prefix client/",
+    "start:server": "nodemon index.js --ignore '../cork-vue/'",
+    "start:client": "npm run serve --prefix cork-vue/",
     "dev": "concurrently \"npm run start:server\" \"npm run start:client\""
   },
   "author": "",
