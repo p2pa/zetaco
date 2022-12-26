@@ -3,6 +3,7 @@ const dotenv = require('dotenv');
 const express = require('express');
 const cors = require('cors')
 const Moralis = require("moralis").default;
+const axios = require('axios');
 const { EvmChain } = require("@moralisweb3/common-evm-utils");
 require('./streams')();
 
@@ -23,10 +24,37 @@ Moralis.start({
   apiKey: process.env.API_KEY,
 });
 
-app.get('/api', async (req, res) => {
+app.get('/api/:protocol/:what/:from/:to', async (req, res) => {
+  console.log("Received a request for the api/" + req.params.protocol + '/' + req.params.what + '/' + req.params.from + '/' + req.params.to)
   //let streams = await getStreams().result;  
   //res.render('streams', streams)
-  res.send("Hello from the API");
+  let arr = []
+
+  if(req.params.what == 'TVL'){
+    await axios
+    .get('https://api.llama.fi/protocol/' + req.params.protocol)
+    .then(async (res) => {
+      let tvl = res.data.tvl
+      let item = {
+        data: [],
+        labels: [],
+      }
+      for (let i = 0; i < tvl.length; i++) {
+        const element = tvl[i];
+        if(element.date > req.params.from && element.date < req.params.to){
+          // turn usd into eth
+          // let eth = await axios.get('https://coins.llama.fi/prices/historical/' + element.date + '/coingecko:ethereum').then((res) => {
+          //     return (element.totalLiquidityUSD / res.data.coins['coingecko:ethereum'].price)
+          // }).catch(err => console.log(err))
+          // item.data.push(eth)
+          item.data.push(element.totalLiquidityUSD)
+          item.labels.push(new Date(element.date * 1000))
+        }        
+      }      
+      arr.push(item)
+    })
+  }  
+  res.json(arr);
 })
 
 app.post('api/webhook', (req, res) => {

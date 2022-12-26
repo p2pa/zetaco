@@ -13,7 +13,7 @@
                         <router-link to="/" class="nav-link"> ZETACO </router-link>
                     </li>
                 </ul>
-                <div class="d-none horizontal-menu">
+                <!-- <div class="d-none horizontal-menu">
                     <a href="javascript:void(0);" class="sidebarCollapse" data-placement="bottom" @click="$store.commit('toggleSideBar', !$store.state.is_show_sidebar)">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@
                             <line x1="3" y1="18" x2="21" y2="18"></line>
                         </svg>
                     </a>
-                </div>
+                </div> -->
                 <!-- <ul class="navbar-item flex-row ms-md-0 ms-auto">
                     <li class="nav-item align-self-center search-animated" :class="{ 'show-search': $store.state.is_show_search }">
                         <svg
@@ -61,7 +61,7 @@
 
                 <div class="navbar-item flex-row ms-md-auto">
                     <div class="dark-mode d-flex align-items-center">
-                        <a v-if="$store.state.dark_mode == 'light'" href="javascript:;" class="d-flex align-items-center" @click="toggleMode('dark')">
+                        <!-- <a href="javascript:;" class="d-flex align-items-center" @click="toggleMode('dark')">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="20"
@@ -85,8 +85,8 @@
                                 <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                             </svg>
                             <span class="ms-2"></span>
-                        </a>
-                        <a v-if="$store.state.dark_mode == 'dark'" href="javascript:;" class="d-flex align-items-center" @click="toggleMode('light')">
+                        </a> -->
+                        <!-- <a v-if="$store.state.dark_mode == 'dark'" href="javascript:;" class="d-flex align-items-center" @click="toggleMode('light')">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="20"
@@ -102,7 +102,7 @@
                                 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                             </svg>
                             <span class="ms-2"></span>
-                        </a>                        
+                        </a>                         -->
                     </div>
 
                     <!-- <div class="dropdown nav-item language-dropdown btn-group">
@@ -445,29 +445,7 @@
 </template>
 
 <script setup>
-    import { onMounted, ref } from 'vue';
-    import { useI18n } from 'vue-i18n';
-    import { useStore } from 'vuex';
-    const store = useStore();
-
-    const selectedLang = ref(null);
-    const countryList = ref(store.state.countryList);
-
-    const i18n = useI18n();
-
-    onMounted(() => {
-        selectedLang.value = window.$appSetting.toggleLanguage();
-        toggleMode();
-    });
-
-    const toggleMode = (mode) => {
-        window.$appSetting.toggleMode(mode);
-    };
-
-    const changeLanguage = (item) => {
-        selectedLang.value = item;
-        window.$appSetting.toggleLanguage(item);
-
-        i18n.locale.value = item.code;
-    };
+    // const toggleMode = (mode) => {
+    //     window.$appSetting.toggleMode(mode);
+    // };
 </script>

@@ -87,7 +87,7 @@
 
 <script setup>
     import '@/assets/sass/widgets/widgets.scss';
-    import { computed, ref } from 'vue';
+    import { onMounted, computed, ref } from 'vue';
     import { useStore } from 'vuex';
     import ApexChart from 'vue3-apexcharts';
     import Multiselect from '@suadelabs/vue3-multiselect';
@@ -99,8 +99,30 @@
     import synthetix from '../../../synthetix.json';
     import balancer from '../../../balancer.json';
 
+    import axios from 'axios';
+import { async } from 'q';
+
     useMeta({ title: 'Sales Admin' });    
 
+    let aave = ref([]);
+
+    onMounted(async () => {
+        await axios.get('https://api.llama.fi/protocol/aave')
+        .then(function (response) {
+            // handle success
+           aave.value = response.tvl
+        })
+        .catch(function (error) {
+            // handle error
+            console.log(error);
+        })
+        .then(function () {
+            // always executed
+        });
+    })    
+
+    console.log(aave)
+    
     const store = useStore();
 
     // Query building
@@ -123,21 +145,15 @@
     d.setHours(0, 0, 0, 0);
   
     let since = "2022-12-01";
-
+    
     //Revenue
     const revenue_series = ref([
         {   
-            name: 'THORChain', 
+            name: 'Aave', 
             //data: [2983956.71217961, 2395275.71071763, 1009108.76758473, 2572090.63945783, 2098498.32074663, 2194474.50212802, 1368761.00564936, 1125933.01377081, 735116.858568302],
-            data: thorchain.map((element) => {
-                let newerThanMonth = new Date(element["DAY"]).getTime() > new Date(since).getTime();
-                let today = new Date()
-                today.setHours(0,0,0,0)
-                let olderThanToday = new Date(element["DAY"]).getTime() < today.getTime();
-                if(newerThanMonth && olderThanToday){
-                    return element["SWAP_VOLUME_USD"]
-                }                
-            }).filter(notUndefined => notUndefined !== undefined),
+            data: aave.map((element) => {
+              console.log(element)
+            }),
             logarithmic: true,
             color: 'green',
         },
@@ -156,34 +172,34 @@
         //     data: [1205075160.12, 643004472.25, 307789126.5, 539359354.42, 623531212.73, 396210925.2, 449933491.13, 450910243.39, 149123770.96],
         //     logarithmic: true
         // },
-         {
-            name: 'Sushiswap',
-            data: sushi.map((element) => {
-                let newerThanMonth = new Date(element["Date"]).getTime() > new Date(since).getTime();
-                let today = new Date()
-                today.setHours(0,0,0,0)
-                let olderThanToday = new Date(element["Date"]).getTime() < today.getTime();
-                if(newerThanMonth && olderThanToday){
-                    return element["Transaction Volume USD"]
-                }
-            }).filter(notUndefined => notUndefined !== undefined),
-            logarithmic: true,
-            color: 'red',
-         },
-         {
-            name: 'Synthetix',
-            data: synthetix.map((element) => {
-                let newerThanMonth = new Date(element["Date"]).getTime() > new Date(since).getTime();
-                let today = new Date()
-                today.setHours(0,0,0,0)
-                let olderThanToday = new Date(element["Date"]).getTime() < today.getTime();
-                if(newerThanMonth && olderThanToday){
-                    return element["Transaction Volume USD"]
-                }
-            }).filter(notUndefined => notUndefined !== undefined),
-            logarithmic: true,
-            color: 'blue',
-         },
+        //  {
+        //     name: 'Sushiswap',
+        //     data: sushi.map((element) => {
+        //         let newerThanMonth = new Date(element["Date"]).getTime() > new Date(since).getTime();
+        //         let today = new Date()
+        //         today.setHours(0,0,0,0)
+        //         let olderThanToday = new Date(element["Date"]).getTime() < today.getTime();
+        //         if(newerThanMonth && olderThanToday){
+        //             return element["Transaction Volume USD"]
+        //         }
+        //     }).filter(notUndefined => notUndefined !== undefined),
+        //     logarithmic: true,
+        //     color: 'red',
+        //  },
+        //  {
+        //     name: 'Synthetix',
+        //     data: synthetix.map((element) => {
+        //         let newerThanMonth = new Date(element["Date"]).getTime() > new Date(since).getTime();
+        //         let today = new Date()
+        //         today.setHours(0,0,0,0)
+        //         let olderThanToday = new Date(element["Date"]).getTime() < today.getTime();
+        //         if(newerThanMonth && olderThanToday){
+        //             return element["Transaction Volume USD"]
+        //         }
+        //     }).filter(notUndefined => notUndefined !== undefined),
+        //     logarithmic: true,
+        //     color: 'blue',
+        //  },
         // {
         //     name: 'Balancer',
         //     data: balancer.map((element) => {
@@ -210,7 +226,7 @@
     //     GROUP BY 1,2
     //     ORDER BY 1,2
 
-    const revenue_options = computed(() => {
+    const revenue_options = computed(async () => {
         const is_dark = store.state.is_dark_mode;
         return {
             chart: {
@@ -229,18 +245,21 @@
             //     ],
             // },
             //labels: ['2022-12-16', '2022-12-17', '2022-12-18', '2022-12-19', '2022-12-19', '2022-12-20', '2022-12-21', '2022-12-22', '2022-12-23', '2022-12-24'],
-            labels: thorchain.map((element) => {   
-                let newerThanMonth = new Date(element["DAY"]).getTime() > new Date(since).getTime();
-                let today = new Date()
-                today.setHours(0,0,0,0)
-                let olderThanToday = new Date(element["DAY"]).getTime() < today.getTime();
-                if(newerThanMonth && olderThanToday){                
-                    return element["DAY"]
-                } 
+            // labels: thorchain.map((element) => {   
+            //     let newerThanMonth = new Date(element["DAY"]).getTime() > new Date(since).getTime();
+            //     let today = new Date()
+            //     today.setHours(0,0,0,0)
+            //     let olderThanToday = new Date(element["DAY"]).getTime() < today.getTime();
+            //     if(newerThanMonth && olderThanToday){                
+            //         return element["DAY"]
+            //     } 
                 // if( < new Date(element["DAY"]).getTime() ){
                 //     return element["DAY"];    
                 // }                                            
-            }).filter(notUndefined => notUndefined !== undefined),
+            //}).filter(notUndefined => notUndefined !== undefined),
+            labels: aave.map((element) => {
+              return new Date(element.date)
+            }),
             xaxis: {
                 axisBorder: { show: false },
                 axisTicks: { show: false },
@@ -289,8 +308,6 @@
             },
         };
     });
-
-    console.log(revenue_options)
 
     //Daily Sales
     const daily_sales_series = ref([
