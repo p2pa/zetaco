@@ -16,8 +16,9 @@
                                 <div class="input-group mb-4" v-if="inputTypes[index - 1] !== 'filter'">
                                     <span class="input-group-text" id="basic-addon1">{{index}}</span>
                                     <span class="input-group-text" id="basic-addon1">{{ inputTypes[index - 1] }}</span>
-                                    <div class="form-control">
-                                      <multiselect v-model="inputValues[index - 1]" :options="options[index - 1]" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
+                                    <div class="form-control" v-for="values, i in inputValues[index - 1]" :key="i">
+                                      <multiselect v-if="i == 0" v-model="inputValues[index - 1][i]" :options="options.protocol" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
+                                      <multiselect v-if="i == 1" v-model="inputValues[index - 1][i]" :options="options.what" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>                                    
                                     </div>
                                 </div>
                                 <div class="input-group mb-4" v-if="inputTypes[index - 1] == 'filter'">
@@ -33,7 +34,7 @@
                             <div v-html="printOutputs"></div>                      
 
                             <br>
-                            <div class="row mb-12">
+                            <!-- <div class="row mb-12">
                               <label class="col-sm-1 col-form-label col-form-label-sm" for="colFormLabelSm">+</label>
                               <div class="col-sm-2">
                                   <span class="btn btn-info me-1">Rows</span>
@@ -47,7 +48,7 @@
                               <div class="col-sm-2">
                                   <span class="btn btn-info me-1">Join table</span>
                               </div>
-                            </div>                            
+                            </div>                             -->
                         </div>
                     </div>
                 </div>
@@ -84,7 +85,7 @@
 
               <div class="widget-content">
                   <!-- <div class="chart-title">Total Profit <span class="text-primary ms-1">$10,840</span></div> -->
-                  <apex-chart v-if="revenue_options" height="325" type="area" :options="revenue_options" :series="revenue_series"></apex-chart>
+                  <apex-chart v-if="revenue_options" height="325" :type="chartType" :options="revenue_options" :series="revenue_series"></apex-chart>
               </div>
             </div>
           </div>  
@@ -111,20 +112,17 @@ export default {
     ApexChart
   },
   methods: {
-    fetchQuery: function(){
-      let protocol, what, from;
-      let to = new Date().getTime();
+    fetchQuery: async function(){
+      let from;
+      let to = new Date().getTime(); 
 
-      for (let index = 0; index < this.inputTypes.length; index++) {
-        const element = this.inputTypes[index];
-        if(element == 'start'){
-          protocol = this.inputValues[index];
-        }
-        if(element == 'join'){
-          what = this.inputValues[index];
-        }
-        if(element == 'filter'){
-          this.inputValues[index].forEach(el => {
+      // to do
+      // check if all values contain valid entry
+      
+      
+      // if inputTypes contains a filter
+      if(this.inputTypes.indexOf('filter')){
+        this.inputValues[this.inputTypes.indexOf('filter')].forEach(el => {
             let condition = el.split(" ");
             if(condition[0] == 'Date'){
               if(condition[1] == '>='){
@@ -132,37 +130,57 @@ export default {
               }
             }
           });
-        }
+      }
+
+      let dataArray = []
+
+      for (let index = 0; index < this.inputTypes.length; index++) {
+        const element = this.inputTypes[index];           
+        if(element == 'protocol'){
+          let array = this.inputValues[index];
+          // if type == revenue do bar chart         
+
+          let url = 'http://localhost:3000/api/' + array[0] + '/' + array[1] + '/' + from + '/' + to ;      
+
+          await axios
+          .get(url)
+          .then((res) => {
+            dataArray.push({                 
+                name: array[0], 
+                data: res.data[0].data                         
+            })
+            this.revenue_options.labels = res.data[0].labels
+          })   
+        }  
+        // if(element == 'start'){
+        //   protocol = this.inputValues[index];
+        // }
+        // if(element == 'join'){
+        //   what = this.inputValues[index];
+        // }
+        
       }      
       
-      let url = 'http://localhost:3000/api/' + protocol + '/' + what + '/' + from + '/' + to ;      
-
-      axios
-      .get(url)
-      .then((res) => {
-        this.revenue_series[0].data = res.data[0].data
-        this.revenue_options.labels = res.data[0].labels
-        console.log(this.revenue_options.labels)
-      })   
+      this.revenue_series = dataArray;
     },
   },   
   data: function() {
     return {        
+        chartType: "area",
         inputsAmount: 3,
         inputTypes: [
-          'start',
-          'join',
+          'protocol',
+          'protocol',
           'filter'
         ],
-        options: [
-          ['Aave', 'Uniswap'],
-          ['Volume', 'TVL', 'Transaction amount', 'Unique users', 'Average Transaction Volume'],
-          []
-        ], 
+        options:{
+            protocol: ['Aave', 'Compound', 'Convex-Finance', 'Curve', 'JustLend', 'Lido', 'MakerDAO', 'PancakeSwap', 'Uniswap'],
+            what: ['TVL', 'Revenue'] //'Volume', 'Transaction amount', 'Unique users', 'Average Transaction Volume'
+        },        
         inputValues: [
-          'Aave',
-          'TVL',
-          ['Date >= 2021-01-01']
+          ['Aave', 'TVL'],
+          ['Uniswap', 'TVL'],
+          ['Date >= 2022-01-01']
         ],       
         revenue_series: [
             {   
@@ -201,7 +219,15 @@ export default {
               tickAmount: 7,
               labels: {
                   formatter: function (value) {
+                    if(value > 1000000000){
                       return Math.floor((value / 1000000000) * 100) / 100 + 'B';
+                    }
+                    if(value > 1000000){
+                      return Math.floor((value / 1000000) * 100) / 100 + 'M';
+                    } 
+                    if(value < 1000000){
+                      return Math.round((value / 1000) * 100) / 100 + 'K';
+                    }                     
                   },
                   offsetX: -10,
                   offsetY: 0,

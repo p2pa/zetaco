@@ -34,13 +34,13 @@ app.get('/api/:protocol/:what/:from/:to', async (req, res) => {
     await axios
     .get('https://api.llama.fi/protocol/' + req.params.protocol)
     .then(async (res) => {
-      let tvl = res.data.tvl
+      let data = res.data.tvl
       let item = {
         data: [],
         labels: [],
       }
-      for (let i = 0; i < tvl.length; i++) {
-        const element = tvl[i];
+      for (let i = 0; i < data.length; i++) {
+        const element = data[i];
         if(element.date > req.params.from && element.date < req.params.to){
           // turn usd into eth
           // let eth = await axios.get('https://coins.llama.fi/prices/historical/' + element.date + '/coingecko:ethereum').then((res) => {
@@ -49,6 +49,30 @@ app.get('/api/:protocol/:what/:from/:to', async (req, res) => {
           // item.data.push(eth)
           item.data.push(element.totalLiquidityUSD)
           item.labels.push(new Date(element.date * 1000))
+        }        
+      }      
+      arr.push(item)
+    })
+  }  
+  if(req.params.what == 'Revenue'){
+    await axios
+    .get('https://api.llama.fi/summary/fees/'+ req.params.protocol + '?dataType=dailyRevenue')
+    .then(async (res) => {
+      let tvl = res.data.totalDataChart
+      let item = {
+        data: [],
+        labels: [],
+      }
+      for (let i = 0; i < tvl.length; i++) {
+        const element = tvl[i];
+        if(element[0] > req.params.from && element[0] < req.params.to){
+          // turn usd into eth
+          // let eth = await axios.get('https://coins.llama.fi/prices/historical/' + element.date + '/coingecko:ethereum').then((res) => {
+          //     return (element.totalLiquidityUSD / res.data.coins['coingecko:ethereum'].price)
+          // }).catch(err => console.log(err))
+          // item.data.push(eth)
+          //item.data.push(element[1])
+          item.labels.push(new Date(element[0] * 1000))
         }        
       }      
       arr.push(item)
