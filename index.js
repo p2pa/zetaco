@@ -1,17 +1,16 @@
-// set up env
-const dotenv = require('dotenv');
 const express = require('express');
 const cors = require('cors')
 const Moralis = require("moralis").default;
 const axios = require('axios');
 const { EvmChain } = require("@moralisweb3/common-evm-utils");
 require('./streams')();
+const Protocol = require('./protocol.js');
 
 // set up express
 const app = express()
 app.use(cors()) // to allow cross origin requests
 app.use(express.json()); // to convert the request into JSON
-dotenv.config();
+
 const port = 3000;
 
 //the rest of your express routes.
@@ -19,9 +18,35 @@ app.listen(port, () => {
   console.log(`Listening on port ${port}`)
 })
 
-// init moralis
-Moralis.start({
-  apiKey: process.env.API_KEY,
+
+
+app.get('/test', async (req, res) => {
+  let p = new Protocol('ethereum');
+  let result = await p.getUniqueUsers();
+  res.json(result)
+
+  // // res.json(queryResults);
+  // let flipside = new Flipside(
+  //   process.env.SHROOM_API_KEY,
+  //   "https://node-api.flipsidecrypto.com"
+  // );
+  
+  // // Parameters can be passed into SQL statements via simple & native string interpolation
+  // let myAddress = "0x009C6979E15443e521389dd998ceABb91369DcC9";
+
+  // // Create a query object for the `query.run` function to execute
+  // let query = {
+  //   sql: `select nft_address, mint_price_eth, mint_price_usd from ethereum.core.ez_nft_mints where nft_to_address = LOWER('${myAddress}')`,
+  //   ttlMinutes: 10,
+  // };
+  
+  // let result = await flipside.query.run(query);
+
+  // // error handling
+  // if(result.error == null){
+  //   console.warn(result.error)
+  // }
+  // res.json(result)
 });
 
 app.get('/api/:protocol/:what/:from/:to', async (req, res) => {
