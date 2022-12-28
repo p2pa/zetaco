@@ -18,36 +18,17 @@ app.listen(port, () => {
   console.log(`Listening on port ${port}`)
 })
 
-
-
 app.get('/test', async (req, res) => {
   let p = new Protocol('ethereum');
   let result = await p.getUniqueUsers();
   res.json(result)
-
-  // // res.json(queryResults);
-  // let flipside = new Flipside(
-  //   process.env.SHROOM_API_KEY,
-  //   "https://node-api.flipsidecrypto.com"
-  // );
-  
-  // // Parameters can be passed into SQL statements via simple & native string interpolation
-  // let myAddress = "0x009C6979E15443e521389dd998ceABb91369DcC9";
-
-  // // Create a query object for the `query.run` function to execute
-  // let query = {
-  //   sql: `select nft_address, mint_price_eth, mint_price_usd from ethereum.core.ez_nft_mints where nft_to_address = LOWER('${myAddress}')`,
-  //   ttlMinutes: 10,
-  // };
-  
-  // let result = await flipside.query.run(query);
-
-  // // error handling
-  // if(result.error == null){
-  //   console.warn(result.error)
-  // }
-  // res.json(result)
 });
+
+app.get('/getProtocols', (req, res) => {
+  let p = new Protocol('all');
+  let result = p.getProtocols();
+  res.json(result)
+})
 
 app.get('/api/:protocol/:what/:from/:to', async (req, res) => {
   console.log("Received a request for the api/" + req.params.protocol + '/' + req.params.what + '/' + req.params.from + '/' + req.params.to)

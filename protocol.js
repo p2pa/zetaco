@@ -19,7 +19,7 @@ module.exports = function(project){
         process.env.SHROOM_API_KEY,
         "https://node-api.flipsidecrypto.com"
     );
-    
+
     this.available = [{
         name: 'ethereum',
         dimensions: ['Unique users', 'Volume']
@@ -34,6 +34,10 @@ module.exports = function(project){
             }
         }
         return addr
+    }
+
+    this.getProtocols = function(){
+        return this.available;
     }
 
     this.getUniqueUsers = async function(){        
