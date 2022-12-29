@@ -4,7 +4,9 @@ const Moralis = require("moralis").default;
 const axios = require('axios');
 const { EvmChain } = require("@moralisweb3/common-evm-utils");
 require('./streams')();
+
 const Protocol = require('./protocol.js');
+const Chain = require('./chain.js');
 
 // set up express
 const app = express()
@@ -19,8 +21,8 @@ app.listen(port, () => {
 })
 
 app.get('/test', async (req, res) => {
-  let p = new Protocol('ethereum');
-  let result = await p.getUniqueUsers();
+  let c = new Chain('ethereum');
+  let result = await c.getUniqueUsers();
   res.json(result)
 });
 
@@ -28,6 +30,39 @@ app.get('/getProtocols', (req, res) => {
   let p = new Protocol('all');
   let result = p.getProtocols();
   res.json(result)
+})
+
+app.get('/getChains', (req, res) => {
+  let c = new Chain('all');
+  let result = c.getChains();
+  res.json(result)
+})
+
+app.get('/api/chains/:x/:dimension/:from/:to', async (req, res) => {
+  // Log the request
+  console.log("Received a request for the api/chains/" + req.params.x + '/' + req.params.dimension + '/' + req.params.from + '/' + req.params.to)
+
+  // Init the chain class
+  let c = new Chain(req.params.x.toLowerCase());
+
+  // Simplify date variables
+  let from = req.params.from;
+  let to = req.params.to;
+
+  // Determine dimension and appropiate action
+  switch (req.params.dimension.toLowerCase()) {
+    case "volume":
+      let volume = await c.getVolume(from, to);
+      res.json(volume);
+      break;  
+    case "uniqueusers":
+      let uniqueUsers = await c.getUniqueUsers(from, to);
+      res.json(uniqueUsers);
+      break;
+    default:
+      res.json({ error: "Dimension not found"});
+      break;
+  }
 })
 
 app.get('/api/:protocol/:what/:from/:to', async (req, res) => {

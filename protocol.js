@@ -13,30 +13,15 @@ class Flipside {
 }
 
 module.exports = function(project){
-    this.prefix = "ethereum."    
     this.chosen = project;
     this.flipside = new Flipside(
         process.env.SHROOM_API_KEY,
         "https://node-api.flipsidecrypto.com"
     );
 
-    this.available = [{
-        name: 'ethereum',
-        dimensions: ['Unique users', 'Volume']
-    }]
+    this.available = []    
 
-    this.getContractAddress = function(){
-        let addr = ''
-        for (let i = 0; i < this.available.length; i++) {
-            let el = this.available[i];
-            if(el.name == this.chosen){
-                addr = el.contract
-            }
-        }
-        return addr
-    }
-
-    this.getProtocols = function(){
+    this.getChains = function(){
         return this.available;
     }
 
