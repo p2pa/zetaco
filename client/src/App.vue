@@ -13,12 +13,20 @@
                         <div class="widget-content">                           
 
                             <div class="row mb-12" v-for="index in inputsAmount" :key="index">
-                                <div class="input-group mb-4" v-if="inputTypes[index - 1] !== 'filter'">
+                                <div class="input-group mb-4" v-if="inputTypes[index - 1] == 'protocol'">
                                     <span class="input-group-text" id="basic-addon1">{{index}}</span>
                                     <span class="input-group-text" id="basic-addon1">{{ inputTypes[index - 1] }}</span>
                                     <div class="form-control" v-for="values, i in inputValues[index - 1]" :key="i">
                                       <multiselect v-if="i == 0" v-model="inputValues[index - 1][i]" :options="options.protocol" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
                                       <multiselect v-if="i == 1" v-model="inputValues[index - 1][i]" :options="options.what" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>                                    
+                                    </div>
+                                </div>
+                                <div class="input-group mb-4" v-if="inputTypes[index - 1] == 'chain'">
+                                    <span class="input-group-text" id="basic-addon1">{{index}}</span>
+                                    <span class="input-group-text" id="basic-addon1">{{ inputTypes[index - 1] }}</span>
+                                    <div class="form-control" v-for="values, i in inputValues[index - 1]" :key="i">
+                                      <multiselect v-if="i == 0" v-model="inputValues[index - 1][0]" :options="options.chain.x" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
+                                      <multiselect v-if="i == 1" v-model="inputValues[index - 1][1]" :options="inputValues[index - 1][0] == '' ? [] : options.chain.dimension[options.chain.x.find(inputValues[index - 1][0])]" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>                                    
                                     </div>
                                 </div>
                                 <div class="input-group mb-4" v-if="inputTypes[index - 1] == 'filter'">
@@ -102,7 +110,6 @@ import Multiselect from '@suadelabs/vue3-multiselect';
 import '@suadelabs/vue3-multiselect/dist/vue3-multiselect.css';
 import AppHeader from '@/components/header.vue';
 import axios from 'axios'
-import moment from 'moment'
 
 export default {
   name: 'App',
@@ -114,11 +121,10 @@ export default {
   methods: {
     fetchQuery: async function(){
       let from;
-      let to = new Date().getTime(); 
+      let to = parseInt((new Date().getTime() / 1000).toFixed(0)); 
 
       // to do
-      // check if all values contain valid entry
-      
+      // check if all values contain valid entry      
       
       // if inputTypes contains a filter
       if(this.inputTypes.indexOf('filter')){
@@ -151,35 +157,73 @@ export default {
             })
             this.revenue_options.labels = res.data[0].labels
           })   
-        }  
-        // if(element == 'start'){
-        //   protocol = this.inputValues[index];
-        // }
-        // if(element == 'join'){
-        //   what = this.inputValues[index];
-        // }
+        } 
         
+        if(element == 'chain'){
+          let array = this.inputValues[index];
+          // if type == revenue do bar chart         
+
+          let url = 'http://localhost:3000/api/chains/' + array[0] + '/' + array[1].replace(/\s+/, "")  + '/' + from + '/' + to ;      
+          
+          await axios
+          .get(url)
+          .then((res) => {
+            let item = {                 
+                name: array[0], 
+                data: []                         
+            };
+            let labels = []
+            for (let z = 0; z < res.data.rows.length; z++) {
+              let el = res.data.rows[z];
+              labels.push(el[1])
+              item.data.push(el[2])
+            }
+            dataArray.push(item)
+            this.revenue_options.labels = labels
+          })   
+        }       
       }      
-      
+      console.log(this.revenue_options.labels);      
       this.revenue_series = dataArray;
     },
-  },   
+  },  
+  async beforeMount(){
+    // get chains
+    let url = 'http://localhost:3000/getChains'; 
+    let nameArray = [];
+    let dimensionArray = [];
+    await axios
+    .get(url)
+    .then((res) => {
+      let chains = res.data;
+      for (let z = 0; z < chains.length; z++) {
+        let el = chains[z];
+        nameArray.push(el.name)
+        dimensionArray.push(el.dimensions)       
+      }
+    })   
+    this.options.chain.x = nameArray;
+    this.options.chain.dimension = dimensionArray;
+    console.log(this.options)
+  },
   data: function() {
     return {        
         chartType: "area",
-        inputsAmount: 3,
+        inputsAmount: 1,
         inputTypes: [
-          'protocol',
-          'protocol',
+          'chain',
           'filter'
         ],
         options:{
+            chain: {
+              x: [],
+              dimension: []
+            },                      
             protocol: ['Aave', 'Compound', 'Convex-Finance', 'Curve', 'JustLend', 'Lido', 'MakerDAO', 'PancakeSwap', 'Uniswap'],
-            what: ['TVL', 'Revenue'] //'Volume', 'Transaction amount', 'Unique users', 'Average Transaction Volume'
+            what: ['Volume', 'Unique users'] //'Volume', 'Transaction amount', 'Unique users', 'Average Transaction Volume'
         },        
         inputValues: [
-          ['Aave', 'TVL'],
-          ['Uniswap', 'TVL'],
+          ['', ''],
           ['Date >= 2022-01-01']
         ],       
         revenue_series: [
@@ -208,11 +252,7 @@ export default {
               labels: { 
                 offsetX: 0, 
                 offsetY: 5, 
-                style: { fontSize: '12px', fontFamily: 'Poppins', cssClass: 'apexcharts-xaxis-title' }, 
-                format: 'yyyy/MM/dd',
-              },
-              formatter: function(value) {
-                return moment(value).format('yyyy/mm/dd')
+                style: { fontSize: '12px', fontFamily: 'Poppins', cssClass: 'apexcharts-xaxis-title' }
               },
           },
           yaxis: {              
