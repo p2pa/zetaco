@@ -29,7 +29,7 @@ module.exports = function(project){
         dimensions: ['Transactions']
     }]
     
-    this.getTransactions = async function(){
+    this.getTransactions = async function(from, to){
         let data = await this.flipside.query.run({
             sql: `SELECT		
             DATE_TRUNC('day', block_timestamp) AS date, status, COUNT(tx_hash) AS txn_count
@@ -38,11 +38,12 @@ module.exports = function(project){
                 WHERE 		
                 status = 'SUCCESS' AND
                 block_timestamp >= '2022-01-01'
-                GROUP BY 	1, 2`,
+                GROUP BY 	1, 2
+                order by 1 asc`,
             ttlMinutes: 10
         });
         let finished = {
-            columns: ["blockchain", "date", "unique users"],
+            columns: ["blockchain", "date", "transactions"],
             rows: [],
         };
 
@@ -82,7 +83,7 @@ module.exports = function(project){
                    from ethereum.core.ez_nft_sales
                    where block_timestamp::date >= '2022-01-01'
                    group by 1
-                   order by 1 desc`,           
+                   order by 1 asc`,           
             ttlMinutes: 10,
         });
         return data;

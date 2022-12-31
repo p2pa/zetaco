@@ -59,6 +59,10 @@ app.get('/api/chains/:x/:dimension/:from/:to', async (req, res) => {
       let uniqueUsers = await c.getUniqueUsers(from, to);
       res.json(uniqueUsers);
       break;
+    case "transactions":
+      let transactions = await c.getTransactions(from, to);
+      res.json(transactions);
+      break;
     default:
       res.json({ error: "Dimension not found"});
       break;
