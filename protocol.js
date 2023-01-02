@@ -45,7 +45,7 @@ module.exports = function(project){
                 column = 'count(distinct seller_address) as sellers';
                 break;
             case 'salescount':
-                column = 'count(Distinct tx_hash) as sales count';
+                column = 'count(Distinct tx_hash) as sales_count';
                 break;
             case 'sales':
                 column = 'ROUND(sum(PRICE_USD)) as sales';
