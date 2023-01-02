@@ -19,66 +19,215 @@ module.exports = function(project){
         "https://node-api.flipsidecrypto.com"
     );
 
-    this.available = []    
+    this.available = [{
+        name: 'blur',
+        dimensions: ['Buyers', 'Sellers']
+    },{
+        name: 'opensea',
+        dimensions: ['Buyers', 'Sellers']
+    },{
+        name: 'x2y2',
+        dimensions: ['Buyers', 'Sellers']
+    }]    
 
-    this.getChains = function(){
+    this.getProtocols = function(){
         return this.available;
     }
 
-    this.getUniqueUsers = async function(){        
-        if(this.chosen == 'ethereum'){
-            let query = {
-                sql: `select
-                block_timestamp::date as date,
-                   'Ethereum' as blockchain,
-                 count(DISTINCT BUYER_ADDRESS) as unique_buyer , 
-                 sum(unique_buyer) over (order by date asc) as cum_user, 
-                 sum(PRICE_USD) as volume,
-                 sum(volume) over (order by date) as cum_volume
-               from ethereum.core.ez_nft_sales
-               where block_timestamp::date >= '2022-01-01'
-               group by 1
-               order by 1 desc`,           
-                ttlMinutes: 10,
-            };
-            
-            let result = await this.flipside.query.run(query);
-
-            // error handling
-            if(result.error !== null){
-                console.warn(result.error)
-            }
-
-            return result
-        } else {
-             // get address for chosen
-            let address = this.getContractAddress()
-
-            // Create a query object for the `query.run` function to execute
-            let query = {
-                sql: `with main_stats AS (select 
-                    distinct TX_HASH AS TX,
-                    BLOCK_TIMESTAMP,
-                    ORIGIN_FROM_ADDRESS AS depositer
-                    from ethereum.core.fact_event_logs
-                    where ORIGIN_TO_ADDRESS='${address}')
-                select 
-                Date(BLOCK_TIMESTAMP) AS DAY,
-                count(distinct depositer) AS "unique users",
-                    count(TX) AS "number of TX"
-                from main_stats
-                group by 1 `,           
-                ttlMinutes: 10,
-            };
-            
-            let result = await this.flipside.query.run(query);
-
-            // error handling
-            if(result.error !== null){
-                console.warn(result.error)
-            }
-
-            return result
-        }       
+    this.getBuyers = async function(from, to){
+        switch (this.chosen) {
+            case 'blur':
+                var data = await this.flipside.query.run({
+                    sql: `select
+                            block_timestamp::date as day,
+                            count(distinct buyer_address)
+                        from
+                            ethereum.core.ez_nft_sales
+                        where
+                            platform_name = 'blur'
+                            and PRICE_USD is not null
+                        group by
+                            1
+                        order by
+                            1`,
+                    ttlMinutes: 10
+                });
+                var finished = {
+                    columns: ["blockchain", "date", "buyers"],
+                    rows: [],
+                };
+        
+                for (let i = 0; i <  data.rows.length; i++) {
+                    let el =  data.rows[i];
+                    //console.log(el)
+                    let inUnix = this.convertToUnix(el[0]);
+                    if(inUnix > from && inUnix < to){
+                        //console.log("Pushed into finished array: " + el[1] + '/' + el[0] + '/' + el[4])
+                        finished.rows.push([this.chosen, el[0], el[1]])
+                    }            
+                }
+                return finished; 
+            case 'opensea':
+                var data = await this.flipside.query.run({
+                    sql: `select
+                            block_timestamp::date as day,
+                            count(distinct buyer_address)
+                        from
+                            ethereum.core.ez_nft_sales
+                        where
+                            platform_name = 'opensea'
+                            and PRICE_USD is not null
+                        group by
+                            1
+                        order by
+                            1`,
+                    ttlMinutes: 10
+                });
+                var finished = {
+                    columns: ["blockchain", "date", "buyers"],
+                    rows: [],
+                };
+        
+                for (let i = 0; i <  data.rows.length; i++) {
+                    let el =  data.rows[i];
+                    //console.log(el)
+                    let inUnix = this.convertToUnix(el[0]);
+                    if(inUnix > from && inUnix < to){
+                        //console.log("Pushed into finished array: " + el[1] + '/' + el[0] + '/' + el[4])
+                        finished.rows.push([this.chosen, el[0], el[1]])
+                    }            
+                }
+                return finished; 
+            case 'x2y2':
+                var data = await this.flipside.query.run({
+                    sql: `select
+                            block_timestamp::date as day,
+                            count(distinct buyer_address)
+                        from
+                            ethereum.core.ez_nft_sales
+                        where
+                            platform_name = 'x2y2'
+                            and PRICE_USD is not null
+                        group by
+                            1
+                        order by
+                            1`,
+                    ttlMinutes: 10
+                });
+                var finished = {
+                    columns: ["blockchain", "date", "buyers"],
+                    rows: [],
+                };
+        
+                for (let i = 0; i <  data.rows.length; i++) {
+                    let el =  data.rows[i];
+                    //console.log(el)
+                    let inUnix = this.convertToUnix(el[0]);
+                    if(inUnix > from && inUnix < to){
+                        //console.log("Pushed into finished array: " + el[1] + '/' + el[0] + '/' + el[4])
+                        finished.rows.push([this.chosen, el[0], el[1]])
+                    }            
+                }
+                return finished; 
+        }
     }
+
+    this.getSellers = async function(from, to){
+        switch (this.chosen) {
+            case 'blur':
+                var data = await this.flipside.query.run({
+                    sql: `select
+                            block_timestamp::date as day,
+                            count(distinct seller_address)
+                        from
+                            ethereum.core.ez_nft_sales
+                        where
+                            platform_name = 'blur'
+                            and PRICE_USD is not null
+                        group by
+                            1
+                        order by
+                            1`,
+                    ttlMinutes: 10
+                });
+                var finished = {
+                    columns: ["blockchain", "date", "buyers"],
+                    rows: [],
+                };
+        
+                for (let i = 0; i <  data.rows.length; i++) {
+                    let el =  data.rows[i];
+                    //console.log(el)
+                    let inUnix = this.convertToUnix(el[0]);
+                    if(inUnix > from && inUnix < to){
+                        //console.log("Pushed into finished array: " + el[1] + '/' + el[0] + '/' + el[4])
+                        finished.rows.push([this.chosen, el[0], el[1]])
+                    }            
+                }
+                return finished; 
+            case 'opensea':
+                var data = await this.flipside.query.run({
+                    sql: `select
+                            block_timestamp::date as day,
+                            count(distinct seller_address)
+                        from
+                            ethereum.core.ez_nft_sales
+                        where
+                            platform_name = 'opensea'
+                            and PRICE_USD is not null
+                        group by
+                            1
+                        order by
+                            1`,
+                    ttlMinutes: 10
+                });
+                var finished = {
+                    columns: ["blockchain", "date", "buyers"],
+                    rows: [],
+                };
+        
+                for (let i = 0; i <  data.rows.length; i++) {
+                    let el =  data.rows[i];
+                    //console.log(el)
+                    let inUnix = this.convertToUnix(el[0]);
+                    if(inUnix > from && inUnix < to){
+                        //console.log("Pushed into finished array: " + el[1] + '/' + el[0] + '/' + el[4])
+                        finished.rows.push([this.chosen, el[0], el[1]])
+                    }            
+                }
+                return finished; 
+            case 'x2y2':
+                var data = await this.flipside.query.run({
+                    sql: `select
+                            block_timestamp::date as day,
+                            count(distinct seller_address)
+                        from
+                            ethereum.core.ez_nft_sales
+                        where
+                            platform_name = 'x2y2'
+                            and PRICE_USD is not null
+                        group by
+                            1
+                        order by
+                            1`,
+                    ttlMinutes: 10
+                });
+                var finished = {
+                    columns: ["blockchain", "date", "buyers"],
+                    rows: [],
+                };
+        
+                for (let i = 0; i <  data.rows.length; i++) {
+                    let el =  data.rows[i];
+                    //console.log(el)
+                    let inUnix = this.convertToUnix(el[0]);
+                    if(inUnix > from && inUnix < to){
+                        //console.log("Pushed into finished array: " + el[1] + '/' + el[0] + '/' + el[4])
+                        finished.rows.push([this.chosen, el[0], el[1]])
+                    }            
+                }
+                return finished; 
+        }
+    }
+    
 }

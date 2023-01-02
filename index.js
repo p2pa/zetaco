@@ -69,61 +69,31 @@ app.get('/api/chains/:x/:dimension/:from/:to', async (req, res) => {
   }
 })
 
-app.get('/api/:protocol/:what/:from/:to', async (req, res) => {
-  console.log("Received a request for the api/" + req.params.protocol + '/' + req.params.what + '/' + req.params.from + '/' + req.params.to)
-  //let streams = await getStreams().result;  
-  //res.render('streams', streams)
-  let arr = []
+app.get('/api/:protocol/:x/:dimension/:from/:to', async (req, res) => {
+  console.log("Received a request for the api/protocol/" + req.params.x + '/' + req.params.dimension + '/' + req.params.from + '/' + req.params.to)
+  // Log the request  
 
-  if(req.params.what == 'TVL'){
-    await axios
-    .get('https://api.llama.fi/protocol/' + req.params.protocol)
-    .then(async (res) => {
-      let data = res.data.tvl
-      let item = {
-        data: [],
-        labels: [],
-      }
-      for (let i = 0; i < data.length; i++) {
-        const element = data[i];
-        if(element.date > req.params.from && element.date < req.params.to){
-          // turn usd into eth
-          // let eth = await axios.get('https://coins.llama.fi/prices/historical/' + element.date + '/coingecko:ethereum').then((res) => {
-          //     return (element.totalLiquidityUSD / res.data.coins['coingecko:ethereum'].price)
-          // }).catch(err => console.log(err))
-          // item.data.push(eth)
-          item.data.push(element.totalLiquidityUSD)
-          item.labels.push(new Date(element.date * 1000))
-        }        
-      }      
-      arr.push(item)
-    })
-  }  
-  if(req.params.what == 'Revenue'){
-    await axios
-    .get('https://api.llama.fi/summary/fees/'+ req.params.protocol + '?dataType=dailyRevenue')
-    .then(async (res) => {
-      let tvl = res.data.totalDataChart
-      let item = {
-        data: [],
-        labels: [],
-      }
-      for (let i = 0; i < tvl.length; i++) {
-        const element = tvl[i];
-        if(element[0] > req.params.from && element[0] < req.params.to){
-          // turn usd into eth
-          // let eth = await axios.get('https://coins.llama.fi/prices/historical/' + element.date + '/coingecko:ethereum').then((res) => {
-          //     return (element.totalLiquidityUSD / res.data.coins['coingecko:ethereum'].price)
-          // }).catch(err => console.log(err))
-          // item.data.push(eth)
-          //item.data.push(element[1])
-          item.labels.push(new Date(element[0] * 1000))
-        }        
-      }      
-      arr.push(item)
-    })
-  }  
-  res.json(arr);
+  // Init the chain class
+  let c = new Protocol(req.params.x.toLowerCase());
+
+  // Simplify date variables
+  let from = req.params.from;
+  let to = req.params.to;
+
+  // Determine dimension and appropiate action
+  switch (req.params.dimension.toLowerCase()) {
+    case "buyers":
+      let buyers = await c.getBuyers(from, to);
+      res.json(buyers);
+      break;  
+    case "sellers":
+      let sellers = await c.getSellers(from, to);
+      res.json(sellers);
+      break;    
+    default:
+      res.json({ error: "Dimension not found"});
+      break;
+  }
 })
 
 app.post('api/webhook', (req, res) => {

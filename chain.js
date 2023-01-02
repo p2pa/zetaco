@@ -33,7 +33,11 @@ module.exports = function(project){
     },{
         name: 'polygon',
         dimensions: ['Transactions']
-    }]
+    }];
+
+    this.getChains = function(){
+        return this.available;
+    }
     
     this.getTransactions = async function(from, to){
 
