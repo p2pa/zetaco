@@ -36,7 +36,7 @@ module.exports = function(project){
     }];
 
     this.getChains = function(){
-        return this.available;
+        return this.available.sort((a, b) => { return (a.name.toUpperCase() < b.name.toUpperCase()) ? -1 : (a.name.toUpperCase() > b.name.toUpperCase()) ? 1 : 0; });
     }
     
     this.getTransactions = async function(from, to){
