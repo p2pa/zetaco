@@ -1,6 +1,8 @@
 # frontend
 fix date formatting on charts
 if multiple chains or protocol are chosen use longest x (date) labels
+make sure each is different color on the chart
+bug where something is not showing after toggling to table view
 
 # backend
 return available chains/protocol in alphabetical order
