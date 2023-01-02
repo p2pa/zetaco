@@ -229,13 +229,7 @@ export default {
           ['', ''],
           ['Date', '>', '2022-01-01']
         ],       
-        revenue_series: [
-            {   
-                name: 'Aave', 
-                data: [],
-                logarithmic: true,
-                color: 'green',
-            },
+        revenue_series: [           
         ],
         revenue_options: {
           chart: {
@@ -332,6 +326,9 @@ export default {
     toggleTable: function(){
       this.table = !this.table;
     },
+    randomColor: function() {
+      return `rgb(${Math.round(Math.random() * 255)}, ${Math.round(Math.random() * 255)}, ${Math.round(Math.random() * 255)})`;
+    },
     fetchQuery: async function(){
       // set default date to 2022-01-01
       let from = 1640995200;
@@ -371,7 +368,8 @@ export default {
             // 
             let item = {                 
                 name: array[0], 
-                data: []                         
+                data: [],
+                color: this.randomColor()                     
             };
             let labels = []
             for (let z = 0; z < res.data.rows.length; z++) {
@@ -399,7 +397,8 @@ export default {
             // 
             let item = {                 
                 name: array[0], 
-                data: []                         
+                data: [],
+                color: this.randomColor()                      
             };
             let labels = []
             for (let z = 0; z < res.data.rows.length; z++) {
