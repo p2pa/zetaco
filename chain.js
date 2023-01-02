@@ -30,6 +30,9 @@ module.exports = function(project){
     },{
         name: 'arbitrum',
         dimensions: ['Transactions']
+    },{
+        name: 'polygon',
+        dimensions: ['Transactions']
     }]
     
     this.getTransactions = async function(from, to){
@@ -41,6 +44,34 @@ module.exports = function(project){
                     DATE_TRUNC('day', block_timestamp) AS date, status, COUNT(tx_hash) AS txn_count
                         FROM		
                         optimism.core.fact_transactions
+                        WHERE 		
+                        status = 'SUCCESS' AND
+                        block_timestamp >= '2022-01-01'
+                        GROUP BY 	1, 2
+                        order by 1 asc`,
+                    ttlMinutes: 10
+                });
+                var finished = {
+                    columns: ["blockchain", "date", "transactions"],
+                    rows: [],
+                };
+        
+                for (let i = 0; i <  data.rows.length; i++) {
+                    let el =  data.rows[i];
+                    //console.log(el)
+                    let inUnix = this.convertToUnix(el[0]);
+                    if(inUnix > from && inUnix < to){
+                        //console.log("Pushed into finished array: " + el[1] + '/' + el[0] + '/' + el[4])
+                        finished.rows.push([this.chosen, el[0], el[2]])
+                    }            
+                }
+                return finished;
+            case 'polygon':
+                var data = await this.flipside.query.run({
+                    sql: `SELECT		
+                    DATE_TRUNC('day', block_timestamp) AS date, status, COUNT(tx_hash) AS txn_count
+                        FROM		
+                        polygon.core.fact_transactions
                         WHERE 		
                         status = 'SUCCESS' AND
                         block_timestamp >= '2022-01-01'
