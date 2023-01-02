@@ -311,7 +311,7 @@ export default {
       this.inputsAmount += 1;
       if(what == 'filter'){
         this.inputTypes.push(what)
-        this.inputValues.push(['', '', ''])
+        this.inputValues.push(['Date', '>', '2022-01-01'])
       } else {
         if(this.inputTypes[this.inputTypes.length - 1] == 'filter'){
           this.inputTypes.splice(this.inputTypes.length - 2, 0, what)
