@@ -1,6 +1,5 @@
 const express = require('express');
 const cors = require('cors')
-const axios = require('axios');
 
 const Protocol = require('./protocol.js');
 const Chain = require('./chain.js');
@@ -12,7 +11,6 @@ app.use(express.json()); // to convert the request into JSON
 
 const port = 3000;
 
-//the rest of your express routes.
 app.listen(port, () => {
   console.log(`Listening on port ${port}`)
 })
