@@ -19,10 +19,8 @@ app.listen(port, () => {
 // Chain endpoints
 //
 
-app.get('/getChains', (req, res) => {
-  let c = new Chain('all');
-  let result = c.getChains();
-  res.json(result)
+app.get('/api/getChains', (req, res) => {
+  res.json(new Chain('all').getChains());
 })
 
 app.get('/api/chains/:x/:dimension/:from/:to', async (req, res) => {
@@ -61,7 +59,7 @@ app.get('/api/chains/:x/:dimension/:from/:to', async (req, res) => {
 // Protocol endpoints
 //
 
-app.get('/getProtocols', (req, res) => {
+app.get('/api/getProtocols', (req, res) => {
   let p = new Protocol('all');
   let result = p.getProtocols();
   res.json(result)

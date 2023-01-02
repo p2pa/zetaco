@@ -36,7 +36,7 @@ module.exports = function(project){
     }];
 
     this.getChains = function(){
-        return this.available.sort((a, b) => { return (a.name.toUpperCase() < b.name.toUpperCase()) ? -1 : (a.name.toUpperCase() > b.name.toUpperCase()) ? 1 : 0; });
+        return this.available.sort((a, b) => a.name.localeCompare(b.name))        
     }
     
     this.getTransactions = async function(from, to){
@@ -159,10 +159,6 @@ module.exports = function(project){
             ttlMinutes: 10,
         });
         return data;
-    }
-
-    this.getChains = function(){
-        return this.available;
     }
 
     this.getUniqueUsers = async function(from,to){

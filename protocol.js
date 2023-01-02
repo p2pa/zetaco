@@ -32,7 +32,7 @@ module.exports = function(project){
     }]    
 
     this.getProtocols = function(){
-        return this.available;
+        return this.available.sort((a, b) => a.name.localeCompare(b.name))   
     }
     
     this.getData = async function(from, to, dimension){
