@@ -1,9 +1,6 @@
 const express = require('express');
 const cors = require('cors')
-const Moralis = require("moralis").default;
 const axios = require('axios');
-const { EvmChain } = require("@moralisweb3/common-evm-utils");
-require('./streams')();
 
 const Protocol = require('./protocol.js');
 const Chain = require('./chain.js');
@@ -20,17 +17,9 @@ app.listen(port, () => {
   console.log(`Listening on port ${port}`)
 })
 
-app.get('/test', async (req, res) => {
-  let c = new Chain('ethereum');
-  let result = await c.getUniqueUsers();
-  res.json(result)
-});
-
-app.get('/getProtocols', (req, res) => {
-  let p = new Protocol('all');
-  let result = p.getProtocols();
-  res.json(result)
-})
+//
+// Chain endpoints
+//
 
 app.get('/getChains', (req, res) => {
   let c = new Chain('all');
@@ -69,7 +58,17 @@ app.get('/api/chains/:x/:dimension/:from/:to', async (req, res) => {
   }
 })
 
-app.get('/api/:protocol/:x/:dimension/:from/:to', async (req, res) => {
+//
+// Protocol endpoints
+//
+
+app.get('/getProtocols', (req, res) => {
+  let p = new Protocol('all');
+  let result = p.getProtocols();
+  res.json(result)
+})
+
+app.get('/api/protocol/:x/:dimension/:from/:to', async (req, res) => {
   console.log("Received a request for the api/protocol/" + req.params.x + '/' + req.params.dimension + '/' + req.params.from + '/' + req.params.to)
   // Log the request  
 
@@ -94,9 +93,4 @@ app.get('/api/:protocol/:x/:dimension/:from/:to', async (req, res) => {
       res.json({ error: "Dimension not found"});
       break;
   }
-})
-
-app.post('api/webhook', (req, res) => {
-  // webhooks enter here  
-  res.sendStatus(200);    
 })
