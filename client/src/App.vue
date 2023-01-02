@@ -361,7 +361,7 @@ export default {
           let array = this.inputValues[index];
           // if type == revenue do bar chart         
 
-          let url = 'http://localhost:3000/api/protocol/' + array[0] + '/' + array[1] + '/' + from + '/' + to ;      
+          let url = 'http://localhost:3000/api/protocol/' + array[0] + '/' + array[1].replace(/\s+/, "") + '/' + from + '/' + to ;      
 
           await axios
           .get(url)
