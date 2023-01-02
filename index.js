@@ -38,6 +38,7 @@ app.get('/api/chains/:x/:dimension/:from/:to', async (req, res) => {
   let from = req.params.from;
   let to = req.params.to;
 
+  
   // Determine dimension and appropiate action
   switch (req.params.dimension.toLowerCase()) {
     case "volume":
@@ -73,25 +74,12 @@ app.get('/api/protocols/:x/:dimension/:from/:to', async (req, res) => {
   // Log the request  
 
   // Init the chain class
-  let c = new Protocol(req.params.x.toLowerCase());
+  let p = new Protocol(req.params.x.toLowerCase());
 
   // Simplify date variables
   let from = req.params.from;
   let to = req.params.to;
 
-  // Determine dimension and appropiate action
-  switch (req.params.dimension.toLowerCase()) {
-    case "buyers":
-      res.json(await c.getBuyers(from, to));
-      break;  
-    case "sellers":
-      res.json(await c.getSellers(from, to));
-      break; 
-    case "sales":
-      res.json(await c.getSales(from, to));
-      break;    
-    default:
-      res.json({ error: "Dimension not found"});
-      break;
-  }
+  // Get data and return in JSON format
+  res.json(await p.getData(from, to, req.params.dimension.toLowerCase()));  
 })

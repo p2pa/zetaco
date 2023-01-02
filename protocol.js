@@ -22,87 +22,73 @@ module.exports = function(project){
 
     this.available = [{
         name: 'blur',
-        dimensions: ['Buyers', 'Sellers', 'Sales count']
+        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties']
     },{
         name: 'opensea',
-        dimensions: ['Buyers', 'Sellers', 'Sales count']
+        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties']
     },{
         name: 'x2y2',
-        dimensions: ['Buyers', 'Sellers', 'Sales count']
+        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties']
     }]    
 
     this.getProtocols = function(){
         return this.available;
     }
     
-    this.getData = async function(from, to, protocol, dimension){
-        if(dimension == 'buyer' || dimension == 'seller'){
-            var data = await this.flipside.query.run({
-                sql: `select
-                        DATE_TRUNC('day', block_timestamp) AS date,
-                        count(distinct ${dimension == 'buyers' ? 'buyer_address' : dimension == 'sellers' ? 'seller_address' : ''})
-                    from
-                        ethereum.core.ez_nft_sales
-                    where
-                        platform_name = '${protocol}'
-                        and block_timestamp >= '2022-01-01'
-                        and PRICE_USD is not null
-                    group by
-                        1
-                    order by
-                        1`,
-                ttlMinutes: 10
-            });
-    
-            var finished = {
-                columns: ["blockchain", "date", dimension],
-                rows: [],
-            };
-    
-            for (let i = 0; i <  data.rows.length; i++) {
-                let el =  data.rows[i];
-                //console.log(el)
-                let inUnix = this.convertToUnix(el[0]);
-                if(inUnix > from && inUnix < to){
-                    //console.log("Pushed into finished array: " + el[1] + '/' + el[0] + '/' + el[4])
-                    finished.rows.push([this.chosen, el[0], el[1]])
-                }            
-            }
-            return finished; 
-        }    
-        if(dimension == 'sales'){
-            var data = await this.flipside.query.run({
-                sql: `select
-                        DATE_TRUNC('day', block_timestamp) AS date,
-                        count(Distinct tx_hash) as sales
-                    from
-                        ethereum.core.ez_nft_sales
-                    where
-                        platform_name = '${protocol}'
-                        and date >= '2022-01-01'
-                    group by
-                        1
-                    order by
-                        1`,
-                ttlMinutes: 10
-            });
-    
-            var finished = {
-                columns: ["blockchain", "date", dimension],
-                rows: [],
-            };
-    
-            for (let i = 0; i <  data.rows.length; i++) {
-                let el =  data.rows[i];
-                //console.log(el)
-                let inUnix = this.convertToUnix(el[0]);
-                if(inUnix > from && inUnix < to){
-                    //console.log("Pushed into finished array: " + el[1] + '/' + el[0] + '/' + el[4])
-                    finished.rows.push([this.chosen, el[0], el[1]])
-                }            
-            }
-            return finished; 
-        }    
+    this.getData = async function(from, to, dimension){
+        let column = ''
+        switch (dimension) {
+            case 'buyers':
+                column = 'count(distinct buyer_address) as buyers';                
+                break;        
+            case 'sellers':
+                column = 'count(distinct seller_address) as sellers';
+                break;
+            case 'salescount':
+                column = 'count(Distinct tx_hash) as sales count';
+                break;
+            case 'sales':
+                column = 'ROUND(sum(PRICE_USD)) as sales';
+                break;
+            case 'royalties':
+                column = 'Round(Sum(creator_fee_usd)) as royalties';
+                break;
+            default:
+                break;
+        }
+
+        var data = await this.flipside.query.run({
+            sql: `select
+                    DATE_TRUNC('day', block_timestamp) AS date,
+                    ${column}
+                from
+                    ethereum.core.ez_nft_sales
+                where
+                    platform_name = '${this.chosen}'
+                    and block_timestamp >= '2022-01-01'
+                    and PRICE_USD is not null
+                group by
+                    1
+                order by
+                    1`,
+            ttlMinutes: 10
+        });
+
+        var finished = {
+            columns: ["blockchain", "date", dimension],
+            rows: [],
+        };
+
+        for (let i = 0; i <  data.rows.length; i++) {
+            let el =  data.rows[i];
+            //console.log(el)
+            let inUnix = this.convertToUnix(el[0]);
+            if(inUnix > from && inUnix < to){
+                //console.log("Pushed into finished array: " + el[1] + '/' + el[0] + '/' + el[4])
+                finished.rows.push([this.chosen, el[0], el[1]])
+            }            
+        }
+        return finished; 
     }
 
     this.getBuyers = async function(from, to){
