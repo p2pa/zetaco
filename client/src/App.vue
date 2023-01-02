@@ -20,6 +20,7 @@
                                       <multiselect v-if="i == 0" v-model="inputValues[index - 1][i]" :options="options.protocol" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
                                       <multiselect v-if="i == 1" v-model="inputValues[index - 1][i]" :options="options.what" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>                                    
                                     </div>
+                                    <span class="input-group-text" id="basic-addon1" @click="removeInput(index - 1)">X</span>
                                 </div>
                                 <div class="input-group mb-4" v-if="inputTypes[index - 1] == 'chain'">
                                     <span class="input-group-text" id="basic-addon1">{{index}}</span>
@@ -28,6 +29,7 @@
                                       <multiselect v-if="i == 0" v-model="inputValues[index - 1][0]" :options="options.chain.x" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
                                       <multiselect v-if="i == 1" v-model="inputValues[index - 1][1]" :options="inputValues[index - 1][0] == '' ? '' : options.chain.dimension[inputValues[index - 1][0]]" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>                                    
                                     </div>
+                                    <span style="cursor:pointer;" class="input-group-text" id="basic-addon1" @click="removeInput(index - 1)">X</span>
                                 </div>
                                 <div class="input-group mb-4" v-if="inputTypes[index - 1] == 'filter'">
                                     <span class="input-group-text" id="basic-addon1">{{index}}</span>
@@ -36,27 +38,20 @@
                                       <span class="badge badge-secondary me-1">
                                         {{ condition }}
                                       </span>
-                                    </span>                              
+                                    </span>    
+                                    <span style="cursor:pointer;" class="input-group-text" id="basic-addon1" @click="removeInput(index - 1)">X</span>                          
                                 </div>
                             </div>
                             <div v-html="printOutputs"></div>                      
 
                             <br>
-                            <!-- <div class="row mb-12">
-                              <label class="col-sm-1 col-form-label col-form-label-sm" for="colFormLabelSm">+</label>
-                              <div class="col-sm-2">
-                                  <span class="btn btn-info me-1">Rows</span>
-                              </div>
-                              <div class="col-sm-2">
-                                  <span class="btn btn-info me-1">Summarize</span>
-                              </div>
-                              <div class="col-sm-2">
-                                  <span class="btn btn-info me-1">Columns</span>
-                              </div>
-                              <div class="col-sm-2">
-                                  <span class="btn btn-info me-1">Join table</span>
-                              </div>
-                            </div>                             -->
+                            <div class="row mb-12">
+                              <div class="col-sm-12">
+                                  <span class="btn btn-info me-1" @click="addInput('chain')">+ Chain</span>
+                                  <span class="btn btn-info me-1" @click="addInput('protocol')">+ Protocol</span>
+                                  <span class="btn btn-info me-1" @click="addInput('filter')">+ Filter</span>
+                              </div>                              
+                            </div>                            
                         </div>
                     </div>
                 </div>
@@ -308,6 +303,16 @@ export default {
       }
   },  
   methods: {
+    addInput: function(what){
+      this.inputsAmount += 1;
+      this.inputTypes.push(what)
+      this.inputValues.push(['', ''])
+    },
+    removeInput: function(index){
+      this.inputsAmount -= 1;
+      this.inputTypes.splice(index, 1)
+      this.inputValues.splice(index, 1)
+    },
     toggleTable: function(){
       this.table = !this.table;
     },
@@ -319,7 +324,7 @@ export default {
       // check if all values contain valid entry      
       
       // if inputTypes contains a filter
-      if(this.inputTypes.indexOf('filter')){
+      if(this.inputTypes.indexOf('filter') !== -1){
         this.inputValues[this.inputTypes.indexOf('filter')].forEach(el => {
             let condition = el.split(" ");
             if(condition[0] == 'Date'){
@@ -328,6 +333,9 @@ export default {
               }
             }
           });
+      } else {
+        // set default date to 2022-01-01
+        from = 1640995200
       }
 
       let dataArray = []
