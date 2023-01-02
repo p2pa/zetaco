@@ -1,0 +1,6 @@
+# frontend
+fix date formatting on charts
+if multiple chains or protocol are chosen use longest x (date) labels
+
+# backend
+return available chains/protocol in alphabetical order
