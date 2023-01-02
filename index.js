@@ -68,8 +68,8 @@ app.get('/getProtocols', (req, res) => {
   res.json(result)
 })
 
-app.get('/api/protocol/:x/:dimension/:from/:to', async (req, res) => {
-  console.log("Received a request for the api/protocol/" + req.params.x + '/' + req.params.dimension + '/' + req.params.from + '/' + req.params.to)
+app.get('/api/protocols/:x/:dimension/:from/:to', async (req, res) => {
+  console.log("Received a request for the api/protocols/" + req.params.x + '/' + req.params.dimension + '/' + req.params.from + '/' + req.params.to)
   // Log the request  
 
   // Init the chain class
@@ -82,12 +82,13 @@ app.get('/api/protocol/:x/:dimension/:from/:to', async (req, res) => {
   // Determine dimension and appropiate action
   switch (req.params.dimension.toLowerCase()) {
     case "buyers":
-      let buyers = await c.getBuyers(from, to);
-      res.json(buyers);
+      res.json(await c.getBuyers(from, to));
       break;  
     case "sellers":
-      let sellers = await c.getSellers(from, to);
-      res.json(sellers);
+      res.json(await c.getSellers(from, to));
+      break; 
+    case "sales":
+      res.json(await c.getSales(from, to));
       break;    
     default:
       res.json({ error: "Dimension not found"});
