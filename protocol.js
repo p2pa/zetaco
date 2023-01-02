@@ -22,13 +22,13 @@ module.exports = function(project){
 
     this.available = [{
         name: 'blur',
-        dimensions: ['Buyers', 'Sellers', 'Sales']
+        dimensions: ['Buyers', 'Sellers', 'Sales count']
     },{
         name: 'opensea',
-        dimensions: ['Buyers', 'Sellers', 'Sales']
+        dimensions: ['Buyers', 'Sellers', 'Sales count']
     },{
         name: 'x2y2',
-        dimensions: ['Buyers', 'Sellers', 'Sales']
+        dimensions: ['Buyers', 'Sellers', 'Sales count']
     }]    
 
     this.getProtocols = function(){
