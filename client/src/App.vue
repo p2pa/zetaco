@@ -419,7 +419,7 @@ export default {
   },  
   async beforeMount(){
     // get chains
-    var url = 'http://localhost:3000/getChains'; 
+    var url = 'http://localhost:3000/api/getChains'; 
     var nameArray = [];
     var dimensionArray = [];
     await axios
@@ -437,7 +437,7 @@ export default {
     console.log(this.options)
 
     // get protocols
-    url = 'http://localhost:3000/getProtocols'; 
+    url = 'http://localhost:3000/api/getProtocols'; 
     nameArray = [];
     dimensionArray = [];
     await axios
