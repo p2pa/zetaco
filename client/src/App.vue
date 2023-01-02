@@ -331,7 +331,8 @@ export default {
       this.table = !this.table;
     },
     fetchQuery: async function(){
-      let from;
+      // set default date to 2022-01-01
+      let from = 1640995200;
       let to = parseInt((new Date().getTime() / 1000).toFixed(0)); 
 
       // to do
@@ -339,15 +340,16 @@ export default {
       
       // if inputTypes contains a filter
       if(this.inputTypes.indexOf('filter') !== -1){
-        this.inputValues[this.inputTypes.indexOf('filter')].forEach((el, index) => {
+        this.inputValues[this.inputTypes.indexOf('filter')].forEach((el, index, arr) => {
             if(index == 2){
-              from = parseInt(new Date(el).getTime() / 1000);
+              if(arr[1] == '>'){
+                from = parseInt(new Date(el).getTime() / 1000);
+              } else {
+                to = parseInt(new Date(el).getTime() / 1000);              
+              }              
             }            
           });
-      } else {
-        // set default date to 2022-01-01
-        from = 1640995200
-      }
+      } 
 
       let dataArray = []
 
