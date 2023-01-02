@@ -17,8 +17,8 @@
                                     <span class="input-group-text" id="basic-addon1">{{index}}</span>
                                     <span class="input-group-text" id="basic-addon1">{{ inputTypes[index - 1] }}</span>
                                     <div class="form-control" v-for="values, i in inputValues[index - 1]" :key="i">
-                                      <multiselect v-if="i == 0" v-model="inputValues[index - 1][i]" :options="options.protocol" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
-                                      <multiselect v-if="i == 1" v-model="inputValues[index - 1][i]" :options="options.what" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>                                    
+                                      <multiselect v-if="i == 0" v-model="inputValues[index - 1][i]" :options="options.protocol.x" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
+                                      <multiselect v-if="i == 1" v-model="inputValues[index - 1][i]" :options="inputValues[index - 1][0] == '' ? '' : options.protocol.dimension[inputValues[index - 1][0]]" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>                                    
                                     </div>
                                     <span class="input-group-text" id="basic-addon1" @click="removeInput(index - 1)">X</span>
                                 </div>
@@ -212,16 +212,18 @@ export default {
         chartType: "area",
         inputsAmount: 2,
         inputTypes: [
-          'chain',
+          'protocol',
           'filter'
         ],
         options:{
             chain: {
               x: [],
               dimension: []
-            },                      
-            protocol: ['Aave', 'Compound', 'Convex-Finance', 'Curve', 'JustLend', 'Lido', 'MakerDAO', 'PancakeSwap', 'Uniswap'],
-            what: ['Volume', 'Unique users'] //'Volume', 'Transaction amount', 'Unique users', 'Average Transaction Volume'
+            },
+            protocol: {
+              x: [],
+              dimension: []
+            } 
         },        
         inputValues: [
           ['', ''],
@@ -359,16 +361,27 @@ export default {
           let array = this.inputValues[index];
           // if type == revenue do bar chart         
 
-          let url = 'http://localhost:3000/api/' + array[0] + '/' + array[1] + '/' + from + '/' + to ;      
+          let url = 'http://localhost:3000/api/protocol/' + array[0] + '/' + array[1] + '/' + from + '/' + to ;      
 
           await axios
           .get(url)
           .then((res) => {
-            dataArray.push({                 
+            // fill table data
+            this.tableData.push(res.data);
+            // 
+            let item = {                 
                 name: array[0], 
-                data: res.data[0].data                         
-            })
-            this.revenue_options.labels = res.data[0].labels
+                data: []                         
+            };
+            let labels = []
+            for (let z = 0; z < res.data.rows.length; z++) {
+              let el = res.data.rows[z];
+              
+              labels.push(el[1])
+              item.data.push(el[2])
+            }
+            dataArray.push(item)
+            this.revenue_options.labels = labels
           })   
         } 
         
@@ -406,9 +419,9 @@ export default {
   },  
   async beforeMount(){
     // get chains
-    let url = 'http://localhost:3000/getChains'; 
-    let nameArray = [];
-    let dimensionArray = [];
+    var url = 'http://localhost:3000/getChains'; 
+    var nameArray = [];
+    var dimensionArray = [];
     await axios
     .get(url)
     .then((res) => {
@@ -421,6 +434,24 @@ export default {
     })   
     this.options.chain.x = nameArray;
     this.options.chain.dimension = dimensionArray;
+    console.log(this.options)
+
+    // get protocols
+    url = 'http://localhost:3000/getProtocols'; 
+    nameArray = [];
+    dimensionArray = [];
+    await axios
+    .get(url)
+    .then((res) => {
+      let chains = res.data;
+      for (let z = 0; z < chains.length; z++) {
+        let el = chains[z];
+        nameArray.push(el.name)
+        dimensionArray[el.name] = el.dimensions;
+      }
+    })   
+    this.options.protocol.x = nameArray;
+    this.options.protocol.dimension = dimensionArray;
     console.log(this.options)
   },
   
