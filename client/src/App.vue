@@ -34,10 +34,10 @@
                                 <div class="input-group mb-4" v-if="inputTypes[index - 1] == 'filter'">
                                     <span class="input-group-text" id="basic-addon1">{{index}}</span>
                                     <span class="input-group-text" id="basic-addon1">{{ inputTypes[index - 1] }}</span>
-                                    <span v-for="condition, i in inputValues[index - 1]" class="form-control" :key="i">
-                                      <span class="badge badge-secondary me-1">
-                                        {{ condition }}
-                                      </span>
+                                    <span v-for="condition, i in inputValues[index - 1]" class="form-control" :key="i">                                  
+                                      <multiselect v-if="i == 0" v-model="inputValues[index - 1][0]" :options="['Date']" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
+                                      <multiselect v-if="i == 1" v-model="inputValues[index - 1][1]" :options="['>', '<']" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
+                                      <flat-pickr style="cursor:pointer;padding-top:10px; padding-bottom:10px; background: #1b2e4b;border-color: #3b3f5c;" v-if="i == 2" v-model="inputValues[index - 1][2]" class="form-control flatpickr active"></flat-pickr>
                                     </span>    
                                     <span style="cursor:pointer;" class="input-group-text" id="basic-addon1" @click="removeInput(index - 1)">X</span>                          
                                 </div>
@@ -191,6 +191,9 @@ import '@/assets/sass/widgets/widgets.scss';
 import ApexChart from 'vue3-apexcharts';
 import Multiselect from '@suadelabs/vue3-multiselect';
 import '@suadelabs/vue3-multiselect/dist/vue3-multiselect.css';
+import flatPickr from 'vue-flatpickr-component';
+import 'flatpickr/dist/flatpickr.css';
+
 import AppHeader from '@/components/header.vue';
 import axios from 'axios'
 
@@ -199,7 +202,8 @@ export default {
   components: {
     AppHeader,
     Multiselect,
-    ApexChart
+    ApexChart,
+    flatPickr
   },
   data: function() {
     return {        
@@ -221,7 +225,7 @@ export default {
         },        
         inputValues: [
           ['', ''],
-          ['Date >= 2022-01-01']
+          ['Date', '>', '2022-01-01']
         ],       
         revenue_series: [
             {   
@@ -305,8 +309,18 @@ export default {
   methods: {
     addInput: function(what){
       this.inputsAmount += 1;
-      this.inputTypes.push(what)
-      this.inputValues.push(['', ''])
+      if(what == 'filter'){
+        this.inputTypes.push(what)
+        this.inputValues.push(['', '', ''])
+      } else {
+        if(this.inputTypes[this.inputTypes.length - 1] == 'filter'){
+          this.inputTypes.splice(this.inputTypes.length - 2, 0, what)
+          this.inputValues.splice(this.inputTypes.length - 2, 0, ['', ''])
+        } else {
+          this.inputTypes.push(what)
+          this.inputValues.push(['', ''])
+        }        
+      }      
     },
     removeInput: function(index){
       this.inputsAmount -= 1;
@@ -325,13 +339,10 @@ export default {
       
       // if inputTypes contains a filter
       if(this.inputTypes.indexOf('filter') !== -1){
-        this.inputValues[this.inputTypes.indexOf('filter')].forEach(el => {
-            let condition = el.split(" ");
-            if(condition[0] == 'Date'){
-              if(condition[1] == '>='){
-                from = parseInt(new Date(condition[2]).getTime() / 1000);
-              }
-            }
+        this.inputValues[this.inputTypes.indexOf('filter')].forEach((el, index) => {
+            if(index == 2){
+              from = parseInt(new Date(el).getTime() / 1000);
+            }            
           });
       } else {
         // set default date to 2022-01-01
