@@ -25,10 +25,13 @@ module.exports = function(project){
         dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties']
     },{
         name: 'opensea',
-        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties']
+        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Revenue', 'Earnings']
     },{
         name: 'x2y2',
-        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties']
+        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Revenue']
+    },{
+        name: 'looksrare',
+        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Revenue']
     }]    
 
     this.getProtocols = function(){
@@ -52,6 +55,12 @@ module.exports = function(project){
                 break;
             case 'royalties':
                 column = 'Round(Sum(creator_fee_usd)) as royalties';
+                break;
+            case 'revenue':
+                column = `sum(platform_fee_usd) as revenue`;
+                break;
+            case 'earnings':
+                column = 'sum(platform_fee_usd) as earnings';
                 break;
             default:
                 break;
