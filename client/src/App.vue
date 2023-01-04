@@ -20,7 +20,7 @@
                                       <multiselect v-if="i == 0" v-model="inputValues[index - 1][i]" :options="options.protocol.x" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
                                       <multiselect v-if="i == 1" v-model="inputValues[index - 1][i]" :options="inputValues[index - 1][0] == '' ? '' : options.protocol.dimension[inputValues[index - 1][0]]" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>                                    
                                     </div>
-                                    <span class="input-group-text" id="basic-addon1" @click="removeInput(index - 1)">X</span>
+                                    <span style="cursor:pointer;" class="input-group-text" id="basic-addon1" @click="removeInput(index - 1)">X</span>
                                 </div>
                                 <div class="input-group mb-4" v-if="inputTypes[index - 1] == 'chain'">
                                     <span class="input-group-text" id="basic-addon1">{{index}}</span>
@@ -37,7 +37,7 @@
                                     <span v-for="condition, i in inputValues[index - 1]" class="form-control" :key="i">                                  
                                       <multiselect v-if="i == 0" v-model="inputValues[index - 1][0]" :options="['Date']" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
                                       <multiselect v-if="i == 1" v-model="inputValues[index - 1][1]" :options="['>', '<']" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
-                                      <flat-pickr style="cursor:pointer;padding-top:10px; padding-bottom:10px; background: #1b2e4b;border-color: #3b3f5c;" v-if="i == 2" v-model="inputValues[index - 1][2]" class="form-control flatpickr active"></flat-pickr>
+                                      <flat-pickr style="cursor:pointer;padding-top:10px; padding-bottom:10px; background: #292929;border-color: #555555;" v-if="i == 2" v-model="inputValues[index - 1][2]" class="form-control flatpickr active"></flat-pickr>
                                     </span>    
                                     <span style="cursor:pointer;" class="input-group-text" id="basic-addon1" @click="removeInput(index - 1)">X</span>                          
                                 </div>
@@ -373,7 +373,7 @@ export default {
             };
             let labels = []
             for (let z = 0; z < res.data.rows.length; z++) {
-              let el = res.data.rows[z];
+              let el = res.data.rows[z];              
               
               labels.push(el[1])
               item.data.push(el[2])
@@ -456,3 +456,44 @@ export default {
   
 }
 </script>
+
+<style>
+  html, body.dark, .dark .navbar, .dark .widget, .dark .widget-content {
+    background-color: #292929 !important;
+    border:none;
+  }
+
+  #basic-addon1, .nav-link {
+    color:#dcdcdc;
+  }
+
+  .dark .input-group-text, .dark .form-control  {
+    background-color: #292929 !important;
+    border: 1px solid #555555;
+    color:#dcdcdc;
+  }
+
+  .dark .multiselect__input {
+    background-color: #292929 !important;
+  }
+
+  .dark .multiselect__tags, .dark .multiselect__single, .dark .form-control[readonly], .dark .multiselect__content-wrapper {
+    background-color: #292929 !important;    
+    color:#dcdcdc !important;
+  }
+
+  .dark .multiselect__tags {
+    border-radius:5px;
+    border: 1px solid #555555;
+    color:#dcdcdc;
+  }
+
+  .dark .header-container {
+    border-bottom:none;
+  }
+
+  .dark .multiselect__placeholder  {
+    color:#dcdcdc;
+  }
+            
+</style>
