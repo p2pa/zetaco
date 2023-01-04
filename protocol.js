@@ -22,16 +22,20 @@ module.exports = function(project){
 
     this.available = [{
         name: 'blur',
-        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties']
+        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Users'],
+        category: 'NFT Exchange',
     },{
         name: 'opensea',
-        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Revenue', 'Earnings']
+        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Revenue', 'Earnings', 'Users'],
+        category: 'NFT Exchange'
     },{
         name: 'x2y2',
-        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Revenue']
+        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Revenue', 'Users'],
+        category: 'NFT Exchange',
     },{
         name: 'looksrare',
-        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Revenue']
+        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Revenue', 'Users'],
+        category: 'NFT Exchange',
     }]    
 
     this.getProtocols = function(){
@@ -40,6 +44,8 @@ module.exports = function(project){
     
     this.getData = async function(from, to, dimension){
         let column = ''
+        let alreadyRun = false;
+
         switch (dimension) {
             case 'buyers':
                 column = 'count(distinct buyer_address) as buyers';                
@@ -62,41 +68,90 @@ module.exports = function(project){
             case 'earnings':
                 column = 'sum(platform_fee_usd) as earnings';
                 break;
+            case 'users':
+                alreadyRun = true;
+                var data = await this.flipside.query.run({
+                    sql: `SELECT
+                            day,
+                            count(distinct addresses) AS users
+                        FROM
+                            (
+                            SELECT
+                                block_timestamp::Date as day,
+                                buyer_address as addresses
+                            FROM
+                                ethereum.core.ez_nft_sales
+                            WHERE
+                                platform_name = '${this.chosen}'
+                                and price_usd > 0
+                            UNION ALL
+                            SELECT
+                                block_timestamp::Date as day,
+                                seller_address as addresses
+                            FROM
+                                ethereum.core.ez_nft_sales
+                            WHERE
+                                platform_name = '${this.chosen}'
+                                and price_usd > 0
+                            )
+                        GROUP BY
+                            1
+                        ORDER BY
+                            1`,
+                    ttlMinutes: 10
+                });
             default:
                 break;
         }
 
-        var data = await this.flipside.query.run({
-            sql: `select
-                    DATE_TRUNC('day', block_timestamp) AS date,
-                    ${column}
-                from
-                    ethereum.core.ez_nft_sales
-                where
-                    platform_name = '${this.chosen}'
-                    and block_timestamp >= '2022-01-01'
-                    and PRICE_USD is not null
-                group by
-                    1
-                order by
-                    1`,
-            ttlMinutes: 10
-        });
+        if(!alreadyRun){
+            var data = await this.flipside.query.run({
+                sql: `select
+                        DATE_TRUNC('day', block_timestamp) AS date,
+                        ${column}
+                    from
+                        ethereum.core.ez_nft_sales
+                    where
+                        platform_name = '${this.chosen}'
+                        and block_timestamp >= '2022-01-01'
+                        and PRICE_USD is not null
+                    group by
+                        1
+                    order by
+                        1`,
+                ttlMinutes: 10
+            });
+        }        
 
         var finished = {
             columns: ["blockchain", "date", dimension],
             rows: [],
         };
 
+        
+
         for (let i = 0; i <  data.rows.length; i++) {
             let el =  data.rows[i];
-            //console.log(el)
-            let inUnix = this.convertToUnix(el[0]);
+            let inUnix = this.convertToUnix(el[0]);            
             if(inUnix > from && inUnix < to){
+                let difference = to - from;
+                let days = Math.floor(difference / 60 / 60 / 24);
+
+                if(i == 0){
+                    if(data.rows.length < days){            
+                        console.log("Data is incomplete")
+                        let daysDifference = (days - data.rows.length);
+                        for (let x = 1; x < daysDifference; x++) {                
+                            finished.rows.push([this.chosen, this.convertToDate(parseInt(from) + (86400 * x)), 0])                
+                        }
+                    }
+                }                
                 //console.log("Pushed into finished array: " + el[1] + '/' + el[0] + '/' + el[4])
                 finished.rows.push([this.chosen, el[0], el[1]])
             }            
         }
+        console.log("Length before data incompletion: " + data.rows.length)
+        console.log("Finished rows length is now: " + finished.rows.length)
         return finished; 
     }
 
@@ -116,5 +171,10 @@ module.exports = function(project){
         let newDate = parseInt((new Date(date).getTime() / 1000).toFixed(0));
         //console.log(date + ' becomes ' + newDate)
         return newDate;
+    }
+
+    this.convertToDate = function(unix){
+        let newDate = new Date(unix * 1000);
+        return newDate.getFullYear() + '-' + (newDate.getMonth() + 1) + '-' + newDate.getDate();
     }
 }
