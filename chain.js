@@ -121,6 +121,20 @@ module.exports = function(project){
                     //console.log(el)
                     let inUnix = this.convertToUnix(el[0]);
                     if(inUnix > from && inUnix < to){
+                        let difference = to - from;
+                        let days = Math.floor(difference / 60 / 60 / 24);
+
+                        if(i == 0){
+                            console.log(data.rows.length)
+                            console.log(days)
+                            if(data.rows.length < days){            
+                                console.log("Data is incomplete")
+                                let daysDifference = (days - data.rows.length);
+                                for (let x = 1; x < daysDifference; x++) {                
+                                    finished.rows.push([this.chosen, this.convertToDate(parseInt(from) + (86400 * x)), 0])                
+                                }
+                            }
+                        }     
                         //console.log("Pushed into finished array: " + el[1] + '/' + el[0] + '/' + el[4])
                         finished.rows.push([this.chosen, el[0], el[2]])
                     }            
@@ -131,17 +145,6 @@ module.exports = function(project){
       
     }
     
-
-    this.getContractAddress = function(){
-        let addr = ''
-        for (let i = 0; i < this.available.length; i++) {
-            let el = this.available[i];
-            if(el.name == this.chosen){
-                addr = el.contract
-            }
-        }
-        return addr
-    }
 
     this.getData = async function(){
         let data = await this.flipside.query.run({
@@ -216,12 +219,29 @@ module.exports = function(project){
         for (let i = 0; i <  data.rows.length; i++) {
             let el =  data.rows[i];
             //console.log(el)
-            let inUnix = this.convertToUnix(el[0]);
-            if(inUnix > from && inUnix < to){
+            let inUnix = this.convertToUnix(el[0]);  
+            
+            if(inUnix > from && inUnix < to){                
+                let difference = to - from;
+                let days = Math.floor(difference / 60 / 60 / 24);
+
+                if(i == 0){
+                    console.log(data.rows.length)
+                    console.log(days)
+                    if(data.rows.length < days){            
+                        console.log("Data is incomplete")
+                        let daysDifference = (days - data.rows.length);
+                        for (let x = 1; x < daysDifference; x++) {                
+                            finished.rows.push([this.chosen, this.convertToDate(parseInt(from) + (86400 * x)), 0])                
+                        }
+                    }
+                }       
                 //console.log("Pushed into finished array: " + el[1] + '/' + el[0] + '/' + el[4])
                 finished.rows.push([el[1], el[0], el[4]])
             }            
         }
+        console.log("Length before data incompletion: " + data.rows.length)
+        console.log("Finished rows length is now: " + finished.rows.length)
         return finished;
     }
 
@@ -232,4 +252,8 @@ module.exports = function(project){
         return newDate;
     }
 
+    this.convertToDate = function(unix){
+        let newDate = new Date(unix * 1000);
+        return newDate.getFullYear() + '-' + (newDate.getMonth() + 1) + '-' + newDate.getDate();
+    }
 }

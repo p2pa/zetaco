@@ -126,9 +126,7 @@ module.exports = function(project){
         var finished = {
             columns: ["blockchain", "date", dimension],
             rows: [],
-        };
-
-        
+        };        
 
         for (let i = 0; i <  data.rows.length; i++) {
             let el =  data.rows[i];
