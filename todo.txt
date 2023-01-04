@@ -1,12 +1,13 @@
 # frontend
 fix date formatting on charts
 if multiple chains or protocol are chosen use longest x (date) labels
+if data is incomplete, fill in the incomplete data
 m̶a̶k̶e̶ ̶s̶u̶r̶e̶ ̶e̶a̶c̶h̶ ̶i̶s̶ ̶d̶i̶f̶f̶e̶r̶e̶n̶t̶ ̶c̶o̶l̶o̶r̶ ̶o̶n̶ ̶t̶h̶e̶ ̶c̶h̶a̶r̶t̶
 bug where something is not showing after toggling to table view
 turn chart and query builder into one card
 possibility of reducing the size of card above (3, 4, 6, 12 in width)
 possibility of adding more cards i.e querybuilder+charts to the dashboard
-connect using metamask
+connect using metamask and verify if shroomnft exists on connected metamask
 
 # backend
 r̶e̶t̶u̶r̶n̶ ̶a̶v̶a̶i̶l̶a̶b̶l̶e̶ ̶c̶h̶a̶i̶n̶s̶/̶p̶r̶o̶t̶o̶c̶o̶l̶ ̶i̶n̶ ̶a̶l̶p̶h̶a̶b̶e̶t̶i̶c̶a̶l̶ ̶o̶r̶d̶e̶r̶
