@@ -148,8 +148,8 @@ module.exports = function(project){
                 finished.rows.push([this.chosen, el[0], el[1]])
             }            
         }
-        console.log("Length before data incompletion: " + data.rows.length)
-        console.log("Finished rows length is now: " + finished.rows.length)
+        // console.log("Length before data incompletion: " + data.rows.length)
+        // console.log("Finished rows length is now: " + finished.rows.length)
         return finished; 
     }
 
