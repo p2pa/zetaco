@@ -36,6 +36,21 @@ module.exports = function(project){
         name: 'looksrare',
         dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Revenue', 'Users'],
         category: 'NFT Exchange',
+    },{
+        name: 'lido',
+        contract: '0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84',
+        dimensions: ['ETH deposited', 'Transactions', 'Withdrawal count'],
+        category: 'Liquid Staking Derivatives'
+    },{
+        name: 'rocketpool',
+        contract: '0xae78736Cd615f374D3085123A210448E74Fc6393',
+        dimensions: ['ETH deposited', 'Transactions', 'Withdrawal count'],
+        category: 'Liquid Staking Derivatives'
+    },{
+        name: 'stakewise',
+        contract: '0xFe2e637202056d30016725477c5da089Ab0A043A',
+        dimensions: ['ETH deposited', 'Transactions', 'Withdrawal count'],
+        category: 'Liquid Staking Derivatives'
     }]    
 
     this.getProtocols = function(){
@@ -44,84 +59,124 @@ module.exports = function(project){
     
     this.getData = async function(from, to, dimension){
         let column = ''
+        let data = null;
         let alreadyRun = false;
 
-        switch (dimension) {
-            case 'buyers':
-                column = 'count(distinct buyer_address) as buyers';                
-                break;        
-            case 'sellers':
-                column = 'count(distinct seller_address) as sellers';
-                break;
-            case 'salescount':
-                column = 'count(Distinct tx_hash) as sales_count';
-                break;
-            case 'sales':
-                column = 'ROUND(sum(PRICE_USD)) as sales';
-                break;
-            case 'royalties':
-                column = 'Round(Sum(creator_fee_usd)) as royalties';
-                break;
-            case 'revenue':
-                column = `sum(platform_fee_usd) as revenue`;
-                break;
-            case 'earnings':
-                column = 'sum(platform_fee_usd) as earnings';
-                break;
-            case 'users':
-                alreadyRun = true;
-                var data = await this.flipside.query.run({
-                    sql: `SELECT
-                            day,
-                            count(distinct addresses) AS users
-                        FROM
-                            (
-                            SELECT
-                                block_timestamp::Date as day,
-                                buyer_address as addresses
-                            FROM
-                                ethereum.core.ez_nft_sales
-                            WHERE
-                                platform_name = '${this.chosen}'
-                                and price_usd > 0
-                            UNION ALL
-                            SELECT
-                                block_timestamp::Date as day,
-                                seller_address as addresses
-                            FROM
-                                ethereum.core.ez_nft_sales
-                            WHERE
-                                platform_name = '${this.chosen}'
-                                and price_usd > 0
-                            )
-                        GROUP BY
-                            1
-                        ORDER BY
-                            1`,
-                    ttlMinutes: 10
-                });
-            default:
-                break;
-        }
+        // check category
+        let availableIndex = this.available.map(e => e.name).indexOf(this.chosen);
+        let category = this.available[availableIndex].category;
+        let contract = this.available[availableIndex].contract;
 
-        if(!alreadyRun){
-            var data = await this.flipside.query.run({
-                sql: `select
-                        DATE_TRUNC('day', block_timestamp) AS date,
-                        ${column}
-                    from
-                        ethereum.core.ez_nft_sales
-                    where
-                        platform_name = '${this.chosen}'
-                        and block_timestamp >= '2022-01-01'
-                        and PRICE_USD is not null
-                    group by
-                        1
-                    order by
-                        1`,
-                ttlMinutes: 10
-            });
-        }        
+        switch (category) {
+            case 'NFT Exchange':
+                switch (dimension) {
+                    case 'buyers':
+                        column = 'count(distinct buyer_address) as buyers';                
+                        break;        
+                    case 'sellers':
+                        column = 'count(distinct seller_address) as sellers';
+                        break;
+                    case 'salescount':
+                        column = 'count(Distinct tx_hash) as sales_count';
+                        break;
+                    case 'sales':
+                        column = 'ROUND(sum(PRICE_USD)) as sales';
+                        break;
+                    case 'royalties':
+                        column = 'Round(Sum(creator_fee_usd)) as royalties';
+                        break;
+                    case 'revenue':
+                        column = `sum(platform_fee_usd) as revenue`;
+                        break;
+                    case 'earnings':
+                        column = 'sum(platform_fee_usd) as earnings';
+                        break;
+                    case 'users':
+                        alreadyRun = true;
+                        data = await this.flipside.query.run({
+                            sql: `SELECT
+                                    day,
+                                    count(distinct addresses) AS users
+                                FROM
+                                    (
+                                    SELECT
+                                        block_timestamp::Date as day,
+                                        buyer_address as addresses
+                                    FROM
+                                        ethereum.core.ez_nft_sales
+                                    WHERE
+                                        platform_name = '${this.chosen}'
+                                        and price_usd > 0
+                                    UNION ALL
+                                    SELECT
+                                        block_timestamp::Date as day,
+                                        seller_address as addresses
+                                    FROM
+                                        ethereum.core.ez_nft_sales
+                                    WHERE
+                                        platform_name = '${this.chosen}'
+                                        and price_usd > 0
+                                    )
+                                GROUP BY
+                                    1
+                                ORDER BY
+                                    1`,
+                            ttlMinutes: 10
+                        });
+                        break;
+                }        
+                if(!alreadyRun){
+                    data = await this.flipside.query.run({
+                        sql: `select
+                                DATE_TRUNC('day', block_timestamp) AS date,
+                                ${column}
+                            from
+                                ethereum.core.ez_nft_sales
+                            where
+                                platform_name = '${this.chosen}'
+                                and block_timestamp >= '2022-01-01'
+                                and PRICE_USD is not null
+                            group by
+                                1
+                            order by
+                                1`,
+                        ttlMinutes: 10
+                    });
+                }        
+                break;
+            case 'Liquid Staking Derivatives':
+                switch (dimension) {
+                    case 'ethdeposited':
+                        column = 'sum(amount) as stake_volume';                
+                        break; 
+                    case 'transactions':
+                        column = 'count(distinct tx_hash) as transactions';
+                        break;
+                    case 'withdrawalcount':
+                        column = 'count(distinct origin_to_address) as withdrawal_count';
+                        break;
+                }
+        
+                if(!alreadyRun){
+                    data = await this.flipside.query.run({
+                        sql: `select
+                                DATE_TRUNC('day', block_timestamp) AS date,
+                                ${column}
+                                from
+                                    ethereum.core.ez_token_transfers
+                                where                                    
+                                    block_timestamp >= '2022-01-01'
+                                    AND contract_address = lower('${contract}') 
+                                    AND from_address = '0x0000000000000000000000000000000000000000'
+                                group by
+                                    1
+                                order by
+                                    1`,
+                        ttlMinutes: 10
+                    });
+                }        
+                break;
+        }       
 
         var finished = {
             columns: ["blockchain", "date", dimension],
@@ -151,18 +206,6 @@ module.exports = function(project){
         // console.log("Length before data incompletion: " + data.rows.length)
         // console.log("Finished rows length is now: " + finished.rows.length)
         return finished; 
-    }
-
-    this.getBuyers = async function(from, to){
-        return this.getData(from, to, this.chosen, 'buyers');        
-    }
-
-    this.getSellers = async function(from, to){
-        return this.getData(from, to, this.chosen, 'sellers');        
-    }
-
-    this.getSales = async function(from, to){
-        return this.getData(from, to, this.chosen, 'sales');        
     }
     
     this.convertToUnix = function(date){
