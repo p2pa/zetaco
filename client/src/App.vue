@@ -1,7 +1,7 @@
 <template>
   <div class="boxed-layout horizontal">
     <AppHeader></AppHeader>
-
+    <br><br>
     <div class="layout-px-spacing dash_1">
       <div class="row layout-top-spacing">
         <div class="widget-border">
@@ -22,6 +22,7 @@
                                           <multiselect v-if="i == 0" v-model="inputValues[index - 1][i]" :options="options.protocol.x" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
                                           <multiselect v-if="i == 1" v-model="inputValues[index - 1][i]" :options="inputValues[index - 1][0] == '' ? '' : options.protocol.dimension[inputValues[index - 1][0]]" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>                                    
                                         </div>
+                                        <span :style="{ cursor: 'pointer', backgroundColor: this.inputValues[index - 1][2] + ' !important' }" class="input-group-text" id="basic-addon1"></span>
                                         <span style="cursor:pointer;" class="input-group-text" id="basic-addon1" @click="removeInput(index - 1)">X</span>
                                     </div>
                                     <div class="input-group mb-4" v-if="inputTypes[index - 1] == 'chain'">
@@ -36,11 +37,16 @@
                                     <div class="input-group mb-4" v-if="inputTypes[index - 1] == 'filter'">
                                         <span class="input-group-text" id="basic-addon1">{{index}}</span>
                                         <span class="input-group-text" id="basic-addon1">{{ inputTypes[index - 1] }}</span>
-                                        <span v-for="condition, i in inputValues[index - 1]" class="form-control" :key="i">                                  
-                                          <multiselect v-if="i == 0" v-model="inputValues[index - 1][0]" :options="['Date']" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
-                                          <multiselect v-if="i == 1" v-model="inputValues[index - 1][1]" :options="['>', '<']" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
-                                          <flat-pickr style="cursor:pointer;padding-top:10px; padding-bottom:10px; background: #292929;border-color: #555555;" v-if="i == 2" v-model="inputValues[index - 1][2]" class="form-control flatpickr active"></flat-pickr>
-                                        </span>    
+                                        <div class="form-control">
+                                          <multiselect v-model="inputValues[index - 1][0]" :options="['Last 30D', 'Last 7D', 'Date']" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
+                                        
+                                          <div v-if="inputValues[index - 1][0] == 'Date'">
+                                            <span v-for="condition, i in inputValues[index - 1]" class="form-control" :key="i">                                  
+                                              <multiselect v-if="i == 1" v-model="inputValues[index - 1][1]" :options="['>', '<']" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
+                                              <flat-pickr style="cursor:pointer;padding-top:10px; padding-bottom:10px; background: #292929;border-color: #555555;" v-if="i == 2" v-model="inputValues[index - 1][2]" class="form-control flatpickr active"></flat-pickr>
+                                            </span> 
+                                          </div>   
+                                        </div>
                                         <span style="cursor:pointer;" class="input-group-text" id="basic-addon1" @click="removeInput(index - 1)">X</span>                          
                                     </div>
                                 </div>
@@ -202,8 +208,9 @@ export default {
         table: false,
         tableData: [],
         chartType: "area",
-        inputsAmount: 2,
+        inputsAmount: 3,
         inputTypes: [
+          'protocol',
           'protocol',
           'filter'
         ],
@@ -215,11 +222,13 @@ export default {
             protocol: {
               x: [],
               dimension: []
-            } 
+            },
+            filter: ['Date', 'Last 30D', 'Last 7D']
         },        
         inputValues: [
-          ['', ''],
-          ['Date', '>', '2022-01-01']
+          ['x2y2', 'users', '#9657d7'],
+          ['looksrare', 'users', '#f3f3f8'],
+          ['Last 30D', '', '']
         ],       
         revenue_series: [           
         ],
@@ -233,14 +242,17 @@ export default {
           stroke: { show: true, curve: 'smooth', width: 2, lineCap: 'square' },
           dropShadow: { enabled: true, opacity: 0.2, blur: 10, left: -7, top: 22 },
           colors: ['#2196f3', '#e7515a'],
-          labels: [],
-          xaxis: {
+          xaxis: {            
+              type: 'datetime',
               axisBorder: { show: false },
               axisTicks: { show: false },
               crosshairs: { show: true },
-              labels: { 
-                offsetX: 0, 
-                offsetY: 5, 
+              labels: {            
+                // formatter: function (timestamp) {
+                //   console.log(this.revenue_options)                  
+                //   return timestamp;
+                //   //return new Date(value).toLocaleDateString('en-US');
+                // },      
                 style: { fontSize: '12px', fontFamily: 'Poppins', cssClass: 'apexcharts-xaxis-title' }
               },
           },
@@ -254,7 +266,7 @@ export default {
                     if(value > 1000000){
                       return Math.floor((value / 1000000) * 100) / 100 + 'M';
                     } 
-                    if(value < 1000000){
+                    if(value > 1000){
                       return Math.round((value / 1000) * 100) / 100 + 'K';
                     } 
                     if(value < 1000){
@@ -282,7 +294,12 @@ export default {
               markers: { width: 10, height: 10, strokeWidth: 0, strokeColor: '#fff', fillColors: undefined, radius: 12, onClick: undefined, offsetX: 0, offsetY: 0 },
               itemMargin: { horizontal: 20, vertical: 5 },
           },
-          tooltip: { theme: 'dark', marker: { show: true }, x: { show: false } },
+          tooltip: { 
+            theme: 'dark', 
+            marker: { show: true }, 
+            x: { 
+              show: false 
+            } },
           fill: {
               type: 'gradient',
               gradient: {
@@ -347,13 +364,20 @@ export default {
       // if inputTypes contains a filter
       if(this.inputTypes.indexOf('filter') !== -1){
         this.inputValues[this.inputTypes.indexOf('filter')].forEach((el, index, arr) => {
-            if(index == 2){
-              if(arr[1] == '>'){
-                from = parseInt(new Date(el).getTime() / 1000);
-              } else {
-                to = parseInt(new Date(el).getTime() / 1000);              
-              }              
-            }            
+            if(arr[0] == 'Last 30D'){
+              from = parseInt((new Date().getTime() / 1000).toFixed(0)) - 2592000;
+            } else if(arr[0] == 'Last 7D'){
+              from = parseInt((new Date().getTime() / 1000).toFixed(0)) - 604800;
+            } else {
+              if(index == 2){
+                if(arr[1] == '>'){
+                  from = parseInt(new Date(el).getTime() / 1000);
+                } else {
+                  to = parseInt(new Date(el).getTime() / 1000);              
+                }              
+              }    
+            }
+                    
           });
       } 
 
@@ -372,21 +396,27 @@ export default {
           .then((res) => {
             // fill table data
             this.tableData.push(res.data);
-            // 
+            
             let item = {                 
                 name: array[0], 
                 data: [],
                 color: this.randomColor()                     
             };
-            let labels = []
+                        
+            //let labels = []
+
             for (let z = 0; z < res.data.rows.length; z++) {
-              let el = res.data.rows[z];              
-              
-              labels.push(el[1])
-              item.data.push(el[2])
+              let el = res.data.rows[z];
+
+              //labels.push(el[1])
+              item.data.push({
+                x: new Date(el[1]).getTime(),
+                y: el[2]
+              })
             }
+
             dataArray.push(item)
-            this.revenue_options.labels = labels
+            //this.revenue_options.xaxis.categories = labels;
           })   
         } 
         
@@ -407,19 +437,21 @@ export default {
                 data: [],
                 color: this.randomColor()                      
             };
-            let labels = []
+            //let labels = []
             for (let z = 0; z < res.data.rows.length; z++) {
               let el = res.data.rows[z];
               
-              labels.push(el[1])
-              item.data.push(el[2])
+              //labels.push(new Date(el[1]))
+              item.data.push({
+                x: new Date(el[1]).getTime(),
+                y: el[2]                
+              })
             }
             dataArray.push(item)
-            this.revenue_options.labels = labels
+            //this.revenue_options.labels = labels
           })   
         }       
-      }      
-      console.log(this.revenue_options.labels);      
+      }               
       this.revenue_series = dataArray;
     },
   },  
@@ -439,8 +471,7 @@ export default {
       }
     })   
     this.options.chain.x = nameArray;
-    this.options.chain.dimension = dimensionArray;
-    console.log(this.options)
+    this.options.chain.dimension = dimensionArray;    
 
     // get protocols
     url = 'http://localhost:3000/api/getProtocols'; 
@@ -458,7 +489,6 @@ export default {
     })   
     this.options.protocol.x = nameArray;
     this.options.protocol.dimension = dimensionArray;
-    console.log(this.options)
   },
   
 }
