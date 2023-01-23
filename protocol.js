@@ -1,5 +1,11 @@
 const dotenv = require('dotenv');
 dotenv.config();
+
+// coingecko
+const CoinGecko = require('coingecko-api');
+
+
+// flipside
 const api_1 = require("./api");
 const integrations_1 = require("./flipside/integrations");
 
@@ -20,6 +26,8 @@ module.exports = function(project){
         "https://node-api.flipsidecrypto.com"
     );
 
+    this.coingecko = new CoinGecko();
+
     this.available = [{
         name: 'blur',
         dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Users'],
@@ -30,11 +38,13 @@ module.exports = function(project){
         category: 'NFT Exchange'
     },{
         name: 'x2y2',
-        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Revenue', 'Users'],
+        ticker: 'x2y2',
+        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Revenue', 'PF Ratio', 'Users'],
         category: 'NFT Exchange',
     },{
         name: 'looksrare',
-        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Revenue', 'Users'],
+        ticker: 'looksrare',
+        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Revenue', 'PF Ratio', 'Users'],
         category: 'NFT Exchange',
     },{
         name: 'lido',
@@ -66,6 +76,7 @@ module.exports = function(project){
         let availableIndex = this.available.map(e => e.name).indexOf(this.chosen);
         let category = this.available[availableIndex].category;
         let contract = this.available[availableIndex].contract;
+        let ticker = this.available[availableIndex].ticker;
 
         switch (category) {
             case 'NFT Exchange':
@@ -86,6 +97,9 @@ module.exports = function(project){
                         column = 'Round(Sum(creator_fee_usd)) as royalties';
                         break;
                     case 'revenue':
+                        column = `sum(platform_fee_usd) as revenue`;
+                        break;
+                    case 'pfratio':
                         column = `sum(platform_fee_usd) as revenue`;
                         break;
                     case 'earnings':
@@ -181,7 +195,14 @@ module.exports = function(project){
         var finished = {
             columns: ["blockchain", "date", dimension],
             rows: [],
-        };        
+        };      
+        
+        let res = await this.coingecko.coins.fetchMarketChart(ticker);
+        console.log(res)
+        if(res.error){
+            console.log(res.error)
+        }
+        let marketcap = res.data.market_caps[0][1]
 
         for (let i = 0; i <  data.rows.length; i++) {
             let el =  data.rows[i];
@@ -194,13 +215,19 @@ module.exports = function(project){
                     if(data.rows.length < days){            
                         console.log("Data is incomplete")
                         let daysDifference = (days - data.rows.length);
-                        for (let x = 1; x < daysDifference; x++) {                
+                        for (let x = 1; x < daysDifference; x++) {           
                             finished.rows.push([this.chosen, this.convertToDate(parseInt(from) + (86400 * x)), 0])                
                         }
                     }
                 }                
                 //console.log("Pushed into finished array: " + el[1] + '/' + el[0] + '/' + el[4])
-                finished.rows.push([this.chosen, el[0], el[1]])
+                if(dimension == 'pfratio'){
+                    // annualized revenue  / market cap                                        
+                    let pf = marketcap / (el[1] * 365);
+                    finished.rows.push([this.chosen, el[0], pf])
+                } else {
+                    finished.rows.push([this.chosen, el[0], el[1]])
+                }
             }            
         }
         // console.log("Length before data incompletion: " + data.rows.length)
