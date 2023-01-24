@@ -197,8 +197,7 @@ module.exports = function(project){
             rows: [],
         };      
         
-        let res = await this.coingecko.coins.fetchMarketChart(ticker);
-        console.log(res)
+        let res = await this.coingecko.coins.fetchMarketChart(ticker);        
         if(res.error){
             console.log(res.error)
         }

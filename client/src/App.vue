@@ -218,7 +218,6 @@ export default {
         inputTypes: [
           'protocol',
           'protocol',
-          'protocol',
           'filter'
         ],
         options:{
@@ -233,9 +232,8 @@ export default {
             filters: ['Last 30D', 'Last 7D', 'Date'] 
         },        
         inputValues: [
-          ['x2y2', 'users', '#9758D8'],
-          ['looksrare', 'users', '#0CE466'],
-          ['blur', 'users', '#F77303'],
+          ['x2y2', 'PF Ratio', '#9758D8'],
+          ['looksrare', 'PF Ratio', '#0CE466'],
           ['Last 30D', '', '']
         ],       
         revenue_series: [           
@@ -250,17 +248,11 @@ export default {
           stroke: { show: true, curve: 'smooth', width: 2, lineCap: 'square' },
           dropShadow: { enabled: true, opacity: 0.2, blur: 10, left: -7, top: 22 },
           colors: ['#2196f3', '#e7515a'],
-          xaxis: {            
-              type: 'datetime',
+          xaxis: { 
               axisBorder: { show: false },
               axisTicks: { show: false },
               crosshairs: { show: true },
-              labels: {            
-                // formatter: function (timestamp) {
-                //   console.log(this.revenue_options)                  
-                //   return timestamp;
-                //   //return new Date(value).toLocaleDateString('en-US');
-                // },      
+              labels: {      
                 style: { fontSize: '12px', fontFamily: 'Poppins', cssClass: 'apexcharts-xaxis-title' }
               },
           },
@@ -444,7 +436,7 @@ export default {
             for (let z = 0; z < res.data.rows.length; z++) {
               let el = res.data.rows[z];              
               
-              labels.push(el[1])
+              //labels.push(el[1])
               //item.data.push(el[2])
 
               // convert el[1] to en-us date format
@@ -453,7 +445,7 @@ export default {
               // push object with x and y into item.data
               item.data.push({x: date, y: el[2]})
             }
-
+            console.log(item.data)
             dataArray.push(item)
             //this.revenue_options.xaxis.categories = labels;
           })   
