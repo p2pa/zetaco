@@ -7,13 +7,9 @@
         <div class="widget-border">
           <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
-                        <div class="widget widget-sales-category">
-                            <div class="widget-heading">
-                                <h5>Query</h5>
-                                <button @click="fetchQuery" type="button" class="btn btn-warning btn-sm mb-4 me-2">Run</button>
-                            </div>
+                        <div class="widget widget-sales-category">                           
                             <div class="widget-content">                           
-
+                                <br>
                                 <div class="row mb-12" v-for="index in inputsAmount" :key="index">
                                     <div class="input-group mb-4" v-if="inputTypes[index - 1] == 'protocol'">
                                         <span class="input-group-text" id="basic-addon1">{{index}}</span>
@@ -24,7 +20,7 @@
                                         </div>  
                                         <div class="form-control" v-for="values, i in inputValues[index - 1].slice(0, 2)" :key="i">
                                           <multiselect v-if="i == 0" v-model="inputValues[index - 1][i]" :options="options.protocol.x" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
-                                          <multiselect v-if="i == 1" v-model="inputValues[index - 1][i]" :options="inputValues[index - 1][0] == '' ? '' : options.protocol.dimension[inputValues[index - 1][0]]" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>                                    
+                                          <multiselect v-if="i == 1" v-model="inputValues[index - 1][i]" :options="inputValues[index - 1][0] == '' ? [] : options.protocol.dimension[inputValues[index - 1][0]]" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>                                    
                                         </div>
                                                                               
                                         <span style="cursor:pointer;" class="input-group-text" id="basic-addon1" @click="removeInput(index - 1)">X</span>
@@ -63,6 +59,7 @@
                                       <span class="btn btn-info me-1" @click="addInput('chain')">+ Chain</span>
                                       <span class="btn btn-info me-1" @click="addInput('protocol')">+ Protocol</span>
                                       <span class="btn btn-info me-1" @click="addInput('filter')">+ Filter</span>
+                                      <button style="float:right" @click="fetchQuery" type="button" class="btn btn-warning mb-4 me-2">Run</button>
                                   </div>                              
                                 </div>                            
                             </div>
@@ -229,12 +226,12 @@ export default {
               x: [],
               dimension: []
             },
-            filters: ['Last 30D', 'Last 7D', 'Date'] 
+            filters: ['Last 3M', 'Last 30D', 'Last 7D', 'Date'] 
         },        
         inputValues: [
           ['x2y2', 'PF Ratio', '#9758D8'],
           ['looksrare', 'PF Ratio', '#0CE466'],
-          ['Last 30D', '', '']
+          ['Last 3M', '', '']
         ],       
         revenue_series: [           
         ],
@@ -249,6 +246,7 @@ export default {
           dropShadow: { enabled: true, opacity: 0.2, blur: 10, left: -7, top: 22 },
           colors: ['#2196f3', '#e7515a'],
           xaxis: { 
+              tickAmount: 10,
               axisBorder: { show: false },
               axisTicks: { show: false },
               crosshairs: { show: true },
@@ -370,6 +368,14 @@ export default {
       // if inputTypes contains a filter
       if(this.inputTypes.indexOf('filter') !== -1){
         this.inputValues[this.inputTypes.indexOf('filter')].forEach((el, index, arr) => {
+            // Last 3M
+            if(arr[0] == 'Last 3M') {
+              filterTitle = 'the last 3 months'
+              from = parseInt((new Date().getTime() / 1000).toFixed(0)) - 7776000;
+              // exclude current day
+              to = parseInt((new Date().getTime() / 1000).toFixed(0)) - 86400;
+            }
+
             if(arr[0] == 'Last 30D') {
               filterTitle = 'the last 30 days'
               from = parseInt((new Date().getTime() / 1000).toFixed(0)) - 2592000;
@@ -406,10 +412,10 @@ export default {
           continue;
         }
         // add protocol & array[1] to chart title if not last index
-        if(index !== this.inputTypes.length - 1){
-            chartTile += this.inputValues[index][0] + ' ' + this.inputValues[index][1] + ' x ';
+        if(index !== this.inputTypes.length - 2){
+            chartTile += this.inputValues[index][0].toUpperCase() + ' ' + this.inputValues[index][1] + ' / ';
         } else {
-          chartTile += this.inputValues[index][0] + ' ' + this.inputValues[index][1];
+          chartTile += this.inputValues[index][0].toUpperCase() + ' ' + this.inputValues[index][1];
         }  
 
         if(element == 'protocol'){         
