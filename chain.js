@@ -23,16 +23,20 @@ module.exports = function(project){
 
     this.available = [{
         name: 'ethereum',
-        dimensions: ['Unique users', 'Volume']
+        dimensions: ['Unique users', 'Volume'],
+        category: 'L1'
     },{
         name: 'optimism',
-        dimensions: ['Transactions']
+        dimensions: ['Transactions'],
+        category: 'L2'
     },{
         name: 'arbitrum',
-        dimensions: ['Transactions']
+        dimensions: ['Transactions'],
+        category: 'L2'
     },{
         name: 'polygon',
-        dimensions: ['Transactions']
+        dimensions: ['Transactions'],
+        category: 'L2'
     }];
 
     this.getChains = function(){

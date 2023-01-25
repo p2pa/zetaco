@@ -31,36 +31,36 @@ module.exports = function(project){
     this.available = [{
         name: 'blur',
         dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Users'],
-        category: 'NFT Exchange',
+        category: 'NFT',
     },{
         name: 'opensea',
         dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Revenue', 'Earnings', 'Users'],
-        category: 'NFT Exchange'
+        category: 'NFT'
     },{
         name: 'x2y2',
         ticker: 'x2y2',
         dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Revenue', 'PF Ratio', 'Users'],
-        category: 'NFT Exchange',
+        category: 'NFT',
     },{
         name: 'looksrare',
         ticker: 'looksrare',
         dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Revenue', 'PF Ratio', 'Users'],
-        category: 'NFT Exchange',
+        category: 'NFT',
     },{
         name: 'lido',
         contract: '0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84',
         dimensions: ['ETH deposited', 'Transactions', 'Withdrawal count'],
-        category: 'Liquid Staking Derivatives'
+        category: 'Staking'
     },{
         name: 'rocketpool',
         contract: '0xae78736Cd615f374D3085123A210448E74Fc6393',
         dimensions: ['ETH deposited', 'Transactions', 'Withdrawal count'],
-        category: 'Liquid Staking Derivatives'
+        category: 'Staking'
     },{
         name: 'stakewise',
         contract: '0xFe2e637202056d30016725477c5da089Ab0A043A',
         dimensions: ['ETH deposited', 'Transactions', 'Withdrawal count'],
-        category: 'Liquid Staking Derivatives'
+        category: 'Staking'
     }]    
 
     this.getProtocols = function(){

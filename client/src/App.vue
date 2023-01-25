@@ -13,22 +13,27 @@
                                 <div class="row mb-12" v-for="index in inputsAmount" :key="index">
                                     <div class="input-group mb-4" v-if="inputTypes[index - 1] == 'protocol'">
                                         <span class="input-group-text" id="basic-addon1">{{index}}</span>
-                                        <span class="input-group-text" id="basic-addon1">{{ inputTypes[index - 1] }}</span>
-                                        <div class="input-group-text" :style="{ cursor:'pointer', backgroundColor: inputValues[index-1][2] + ' !important' }">
-                                          <!-- color picker here -->
-                                          <span></span>
+                                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+                                          
+                                        <div class="input-group-text" :style="{ cursor:'pointer', backgroundColor: inputValues[index-1][3] + ' !important' }" @click="newColor(index-1)">
+                                          <!-- color picker here -->                                          
                                         </div>  
-                                        <div class="form-control" v-for="values, i in inputValues[index - 1].slice(0, 2)" :key="i">
-                                          <multiselect v-if="i == 0" v-model="inputValues[index - 1][i]" :options="options.protocol.x" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
-                                          <multiselect v-if="i == 1" v-model="inputValues[index - 1][i]" :options="inputValues[index - 1][0] == '' ? [] : options.protocol.dimension[inputValues[index - 1][0]]" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>                                    
+                                        <div class="form-control" v-for="values, i in inputValues[index - 1].slice(0, 3)" :key="i">
+                                          <multiselect v-if="i == 0" v-model="inputValues[index - 1][i]" :options="options.protocol.categories" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>                                        
+                                          <multiselect v-if="i == 1" v-model="inputValues[index - 1][i]" :options="options.protocol.x" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
+                                          <multiselect v-if="i == 2" v-model="inputValues[index - 1][i]" :options="inputValues[index - 1][0] == '' ? [] : options.protocol.dimension[inputValues[index - 1][0]]" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>                                    
                                         </div>
                                                                               
                                         <span style="cursor:pointer;" class="input-group-text" id="basic-addon1" @click="removeInput(index - 1)">X</span>
                                     </div>
                                     <div class="input-group mb-4" v-if="inputTypes[index - 1] == 'chain'">
                                         <span class="input-group-text" id="basic-addon1">{{index}}</span>
-                                        <span class="input-group-text" id="basic-addon1">{{ inputTypes[index - 1] }}</span>
-                                        <div class="form-control" v-for="values, i in inputValues[index - 1]" :key="i">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-link" aria-hidden="true"></i></span>
+                                        <div class="input-group-text" :style="{ cursor:'pointer', backgroundColor: inputValues[index-1][2] + ' !important' }" @click="newColor(index-1)">
+                                          <!-- color picker here -->
+                                          <span></span>
+                                        </div> 
+                                        <div class="form-control" v-for="values, i in inputValues[index - 1].slice(0, 2)" :key="i">
                                           <multiselect v-if="i == 0" v-model="inputValues[index - 1][0]" :options="options.chain.x" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
                                           <multiselect v-if="i == 1" v-model="inputValues[index - 1][1]" :options="inputValues[index - 1][0] == '' ? '' : options.chain.dimension[inputValues[index - 1][0]]" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>                                    
                                         </div>
@@ -36,7 +41,7 @@
                                     </div>
                                     <div class="input-group mb-4" v-if="inputTypes[index - 1] == 'filter'">
                                         <span class="input-group-text" id="basic-addon1">{{index}}</span>
-                                        <span class="input-group-text" id="basic-addon1">{{ inputTypes[index - 1] }}</span>
+                                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-filter" aria-hidden="true"></i></span>
                                         <span class="form-control">
                                         <span v-for="condition, i in inputValues[index - 1]" :key="i">   
                                           <span v-if="i == 0">
@@ -78,31 +83,10 @@
                         </a>
                         <a v-if="chartType == 'area' || table" class="btn dropdown-toggle btn-icon-only" style="margin-right:15px;" @click="goTo('bar')"> 
                           <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                        </a>
+                        </a>                        
                         <a v-if="!table " class="btn dropdown-toggle btn-icon-only" style="margin-right:15px;" @click="goTo('table')"> 
                           <i class="fa fa-table" aria-hidden="true"></i>
-                        </a>                      
-                        <!-- <a href="javascript:;" id="ddlRevenue" class="btn dropdown-toggle btn-icon-only" data-bs-toggle="dropdown" aria-expanded="false">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feather feather-more-horizontal"
-                            >
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                            </svg>
-                        </a> -->
-                        <!-- <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="ddlRevenue">
-                            <li><a href="javascript:;" class="dropdown-item">Last 30 days</a></li>
-                        </ul> -->
+                        </a> 
                     </div>
                 </div>
 
@@ -194,6 +178,7 @@ import '@suadelabs/vue3-multiselect/dist/vue3-multiselect.css';
 import flatPickr from 'vue-flatpickr-component';
 import 'flatpickr/dist/flatpickr.css';
 
+
 import AppHeader from '@/components/header.vue';
 import axios from 'axios'
 
@@ -211,7 +196,7 @@ export default {
         chartTitle: '',
         tableData: [],
         chartType: "area",
-        inputsAmount: 4,
+        inputsAmount: 3,
         inputTypes: [
           'protocol',
           'protocol',
@@ -219,18 +204,20 @@ export default {
         ],
         options:{
             chain: {
+              categories: [],
               x: [],
               dimension: []
             },
             protocol: {
+              categories: [],
               x: [],
               dimension: []
             },
             filters: ['Last 3M', 'Last 30D', 'Last 7D', 'Date'] 
         },        
         inputValues: [
-          ['x2y2', 'PF Ratio', '#9758D8'],
-          ['looksrare', 'PF Ratio', '#0CE466'],
+          ['nft', 'x2y2', 'PF Ratio', '#9758D8'],
+          ['nft', 'looksrare', 'PF Ratio', '#0CE466'],
           ['Last 3M', '', '']
         ],       
         revenue_series: [           
@@ -261,7 +248,7 @@ export default {
                     if(value > 100000000){
                       return Math.floor((value / 1000000000) * 100) / 100 + 'B';
                     }
-                    if(value > 1000000){
+                    if(value > 999999){
                       return Math.floor((value / 1000000) * 100) / 100 + 'M';
                     } 
                     if(value > 1000){
@@ -319,17 +306,21 @@ export default {
   methods: {
     addInput: function(what){
       this.inputsAmount += 1;
-      if(what == 'filter'){
-        this.inputTypes.push(what)
-        this.inputValues.push(['Last 30D', '', ''])
-      } else {
-        if(this.inputTypes[this.inputTypes.length - 1] == 'filter'){
-          this.inputTypes.splice(this.inputTypes.length - 2, 0, what)
-          this.inputValues.splice(this.inputTypes.length - 2, 0, ['', '', this.randomColor()])
-        } else {
-          this.inputTypes.push(what)
-          this.inputValues.push(['', '', this.randomColor()])
-        }        
+      switch (what) {
+        case 'filter':
+          this.inputTypes.push('filter')
+          this.inputValues.push(['Last 30D', '', ''])
+          break;
+        case 'protocol':
+          this.inputTypes.push('protocol')
+          this.inputValues.push(['', '', '', this.randomColor()])
+          break;
+        case 'chain':
+          this.inputTypes.push('chain')
+          this.inputValues.push(['', '', '', this.randomColor()])
+          break;      
+        default:
+          break;
       }      
     },
     removeInput: function(index){
@@ -345,16 +336,21 @@ export default {
         case 'area':
           this.table = false;
           this.chartType = 'area';
+          this.revenue_options.chart.stacked = false;
           break;
         case 'bar':
           this.table = false;
           this.chartType = 'bar';
-          break;
+          this.revenue_options.chart.stacked = true;
+          break;        
       }
     },
     randomColor: function() {
       return `rgb(${Math.round(Math.random() * 255)}, ${Math.round(Math.random() * 255)}, ${Math.round(Math.random() * 255)})`;
     },
+    newColor: function(index){
+      this.inputValues[index][3] = this.randomColor();
+    },     
     fetchQuery: async function(){
       // set default date to 2022-01-01
       let from = 1640995200;
@@ -413,9 +409,9 @@ export default {
         }
         // add protocol & array[1] to chart title if not last index
         if(index !== this.inputTypes.length - 2){
-            chartTile += this.inputValues[index][0].toUpperCase() + ' ' + this.inputValues[index][1] + ' / ';
+            chartTile += this.inputValues[index][1].toUpperCase() + ' ' + this.inputValues[index][2] + ' / ';
         } else {
-          chartTile += this.inputValues[index][0].toUpperCase() + ' ' + this.inputValues[index][1];
+          chartTile += this.inputValues[index][1].toUpperCase() + ' ' + this.inputValues[index][2];
         }  
 
         if(element == 'protocol'){         
@@ -423,7 +419,7 @@ export default {
           let array = this.inputValues[index];
           // if type == revenue do bar chart         
 
-          let url = 'http://localhost:3000/api/protocols/' + array[0] + '/' + array[1].replace(/\s+/, "") + '/' + from + '/' + to ;      
+          let url = 'http://localhost:3000/api/protocols/' + array[1] + '/' + array[2].replace(/\s+/, "") + '/' + from + '/' + to ;      
 
           await axios
           .get(url)
@@ -432,9 +428,9 @@ export default {
             this.tableData.push(res.data);
             
             let item = {                 
-                name: array[0], 
+                name: array[1], 
                 data: [],
-                color: array[2]                   
+                color: array[3]                   
             };
                         
             //let labels = []
@@ -461,7 +457,7 @@ export default {
           let array = this.inputValues[index];
           // if type == revenue do bar chart         
 
-          let url = 'http://localhost:3000/api/chains/' + array[0] + '/' + array[1].replace(/\s+/, "")  + '/' + from + '/' + to ;      
+          let url = 'http://localhost:3000/api/chains/' + array[1] + '/' + array[2].replace(/\s+/, "")  + '/' + from + '/' + to ;      
           
           await axios
           .get(url)
@@ -470,19 +466,20 @@ export default {
             this.tableData.push(res.data);
             // 
             let item = {                 
-                name: array[0], 
+                name: array[1], 
                 data: [],
-                color: array[2]                    
+                color: array[3]                    
             };
             //let labels = []
             for (let z = 0; z < res.data.rows.length; z++) {
               let el = res.data.rows[z];
+
+              let date = new Date(el[1]).toLocaleDateString('en-US', {month: 'short', day: 'numeric'})
+
+              // push object with x and y into item.data
+              item.data.push({x: date, y: el[2]})
               
-              //labels.push(new Date(el[1]))
-              item.data.push({
-                x: new Date(el[1]).getTime(),
-                y: el[2]                
-              })
+              //labels.push(new Date(el[1]))              
             }
             dataArray.push(item)
             //this.revenue_options.labels = labels
@@ -498,6 +495,8 @@ export default {
     var url = 'http://localhost:3000/api/getChains'; 
     var nameArray = [];
     var dimensionArray = [];
+    var categoryArray = [];
+
     await axios
     .get(url)
     .then((res) => {
@@ -506,15 +505,23 @@ export default {
         let el = chains[z];
         nameArray.push(el.name)
         dimensionArray[el.name] = el.dimensions;
+
+        // if category does not exist in categoryArray, add it
+        if(!categoryArray.includes(el.category)){
+          categoryArray.push(el.category)
+        }
       }
     })   
     this.options.chain.x = nameArray;
     this.options.chain.dimension = dimensionArray;
+    this.options.protocol.categories = categoryArray;
     
     // get protocols
     url = 'http://localhost:3000/api/getProtocols'; 
     nameArray = [];
     dimensionArray = [];
+    categoryArray = [];
+
     await axios
     .get(url)
     .then((res) => {
@@ -523,11 +530,18 @@ export default {
         let el = chains[z];
         nameArray.push(el.name)
         dimensionArray[el.name] = el.dimensions;
+
+        // if category does not exist in categoryArray, add it
+        if(!categoryArray.includes(el.category)){
+          categoryArray.push(el.category)
+        }
       }
     })   
     this.options.protocol.x = nameArray;
     this.options.protocol.dimension = dimensionArray;
-    
+    this.options.protocol.categories = categoryArray;
+
+    console.log(this.options)
   },
   
 }
