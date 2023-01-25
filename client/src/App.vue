@@ -13,15 +13,14 @@
                                 <div class="row mb-12" v-for="index in inputsAmount" :key="index">
                                     <div class="input-group mb-4" v-if="inputTypes[index - 1] == 'protocol'">
                                         <span class="input-group-text" id="basic-addon1">{{index}}</span>
-                                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
-                                          
+                                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>                                          
                                         <div class="input-group-text" :style="{ cursor:'pointer', backgroundColor: inputValues[index-1][3] + ' !important' }" @click="newColor(index-1)">
                                           <!-- color picker here -->                                          
                                         </div>  
                                         <div class="form-control" v-for="values, i in inputValues[index - 1].slice(0, 3)" :key="i">
-                                          <multiselect v-if="i == 0" v-model="inputValues[index - 1][i]" :options="options.protocol.categories" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>                                        
-                                          <multiselect v-if="i == 1" v-model="inputValues[index - 1][i]" :options="options.protocol.x" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
-                                          <multiselect v-if="i == 2" v-model="inputValues[index - 1][i]" :options="inputValues[index - 1][0] == '' ? [] : options.protocol.dimension[inputValues[index - 1][0]]" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>                                    
+                                          <multiselect v-if="i == 0" v-model="inputValues[index - 1][i]" :options="options.protocol.categories" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>                
+                                          <multiselect v-if="i == 1" v-model="inputValues[index - 1][i]" :options="inputValues[index - 1][0] == '' ? [] : options.protocol.x[inputValues[index - 1][0]]" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
+                                          <multiselect v-if="i == 2" v-model="inputValues[index - 1][i]" :options="inputValues[index - 1][1] == '' ? [] : options.protocol.dimension[inputValues[index - 1][1]]" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>                                    
                                         </div>
                                                                               
                                         <span style="cursor:pointer;" class="input-group-text" id="basic-addon1" @click="removeInput(index - 1)">X</span>
@@ -213,12 +212,12 @@ export default {
               x: [],
               dimension: []
             },
-            filters: ['Last 3M', 'Last 30D', 'Last 7D', 'Date'] 
+            filters: ['last 3m', 'last 30d', 'last 7d', 'date'] 
         },        
         inputValues: [
-          ['nft', 'x2y2', 'PF Ratio', '#9758D8'],
-          ['nft', 'looksrare', 'PF Ratio', '#0CE466'],
-          ['Last 3M', '', '']
+          ['NFT', 'x2y2', 'pf ratio', '#9758D8'],
+          ['NFT', 'looksrare', 'pf ratio', '#0CE466'],
+          ['last 30d', '', '']
         ],       
         revenue_series: [           
         ],
@@ -309,7 +308,7 @@ export default {
       switch (what) {
         case 'filter':
           this.inputTypes.push('filter')
-          this.inputValues.push(['Last 30D', '', ''])
+          this.inputValues.push(['last 30d', '', ''])
           break;
         case 'protocol':
           this.inputTypes.push('protocol')
@@ -350,6 +349,10 @@ export default {
     },
     newColor: function(index){
       this.inputValues[index][3] = this.randomColor();
+    },
+    // capitalize first letter in string
+    capitalize: function(str){
+      return str.charAt(0).toUpperCase() + str.slice(1);
     },     
     fetchQuery: async function(){
       // set default date to 2022-01-01
@@ -365,26 +368,26 @@ export default {
       if(this.inputTypes.indexOf('filter') !== -1){
         this.inputValues[this.inputTypes.indexOf('filter')].forEach((el, index, arr) => {
             // Last 3M
-            if(arr[0] == 'Last 3M') {
+            if(arr[0] == 'last 3m') {
               filterTitle = 'the last 3 months'
               from = parseInt((new Date().getTime() / 1000).toFixed(0)) - 7776000;
               // exclude current day
               to = parseInt((new Date().getTime() / 1000).toFixed(0)) - 86400;
             }
 
-            if(arr[0] == 'Last 30D') {
+            if(arr[0] == 'last 30d') {
               filterTitle = 'the last 30 days'
               from = parseInt((new Date().getTime() / 1000).toFixed(0)) - 2592000;
               // exclude current day
               to = parseInt((new Date().getTime() / 1000).toFixed(0)) - 86400;
             }
-            if(arr[0] == 'Last 7D') {
+            if(arr[0] == 'last 7d') {
               filterTitle = 'the last 7 days'
               from = parseInt((new Date().getTime() / 1000).toFixed(0)) - 604800;
               // exclude current day
               to = parseInt((new Date().getTime() / 1000).toFixed(0)) - 86400;
             }
-            if(arr[0] == 'Date'){
+            if(arr[0] == 'date'){
               filterTitle = 'from ' + arr[2] + ' to ' + arr[4]
               if(index == 2){
                 if(arr[1] == '>'){
@@ -503,18 +506,26 @@ export default {
       let chains = res.data;
       for (let z = 0; z < chains.length; z++) {
         let el = chains[z];
-        nameArray.push(el.name)
-        dimensionArray[el.name] = el.dimensions;
-
+        let name = el.name;
         // if category does not exist in categoryArray, add it
         if(!categoryArray.includes(el.category)){
           categoryArray.push(el.category)
         }
+
+        // does namearray[el.category] exist? if not, add it
+        if(!nameArray[el.category]){
+          nameArray[el.category] = []
+          nameArray[el.category].push(name)
+        } else {
+          nameArray[el.category].push(name)
+        }
+
+        dimensionArray[name] = el.dimensions;        
       }
     })   
     this.options.chain.x = nameArray;
     this.options.chain.dimension = dimensionArray;
-    this.options.protocol.categories = categoryArray;
+    this.options.chain.categories = categoryArray;
     
     // get protocols
     url = 'http://localhost:3000/api/getProtocols'; 
@@ -528,13 +539,20 @@ export default {
       let chains = res.data;
       for (let z = 0; z < chains.length; z++) {
         let el = chains[z];
-        nameArray.push(el.name)
-        dimensionArray[el.name] = el.dimensions;
-
-        // if category does not exist in categoryArray, add it
-        if(!categoryArray.includes(el.category)){
+        let name = el.name;
+         // if category does not exist in categoryArray, add it
+         if(!categoryArray.includes(el.category)){
           categoryArray.push(el.category)
         }
+        // does namearray[el.category] exist? if not, add it
+        if(!nameArray[el.category]){
+          nameArray[el.category] = []  
+          nameArray[el.category].push(name)
+        } else {
+          nameArray[el.category].push(name)
+        }
+
+        dimensionArray[name] = el.dimensions;       
       }
     })   
     this.options.protocol.x = nameArray;
