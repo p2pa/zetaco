@@ -79,7 +79,7 @@ module.exports = function(project){
         let ticker = this.available[availableIndex].ticker;
 
         switch (category) {
-            case 'NFT Exchange':
+            case 'NFT':
                 switch (dimension) {
                     case 'buyers':
                         column = 'count(distinct buyer_address) as buyers';                
@@ -158,7 +158,7 @@ module.exports = function(project){
                     });
                 }        
                 break;
-            case 'Liquid Staking Derivatives':
+            case 'Staking':
                 switch (dimension) {
                     case 'ethdeposited':
                         column = 'sum(amount) as stake_volume';                
