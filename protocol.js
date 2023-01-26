@@ -66,6 +66,16 @@ module.exports = function(project){
         contract: '0xE95A203B1a91a908F9B9CE46459d101078c2c3cb',
         dimensions: ['Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
+    },{
+        name: 'cream',
+        contract: '0xcBc1065255cBc3aB41a6868c22d1f1C573AB89fd',
+        dimensions: ['Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
+        category: 'Staking'
+    },{
+        name: 'sharedstake',
+        contract: '0x898BAD2774EB97cF6b94605677F43b41871410B1',
+        dimensions: ['Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
+        category: 'Staking'
     }]    
 
     this.getProtocols = function(){
