@@ -232,7 +232,7 @@ export default {
           dropShadow: { enabled: true, opacity: 0.2, blur: 10, left: -7, top: 22 },
           colors: ['#2196f3', '#e7515a'],
           xaxis: { 
-              tickAmount: 10,
+              tickAmount: 15,
               axisBorder: { show: false },
               axisTicks: { show: false },
               crosshairs: { show: true },
@@ -404,6 +404,16 @@ export default {
 
       let chartTile = '';
 
+      // if this.inputValues[0][2] is the same as this.inputValues[1][2]
+      if(this.inputValues.length > 1){
+        if(this.inputValues[0][2] == this.inputValues[1][2]){
+          chartTile += this.inputValues[0][2].toUpperCase() + ' '
+        } else {
+          chartTile += this.inputValues[0][2].toUpperCase() + '/' + this.inputValues[1][2].toUpperCase() + ' '
+        }
+      }  
+
+
       for (let index = 0; index < this.inputTypes.length; index++) {
         const element = this.inputTypes[index];  
 
@@ -412,9 +422,9 @@ export default {
         }
         // add protocol & array[1] to chart title if not last index
         if(index !== this.inputTypes.length - 2){
-            chartTile += this.inputValues[index][1].toUpperCase() + ' ' + this.inputValues[index][2] + ' / ';
+            chartTile += this.inputValues[index][1].toUpperCase() + ' vs ';
         } else {
-          chartTile += this.inputValues[index][1].toUpperCase() + ' ' + this.inputValues[index][2];
+          chartTile += this.inputValues[index][1].toUpperCase();
         }  
 
         if(element == 'protocol'){         
