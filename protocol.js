@@ -30,21 +30,23 @@ module.exports = function(project){
 
     this.available = [{
         name: 'blur',
+        ticker: null,
         dimensions: ['Buyers', 'Sellers', 'Sales', 'Volume', 'Royalties', 'Users'],
         category: 'NFT',
     },{
         name: 'opensea',
+        ticker: null,
         dimensions: ['Buyers', 'Sellers', 'Sales', 'Volume', 'Royalties', 'Revenue', 'Earnings', 'Users'],
         category: 'NFT'
     },{
         name: 'x2y2',
-        ticker: 'x2y2',
-        dimensions: ['Buyers', 'Sellers', 'Sales', 'Volume', 'Royalties', 'Revenue', 'PF Ratio', 'Users'],
+        ticker: 'X2Y2',
+        dimensions: ['Price', 'Buyers', 'Sellers', 'Sales', 'Volume', 'Royalties', 'Revenue', 'PF Ratio', 'Users'],
         category: 'NFT',
     },{
         name: 'looksrare',
-        ticker: 'looksrare',
-        dimensions: ['Buyers', 'Sellers', 'Sales', 'Volume', 'Royalties', 'Revenue', 'PF Ratio', 'Users'],
+        ticker: 'LOOKS',
+        dimensions: ['Price', 'Buyers', 'Sellers', 'Sales', 'Volume', 'Royalties', 'Revenue', 'PF Ratio', 'Users'],
         category: 'NFT',
     },{
         name: 'lido',
@@ -116,6 +118,24 @@ module.exports = function(project){
         switch (category) {
             case 'NFT':
                 switch (dimension) {
+                    case 'price':
+                        alreadyRun = true;
+                        data = await this.flipside.query.run({
+                            sql: `select
+                                    hour::date as date,
+                                    avg(price) as price
+                                from
+                                    ethereum.core.fact_hourly_token_prices
+                                where
+                                    date >= '2022-01-01'
+                                    AND symbol = '${ticker}'
+                                group by
+                                    date
+                                order by
+                                    date`,
+                            ttlMinutes: 10
+                        });
+                        break;
                     case 'buyers':
                         column = 'count(distinct buyer_address) as buyers';                
                         break;        
@@ -276,7 +296,7 @@ module.exports = function(project){
         };      
         
         if(dimension == 'pfratio'){
-            let res = await this.coingecko.coins.fetchMarketChart(ticker);        
+            let res = await this.coingecko.coins.fetchMarketChart(this.chosen);        
             if(res.error){
                 console.log(res.error)
             }
