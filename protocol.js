@@ -79,13 +79,6 @@ module.exports = function(project){
         dimensions: ['Price', 'FDMC', 'Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     },{
-        name: 'cream',
-        ticker: 'CREAM',
-        max_supply: 2924546,
-        contract: '0xcBc1065255cBc3aB41a6868c22d1f1C573AB89fd',
-        dimensions: ['Price', 'FDMC', 'Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
-        category: 'Staking'
-    },{
         name: 'bifrost',
         ticker: 'BFC',
         max_supply: 2368584074,
