@@ -194,9 +194,8 @@ export default {
         chartTitle: '',
         tableData: [],
         chartType: "area",
-        inputsAmount: 3,
+        inputsAmount: 2,
         inputTypes: [
-          'protocol',
           'protocol',
           'filter'
         ],
@@ -214,9 +213,8 @@ export default {
             filters: ['last 3m', 'last 30d', 'last 7d', 'date'] 
         },        
         inputValues: [
-          ['NFT', 'x2y2', 'pf ratio', '#9758D8'],
-          ['NFT', 'looksrare', 'pf ratio', '#0CE466'],
-          ['last 30d', '', '']
+          ['DEX', 'gmx', 'volume', '#9758D8'],
+          ['last 3m', '', '']
         ],       
         chart_series: [],
         chart_options: {
@@ -404,7 +402,7 @@ export default {
 
       // if this.inputValues[0][2] is the same as this.inputValues[1][2]
       if(this.inputValues.length > 1){
-        if(this.inputValues[0][2] == this.inputValues[1][2]){
+        if(this.inputValues[0][2] == this.inputValues[1][2] || this.inputTypes[1] == 'filter'){
           chartTile += this.inputValues[0][2].toUpperCase() + ' '
         } else {
           chartTile += this.inputValues[0][2].toUpperCase() + '/' + this.inputValues[1][2].toUpperCase() + ' '
@@ -544,14 +542,17 @@ export default {
     await axios
     .get(url)
     .then((res) => {
-      let chains = res.data;
-      for (let z = 0; z < chains.length; z++) {
-        let el = chains[z];
+      //console.log(res)
+      let protocols = res.data;
+      for (let z = 0; z < protocols.length; z++) {
+        let el = protocols[z];
         let name = el.name;
-         // if category does not exist in categoryArray, add it
-         if(!categoryArray.includes(el.category)){
+       
+        // if category does not exist in categoryArray, add it
+        if(!categoryArray.includes(el.category)){
           categoryArray.push(el.category)
         }
+
         // does namearray[el.category] exist? if not, add it
         if(!nameArray[el.category]){
           nameArray[el.category] = []  
@@ -563,11 +564,12 @@ export default {
         dimensionArray[name] = el.dimensions;       
       }
     })   
+    console.log(nameArray)
+    console.log(dimensionArray)
+    console.log(categoryArray)
     this.options.protocol.x = nameArray;
     this.options.protocol.dimension = dimensionArray;
     this.options.protocol.categories = categoryArray;
-
-    console.log(this.options)
   },
   
 }
