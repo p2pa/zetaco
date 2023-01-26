@@ -49,17 +49,22 @@ module.exports = function(project){
     },{
         name: 'lido',
         contract: '0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84',
-        dimensions: ['ETH deposited', 'Transactions', 'Withdrawal count'],
+        dimensions: ['Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     },{
         name: 'rocketpool',
         contract: '0xae78736Cd615f374D3085123A210448E74Fc6393',
-        dimensions: ['ETH deposited', 'Transactions', 'Withdrawal count'],
+        dimensions: ['Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     },{
         name: 'stakewise',
         contract: '0xFe2e637202056d30016725477c5da089Ab0A043A',
-        dimensions: ['ETH deposited', 'Transactions', 'Withdrawal count'],
+        dimensions: ['Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
+        category: 'Staking'
+    },{
+        name: 'ankr',
+        contract: '0xE95A203B1a91a908F9B9CE46459d101078c2c3cb',
+        dimensions: ['Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     }]    
 
@@ -160,14 +165,17 @@ module.exports = function(project){
                 break;
             case 'Staking':
                 switch (dimension) {
-                    case 'ethdeposited':
-                        column = 'sum(amount) as stake_volume';                
+                    case 'deposited':
+                        column = 'sum(amount) as deposited';                
                         break; 
                     case 'transactions':
                         column = 'count(distinct tx_hash) as transactions';
                         break;
-                    case 'withdrawalcount':
-                        column = 'count(distinct origin_to_address) as withdrawal_count';
+                    case 'withdrawers':
+                        column = 'count(distinct origin_to_address) as withdrawers';
+                        break;
+                    case 'depositors':
+                        column = 'count(distinct origin_from_address) as depositors';
                         break;
                 }
         
