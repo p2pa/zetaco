@@ -41,49 +41,56 @@ module.exports = function(project){
     },{
         name: 'x2y2',
         ticker: 'X2Y2',
+        cg_id: 'x2y2',
         max_supply: 1000000000,
-        dimensions: ['Price', 'FDMC', 'Buyers', 'Sellers', 'Sales', 'Volume', 'Royalties', 'Revenue', 'PF Ratio', 'Users'],
+        dimensions: ['Price', 'FDMC', 'MC', 'Buyers', 'Sellers', 'Sales', 'Volume', 'Royalties', 'Revenue', 'PF Ratio', 'Users'],
         category: 'NFT',
     },{
         name: 'looksrare',
         ticker: 'LOOKS',
+        cg_id: 'looksrare',
         max_supply: 1000000000,
-        dimensions: ['Price', 'FDMC', 'Buyers', 'Sellers', 'Sales', 'Volume', 'Royalties', 'Revenue', 'PF Ratio', 'Users'],
+        dimensions: ['Price', 'FDMC', 'MC', 'Buyers', 'Sellers', 'Sales', 'Volume', 'Royalties', 'Revenue', 'PF Ratio', 'Users'],
         category: 'NFT',
     },{
         name: 'lido',
         ticker: 'LDO',
+        cg_id: 'lido-dao',
         max_supply: 1000000000,
         contract: '0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84',
-        dimensions: ['Price', 'FDMC', 'Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
+        dimensions: ['Price', 'FDMC', 'MC', 'Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     },{
         name: 'rocketpool',
         ticker: 'RPL',
+        cg_id: 'rocket-pool',
         max_supply: 18970871,
         contract: '0xae78736Cd615f374D3085123A210448E74Fc6393',
-        dimensions: ['Price', 'FDMC', 'Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
+        dimensions: ['Price', 'FDMC', 'MC', 'Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     },{
         name: 'stakewise',
         ticker: 'SWISE',
+        cg_id: 'stakewise',
         max_supply: 1000000000,
         contract: '0xFe2e637202056d30016725477c5da089Ab0A043A',
-        dimensions: ['Price', 'FDMC', 'Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
+        dimensions: ['Price', 'FDMC', 'MC', 'Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     },{
         name: 'ankr',
         ticker: 'ANKR',
+        cg_id: 'ankr',
         max_supply: 10000000000,
         contract: '0xE95A203B1a91a908F9B9CE46459d101078c2c3cb',
-        dimensions: ['Price', 'FDMC', 'Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
+        dimensions: ['Price', 'FDMC', 'MC', 'Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     },{
         name: 'stafi',
         ticker: 'FIS',
+        cg_id: 'stafi',
         max_supply: 114911733,
         contract: '0xef3a930e1ffffacd2fc13434ac81bd278b0ecc8d', 
-        dimensions: ['Price', 'FDMC', 'Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
+        dimensions: ['Price', 'FDMC', 'MC', 'Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     }]    
 
@@ -103,6 +110,7 @@ module.exports = function(project){
         let contract = current.contract;
         let ticker = current.ticker;
         let max_supply = current.max_supply;
+        let cg_id = current.cg_id;
 
         switch (category) {
             case 'NFT':
@@ -131,6 +139,29 @@ module.exports = function(project){
                             sql: `select
                                     hour::date as date,
                                     avg(price) * ${max_supply} as price
+                                from
+                                    ethereum.core.fact_hourly_token_prices
+                                where
+                                    date >= '2022-01-01'
+                                    AND symbol = '${ticker}'
+                                group by
+                                    date
+                                order by
+                                    date`,
+                            ttlMinutes: 10
+                        });
+                        break;
+                    case 'mc':
+                        alreadyRun = true;
+                        let res = await this.coingecko.coins.fetch(cg_id, { market_data: true, community_data: false, developer_data: false, localization: false, sparkline: false });                            
+                        if(res.error){
+                            console.log(res.error)
+                        }              
+                        let circSupply = res.data.market_data.circulating_supply;                           
+                        data = await this.flipside.query.run({
+                            sql: `select
+                                    hour::date as date,
+                                    avg(price) * ${circSupply} as price
                                 from
                                     ethereum.core.fact_hourly_token_prices
                                 where
@@ -246,6 +277,29 @@ module.exports = function(project){
                             sql: `select
                                     hour::date as date,
                                     avg(price) * ${max_supply} as price
+                                from
+                                    ethereum.core.fact_hourly_token_prices
+                                where
+                                    date >= '2022-01-01'
+                                    AND symbol = '${ticker}'
+                                group by
+                                    date
+                                order by
+                                    date`,
+                            ttlMinutes: 10
+                        });
+                        break;
+                    case 'mc':
+                        alreadyRun = true;
+                        let res = await this.coingecko.coins.fetch(cg_id, { market_data: true, community_data: false, developer_data: false, localization: false, sparkline: false });                            
+                        if(res.error){
+                            console.log(res.error)
+                        }              
+                        let circSupply = res.data.market_data.circulating_supply;                           
+                        data = await this.flipside.query.run({
+                            sql: `select
+                                    hour::date as date,
+                                    avg(price) * ${circSupply} as price
                                 from
                                     ethereum.core.fact_hourly_token_prices
                                 where
