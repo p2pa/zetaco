@@ -397,7 +397,7 @@ module.exports = function(project){
             if(res.error){
                 console.log(res.error)
             }
-            let marketcap = res.data.market_caps[0][1]
+            marketcap = res.data.market_caps[0][1]
         }
 
         for (let i = 0; i <  data.rows.length; i++) {
