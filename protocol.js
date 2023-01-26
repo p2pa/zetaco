@@ -79,17 +79,10 @@ module.exports = function(project){
         dimensions: ['Price', 'FDMC', 'Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     },{
-        name: 'bifrost',
-        ticker: 'BFC',
-        max_supply: 2368584074,
-        contract: '0xec1d6163e05b3f5d0fb8f354881f6c8b793ad612',
-        dimensions: ['Price', 'FDMC', 'Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
-        category: 'Staking'
-    },{
         name: 'stafi',
         ticker: 'FIS',
         max_supply: 114911733,
-        contract: '0x430cf6dd3e289adae63b50ff661d6bba2dbb3f28',
+        contract: '0xef3a930e1ffffacd2fc13434ac81bd278b0ecc8d', 
         dimensions: ['Price', 'FDMC', 'Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     }]    
