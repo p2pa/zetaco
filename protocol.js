@@ -41,62 +41,63 @@ module.exports = function(project){
     },{
         name: 'x2y2',
         ticker: 'X2Y2',
-        dimensions: ['Price', 'Buyers', 'Sellers', 'Sales', 'Volume', 'Royalties', 'Revenue', 'PF Ratio', 'Users'],
+        max_supply: 1000000000,
+        dimensions: ['Price', 'FDMC', 'Buyers', 'Sellers', 'Sales', 'Volume', 'Royalties', 'Revenue', 'PF Ratio', 'Users'],
         category: 'NFT',
     },{
         name: 'looksrare',
         ticker: 'LOOKS',
-        dimensions: ['Price', 'Buyers', 'Sellers', 'Sales', 'Volume', 'Royalties', 'Revenue', 'PF Ratio', 'Users'],
+        max_supply: 1000000000,
+        dimensions: ['Price', 'FDMC', 'Buyers', 'Sellers', 'Sales', 'Volume', 'Royalties', 'Revenue', 'PF Ratio', 'Users'],
         category: 'NFT',
     },{
         name: 'lido',
+        ticker: 'LDO',
+        max_supply: 1000000000,
         contract: '0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84',
-        dimensions: ['Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
+        dimensions: ['Price', 'FDMC', 'Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     },{
         name: 'rocketpool',
+        ticker: 'RPL',
+        max_supply: 18970871,
         contract: '0xae78736Cd615f374D3085123A210448E74Fc6393',
-        dimensions: ['Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
+        dimensions: ['Price', 'FDMC', 'Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     },{
         name: 'stakewise',
+        ticker: 'SWISE',
+        max_supply: 1000000000,
         contract: '0xFe2e637202056d30016725477c5da089Ab0A043A',
-        dimensions: ['Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
+        dimensions: ['Price', 'FDMC', 'Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     },{
         name: 'ankr',
+        ticker: 'ANKR',
+        max_supply: 10000000000,
         contract: '0xE95A203B1a91a908F9B9CE46459d101078c2c3cb',
-        dimensions: ['Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
+        dimensions: ['Price', 'FDMC', 'Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     },{
         name: 'cream',
+        ticker: 'CREAM',
+        max_supply: 2924546,
         contract: '0xcBc1065255cBc3aB41a6868c22d1f1C573AB89fd',
-        dimensions: ['Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
-        category: 'Staking'
-    },{
-        name: 'sharedstake',
-        contract: '0x898BAD2774EB97cF6b94605677F43b41871410B1',
-        dimensions: ['Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
+        dimensions: ['Price', 'FDMC', 'Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     },{
         name: 'bifrost',
+        ticker: 'BFC',
+        max_supply: 2368584074,
         contract: '0xec1d6163e05b3f5d0fb8f354881f6c8b793ad612',
-        dimensions: ['Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
+        dimensions: ['Price', 'FDMC', 'Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     },{
         name: 'stafi',
+        ticker: 'FIS',
+        max_supply: 114911733,
         contract: '0x430cf6dd3e289adae63b50ff661d6bba2dbb3f28',
-        dimensions: ['Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
-        category: 'Staking'
-    },{
-        name: 'blockdaemon',
-        contract: '0xea6b7151b138c274ed8d4d61328352545ef2d4b7',
-        dimensions: ['Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
-        category: 'Staking'
-    },{
-        name: 'swellnetwork',
-        contract: '0xe0c8df4270f4342132ec333f6048cb703e7a9c77',
-        dimensions: ['Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
+        dimensions: ['Price', 'FDMC', 'Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     }]    
 
@@ -111,9 +112,11 @@ module.exports = function(project){
 
         // check category
         let availableIndex = this.available.map(e => e.name).indexOf(this.chosen);
-        let category = this.available[availableIndex].category;
-        let contract = this.available[availableIndex].contract;
-        let ticker = this.available[availableIndex].ticker;
+        let current = this.available[availableIndex];
+        let category = current.category;
+        let contract = current.contract;
+        let ticker = current.ticker;
+        let max_supply = current.max_supply;
 
         switch (category) {
             case 'NFT':
@@ -124,6 +127,24 @@ module.exports = function(project){
                             sql: `select
                                     hour::date as date,
                                     avg(price) as price
+                                from
+                                    ethereum.core.fact_hourly_token_prices
+                                where
+                                    date >= '2022-01-01'
+                                    AND symbol = '${ticker}'
+                                group by
+                                    date
+                                order by
+                                    date`,
+                            ttlMinutes: 10
+                        });
+                        break;
+                    case 'fdmc':
+                        alreadyRun = true;
+                        data = await this.flipside.query.run({
+                            sql: `select
+                                    hour::date as date,
+                                    avg(price) * ${max_supply} as price
                                 from
                                     ethereum.core.fact_hourly_token_prices
                                 where
@@ -215,6 +236,42 @@ module.exports = function(project){
                 break;
             case 'Staking':
                 switch (dimension) {
+                    case 'price':
+                        alreadyRun = true;
+                        data = await this.flipside.query.run({
+                            sql: `select
+                                    hour::date as date,
+                                    avg(price) as price
+                                from
+                                    ethereum.core.fact_hourly_token_prices
+                                where
+                                    date >= '2022-01-01'
+                                    AND symbol = '${ticker}'
+                                group by
+                                    date
+                                order by
+                                    date`,
+                            ttlMinutes: 10
+                        });
+                        break;
+                    case 'fdmc':
+                        alreadyRun = true;
+                        data = await this.flipside.query.run({
+                            sql: `select
+                                    hour::date as date,
+                                    avg(price) * ${max_supply} as price
+                                from
+                                    ethereum.core.fact_hourly_token_prices
+                                where
+                                    date >= '2022-01-01'
+                                    AND symbol = '${ticker}'
+                                group by
+                                    date
+                                order by
+                                    date`,
+                            ttlMinutes: 10
+                        });
+                        break;
                     case 'deposited':
                         column = 'sum(amount) as deposited';                
                         break; 
