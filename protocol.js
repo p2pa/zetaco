@@ -76,6 +76,26 @@ module.exports = function(project){
         contract: '0x898BAD2774EB97cF6b94605677F43b41871410B1',
         dimensions: ['Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
+    },{
+        name: 'bifrost',
+        contract: '0xec1d6163e05b3f5d0fb8f354881f6c8b793ad612',
+        dimensions: ['Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
+        category: 'Staking'
+    },{
+        name: 'stafi',
+        contract: '0x430cf6dd3e289adae63b50ff661d6bba2dbb3f28',
+        dimensions: ['Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
+        category: 'Staking'
+    },{
+        name: 'blockdaemon',
+        contract: '0xea6b7151b138c274ed8d4d61328352545ef2d4b7',
+        dimensions: ['Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
+        category: 'Staking'
+    },{
+        name: 'swellnetwork',
+        contract: '0xe0c8df4270f4342132ec333f6048cb703e7a9c77',
+        dimensions: ['Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
+        category: 'Staking'
     }]    
 
     this.getProtocols = function(){
@@ -182,6 +202,9 @@ module.exports = function(project){
                         alreadyRun = true;
                         let symbol_out = '';
                         switch (this.chosen) {
+                            case 'stakewise':
+                                symbol_out = 'sETH2'
+                                break;
                             case 'lido':
                                 symbol_out = 'stETH'
                                 break;
@@ -204,7 +227,7 @@ module.exports = function(project){
                                         trunc(block_timestamp, 'day') as date,    
                                         sum(amount_out) as withdrawed
                                     FROM
-                                        ethereum_core.ez_dex_swaps
+                                        ethereum.core.ez_dex_swaps
                                     where
                                         block_timestamp >= '2022-01-01'
                                         AND symbol_out like '%${symbol_out}%'
