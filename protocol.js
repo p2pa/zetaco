@@ -30,21 +30,21 @@ module.exports = function(project){
 
     this.available = [{
         name: 'blur',
-        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Users'],
+        dimensions: ['Buyers', 'Sellers', 'Sales', 'Volume', 'Royalties', 'Users'],
         category: 'NFT',
     },{
         name: 'opensea',
-        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Revenue', 'Earnings', 'Users'],
+        dimensions: ['Buyers', 'Sellers', 'Sales', 'Volume', 'Royalties', 'Revenue', 'Earnings', 'Users'],
         category: 'NFT'
     },{
         name: 'x2y2',
         ticker: 'x2y2',
-        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Revenue', 'PF Ratio', 'Users'],
+        dimensions: ['Buyers', 'Sellers', 'Sales', 'Volume', 'Royalties', 'Revenue', 'PF Ratio', 'Users'],
         category: 'NFT',
     },{
         name: 'looksrare',
         ticker: 'looksrare',
-        dimensions: ['Buyers', 'Sellers', 'Sales count', 'Sales', 'Royalties', 'Revenue', 'PF Ratio', 'Users'],
+        dimensions: ['Buyers', 'Sellers', 'Sales', 'Volume', 'Royalties', 'Revenue', 'PF Ratio', 'Users'],
         category: 'NFT',
     },{
         name: 'lido',
@@ -87,11 +87,11 @@ module.exports = function(project){
                     case 'sellers':
                         column = 'count(distinct seller_address) as sellers';
                         break;
-                    case 'salescount':
-                        column = 'count(Distinct tx_hash) as sales_count';
-                        break;
                     case 'sales':
-                        column = 'ROUND(sum(PRICE_USD)) as sales';
+                        column = 'count(Distinct tx_hash) as sales';
+                        break;
+                    case 'volume':
+                        column = 'ROUND(sum(PRICE_USD)) as volume';
                         break;
                     case 'royalties':
                         column = 'Round(Sum(creator_fee_usd)) as royalties';
@@ -100,7 +100,7 @@ module.exports = function(project){
                         column = `sum(platform_fee_usd) as revenue`;
                         break;
                     case 'pfratio':
-                        column = `sum(platform_fee_usd) as revenue`;
+                        column = `sum(platform_fee_usd) as revenue`;                        
                         break;
                     case 'earnings':
                         column = 'sum(platform_fee_usd) as earnings';
@@ -197,11 +197,13 @@ module.exports = function(project){
             rows: [],
         };      
         
-        let res = await this.coingecko.coins.fetchMarketChart(ticker);        
-        if(res.error){
-            console.log(res.error)
+        if(dimension == 'pfratio'){
+            let res = await this.coingecko.coins.fetchMarketChart(ticker);        
+            if(res.error){
+                console.log(res.error)
+            }
+            let marketcap = res.data.market_caps[0][1]
         }
-        let marketcap = res.data.market_caps[0][1]
 
         for (let i = 0; i <  data.rows.length; i++) {
             let el =  data.rows[i];
