@@ -49,32 +49,32 @@ module.exports = function(project){
     },{
         name: 'lido',
         contract: '0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84',
-        dimensions: ['Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
+        dimensions: ['Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     },{
         name: 'rocketpool',
         contract: '0xae78736Cd615f374D3085123A210448E74Fc6393',
-        dimensions: ['Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
+        dimensions: ['Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     },{
         name: 'stakewise',
         contract: '0xFe2e637202056d30016725477c5da089Ab0A043A',
-        dimensions: ['Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
+        dimensions: ['Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     },{
         name: 'ankr',
         contract: '0xE95A203B1a91a908F9B9CE46459d101078c2c3cb',
-        dimensions: ['Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
+        dimensions: ['Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     },{
         name: 'cream',
         contract: '0xcBc1065255cBc3aB41a6868c22d1f1C573AB89fd',
-        dimensions: ['Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
+        dimensions: ['Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     },{
         name: 'sharedstake',
         contract: '0x898BAD2774EB97cF6b94605677F43b41871410B1',
-        dimensions: ['Deposited', 'Transactions', 'Withdrawers', 'Depositors'],
+        dimensions: ['Deposited', 'Withdrawed', 'Transactions', 'Withdrawers', 'Depositors'],
         category: 'Staking'
     }]    
 
@@ -178,6 +178,43 @@ module.exports = function(project){
                     case 'deposited':
                         column = 'sum(amount) as deposited';                
                         break; 
+                    case 'withdrawed':
+                        alreadyRun = true;
+                        let symbol_out = '';
+                        switch (this.chosen) {
+                            case 'lido':
+                                symbol_out = 'stETH'
+                                break;
+                            case 'rocketpool':
+                                symbol_out = 'rETH'
+                                break;
+                            case 'ankr':
+                                symbol_out = 'aETH'
+                                break;
+                            case 'cream':
+                                symbol_out = 'crETH'
+                                break;
+                            case 'sharedstake':
+                                symbol_out = 'vETH'
+                                break;  
+                        }
+
+                        data = await this.flipside.query.run({
+                            sql: `SELECT
+                                        trunc(block_timestamp, 'day') as date,    
+                                        sum(amount_out) as withdrawed
+                                    FROM
+                                        ethereum_core.ez_dex_swaps
+                                    where
+                                        block_timestamp >= '2022-01-01'
+                                        AND symbol_out like '%${symbol_out}%'
+                                    GROUP BY
+                                        date
+                                    ORDER BY
+                                        date`,
+                            ttlMinutes: 10
+                        });
+                        break;
                     case 'transactions':
                         column = 'count(distinct tx_hash) as transactions';
                         break;
