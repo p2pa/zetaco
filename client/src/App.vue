@@ -18,9 +18,9 @@
                                           <!-- color picker here -->                                          
                                         </div>  
                                         <div class="form-control" v-for="values, i in inputValues[index - 1].slice(0, 3)" :key="i">
-                                          <multiselect v-if="i == 0" v-model="inputValues[index - 1][i]" :options="options.protocol.categories" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>                
-                                          <multiselect v-if="i == 1" v-model="inputValues[index - 1][i]" :options="inputValues[index - 1][0] == '' ? [] : options.protocol.x[inputValues[index - 1][0]]" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
-                                          <multiselect v-if="i == 2" v-model="inputValues[index - 1][i]" :options="inputValues[index - 1][1] == '' ? [] : options.protocol.dimension[inputValues[index - 1][1]]" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>                                    
+                                          <multiselect v-if="i == 0" v-model="inputValues[index - 1][i]" :options="options.protocol.categories" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label="" placeholder="Select a category"></multiselect>                
+                                          <multiselect v-if="i == 1" v-model="inputValues[index - 1][i]" :options="inputValues[index - 1][0] == '' ? [] : options.protocol.x[inputValues[index - 1][0]]" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label="" placeholder="Select a protocol"></multiselect>
+                                          <multiselect v-if="i == 2" v-model="inputValues[index - 1][i]" :options="inputValues[index - 1][1] == '' ? [] : options.protocol.dimension[inputValues[index - 1][1]]" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label="" placeholder="Select the dimension"></multiselect>                                    
                                         </div>
                                                                               
                                         <span style="cursor:pointer;" class="input-group-text" id="basic-addon1" @click="removeInput(index - 1)">X</span>
@@ -28,13 +28,12 @@
                                     <div class="input-group mb-4" v-if="inputTypes[index - 1] == 'chain'">
                                         <span class="input-group-text" id="basic-addon1">{{index}}</span>
                                         <span class="input-group-text" id="basic-addon1"><i class="fa fa-link" aria-hidden="true"></i></span>
-                                        <div class="input-group-text" :style="{ cursor:'pointer', backgroundColor: inputValues[index-1][2] + ' !important' }" @click="newColor(index-1)">
-                                          <!-- color picker here -->
-                                          <span></span>
-                                        </div> 
+                                        <div class="input-group-text" :style="{ cursor:'pointer', backgroundColor: inputValues[index-1][3] + ' !important' }" @click="newColor(index-1)">
+                                          <!-- color picker here -->                                          
+                                        </div>
                                         <div class="form-control" v-for="values, i in inputValues[index - 1].slice(0, 2)" :key="i">
-                                          <multiselect v-if="i == 0" v-model="inputValues[index - 1][0]" :options="options.chain.x" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>
-                                          <multiselect v-if="i == 1" v-model="inputValues[index - 1][1]" :options="inputValues[index - 1][0] == '' ? '' : options.chain.dimension[inputValues[index - 1][0]]" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label=""></multiselect>                                    
+                                          <multiselect v-if="i == 0" v-model="inputValues[index - 1][0]" :options="options.chain.x" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label="" placeholder="Select a chain"></multiselect>
+                                          <multiselect v-if="i == 1" v-model="inputValues[index - 1][1]" :options="inputValues[index - 1][0] == '' ? '' : options.chain.dimension[inputValues[index - 1][0]]" :searchable="true" :preselect-first="false" selected-label="" select-label="" deselect-label="" placeholder="Select the dimension"></multiselect>                                    
                                         </div>
                                         <span style="cursor:pointer;" class="input-group-text" id="basic-addon1" @click="removeInput(index - 1)">X</span>
                                     </div>
@@ -92,7 +91,7 @@
                 <div class="widget-content">
                     <!-- <div class="chart-title">Total Profit <span class="text-primary ms-1">$10,840</span></div> -->
                     <div v-if="!table">
-                      <apex-chart v-if="revenue_options" height="325" :type="chartType" :options="revenue_options" :series="revenue_series"></apex-chart>
+                      <apex-chart v-if="chart_options" height="325" :type="chartType" :options="chart_options" :series="chart_series"></apex-chart>
                     </div>
 
                     <div v-if="table && tableData.length > 0">
@@ -219,11 +218,10 @@ export default {
           ['NFT', 'looksrare', 'pf ratio', '#0CE466'],
           ['last 30d', '', '']
         ],       
-        revenue_series: [           
-        ],
-        revenue_options: {
+        chart_series: [],
+        chart_options: {
           chart: {
-                    fontFamily: 'Nunito, sans-serif',
+                    fontFamily: 'Rubik, sans-serif',
                     zoom: { enabled: false },
                     toolbar: { show: false },
           },
@@ -263,11 +261,11 @@ export default {
                   },
                   offsetX: -10,
                   offsetY: 0,
-                  style: { fontSize: '12px', fontFamily: 'Poppins', cssClass: 'apexcharts-yaxis-title' },
+                  style: { fontSize: '12px', fontFamily: 'Rubik', cssClass: 'apexcharts-yaxis-title' },
               },
           },
           grid: {
-              borderColor: '#191e3a',
+              borderColor: '#292929',
               strokeDashArray: 5,
               xaxis: { lines: { show: true } },
               yaxis: { lines: { show: false } },
@@ -278,7 +276,7 @@ export default {
               horizontalAlign: 'right',
               offsetY: 0,
               fontSize: '16px',
-              fontFamily: 'Poppins',
+              fontFamily: 'Rubik',
               markers: { width: 10, height: 10, strokeWidth: 0, strokeColor: '#fff', fillColors: undefined, radius: 12, onClick: undefined, offsetX: 0, offsetY: 0 },
               itemMargin: { horizontal: 20, vertical: 5 },
           },
@@ -335,12 +333,12 @@ export default {
         case 'area':
           this.table = false;
           this.chartType = 'area';
-          this.revenue_options.chart.stacked = false;
+          this.chart_options.chart.stacked = false;
           break;
         case 'bar':
           this.table = false;
           this.chartType = 'bar';
-          this.revenue_options.chart.stacked = true;
+          this.chart_options.chart.stacked = true;
           break;        
       }
     },
@@ -500,7 +498,7 @@ export default {
         }       
       }         
       this.chartTitle = chartTile + ' ' + filterTitle; 
-      this.revenue_series = dataArray;
+      this.chart_series = dataArray;
     },
   },  
   async beforeMount(){
