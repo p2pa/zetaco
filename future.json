@@ -1,0 +1,30 @@
+[{
+    "name": "gmx",
+    "ticker": "GMX",
+    "cg_id": "gmx",
+    "max_supply": 13250000,
+    "contract": "0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a",
+    "dimensions": [
+      "Transactions",
+      "Volume",
+      "Users",
+      "New Users"
+    ],
+    "category": "DEX",
+    "chain": "Arbitrum"
+  },
+  {
+    "name": "gns",
+    "ticker": "GNS",
+    "cg_id": "gains-network",
+    "max_supply": 30390000,
+    "contract": "0xe5417af564e4bfda1c483642db72007871397896",
+    "dimensions": [
+      "Transactions",
+      "Volume",
+      "Users",
+      "New Users"
+    ],
+    "category": "DEX",
+    "chain": "Polygon"
+  }]
