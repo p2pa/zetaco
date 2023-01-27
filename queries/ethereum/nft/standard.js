@@ -3,11 +3,10 @@ SELECT
     DATE_TRUNC('day', block_timestamp) AS date,
     {column}
 FROM 
-    ethereum.core.ez_dex_swaps 
+    ethereum.core.ez_nft_sales 
 WHERE 
-    platform IN ({platform})
+    platform_name = '{platform}'
     AND block_timestamp >= '2022-01-01'
-    AND event_name = 'Swap'
 GROUP BY 
     1
 ORDER BY
