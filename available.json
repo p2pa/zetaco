@@ -74,6 +74,65 @@
     "chain": "Ethereum"
   },
   {
+    "name": "rarible",
+    "ticker": "RARI",
+    "cg_id": "rarible",
+    "max_supply": 25000000,
+    "dimensions": [
+      "Price",
+      "FDMC",
+      "MC",
+      "Buyers",
+      "Sellers",
+      "Sales",
+      "Volume",
+      "Royalties",
+      "Revenue",
+      "PF Ratio",
+      "Users"
+    ],
+    "category": "NFT",
+    "chain": "Ethereum"
+  },
+  {
+    "name": "nftx",
+    "ticker": "NFTX",
+    "cg_id": "nftx",
+    "max_supply": 650000,
+    "dimensions": [
+      "Price",
+      "FDMC",
+      "MC",
+      "Buyers",
+      "Sellers",
+      "Sales",
+      "Volume",
+      "Royalties",
+      "Revenue",
+      "PF Ratio",
+      "Users"
+    ],
+    "category": "NFT",
+    "chain": "Ethereum"
+  },
+  {
+    "name": "sudoswap",
+    "ticker": null,
+    "cg_id": "sudoswap",
+    "max_supply": null,
+    "dimensions": [      
+      "Buyers",
+      "Sellers",
+      "Sales",
+      "Volume",
+      "Royalties",
+      "Revenue",
+      "Users"
+    ],
+    "category": "NFT",
+    "chain": "Ethereum"
+  },
+  {
     "name": "lido",
     "ticker": "LDO",
     "cg_id": "lido-dao",
@@ -198,5 +257,56 @@
     ],
     "category": "DEX",
     "chain": "Ethereum"
-  } 
+  },
+  {
+    "name": "synthetix",
+    "ticker": "SNX",
+    "cg_id": "synthetix-network-token",
+    "max_supply": 313040451,
+    "contract": "0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f",
+    "dimensions": [
+      "Price",
+      "FDMC",
+      "MC",
+      "Users",
+      "Volume",
+      "Transactions"
+    ],
+    "category": "DEX",
+    "chain": "Ethereum"
+  },
+  {
+    "name": "curve",
+    "ticker": "CRV",
+    "cg_id": "curve-dao-token",
+    "max_supply": 3303030299,
+    "contract": "0xd533a949740bb3306d119cc777fa900ba034cd52",
+    "dimensions": [
+      "Price",
+      "FDMC",
+      "MC",
+      "Users",
+      "Volume",
+      "Transactions"
+    ],
+    "category": "DEX",
+    "chain": "Ethereum"
+  },
+  {
+    "name": "balancer",
+    "ticker": "BAL",
+    "cg_id": "balancer",
+    "max_supply": 96150704,
+    "contract": "0xba100000625a3754423978a60c9317c58a424e3d",
+    "dimensions": [
+      "Price",
+      "FDMC",
+      "MC",
+      "Users",
+      "Volume",
+      "Transactions"
+    ],
+    "category": "DEX",
+    "chain": "Ethereum"
+  }   
 ]
