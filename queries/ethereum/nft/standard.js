@@ -1,17 +1,17 @@
 let q = `
-    select
-        DATE_TRUNC('day', block_timestamp) AS date,
-        {column}
-    from
-        ethereum.core.ez_nft_sales
-    where
-        platform_name = '{name}'
-        and block_timestamp >= '2022-01-01'
-        and PRICE_USD is not null
-    group by
-        1
-    order by
-        1
+SELECT 
+    DATE_TRUNC('day', block_timestamp) AS date,
+    {column}
+FROM 
+    ethereum.core.ez_dex_swaps 
+WHERE 
+    platform IN ({platform})
+    AND block_timestamp >= '2022-01-01'
+    AND event_name = 'Swap'
+GROUP BY 
+    1
+ORDER BY
+    1;
     `
 
 module.exports = function(dimension, name){
