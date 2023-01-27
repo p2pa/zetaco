@@ -194,8 +194,9 @@ export default {
         chartTitle: '',
         tableData: [],
         chartType: "area",
-        inputsAmount: 2,
+        inputsAmount: 3,
         inputTypes: [
+          'protocol',
           'protocol',
           'filter'
         ],
@@ -213,7 +214,8 @@ export default {
             filters: ['last 3m', 'last 30d', 'last 7d', 'date'] 
         },        
         inputValues: [
-          ['DEX', 'gmx', 'volume', '#9758D8'],
+          ['DEX', 'uniswap', 'users', '#9758D8'],
+          ['DEX', 'sushiswap', 'users', '#e7515a'],
           ['last 3m', '', '']
         ],       
         chart_series: [],
