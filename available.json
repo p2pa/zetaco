@@ -166,35 +166,37 @@
     ],
     "category": "Staking",
     "chain": "Ethereum"
-  },
-  {
-    "name": "gmx",
-    "ticker": "GMX",
-    "cg_id": "gmx",
-    "max_supply": 13250000,
-    "contract": "0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a",
+  },{
+    "name": "uniswap",
+    "ticker": "UNI",
+    "cg_id": "uniswap",
+    "max_supply": 1000000000,
+    "contract": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
     "dimensions": [
-      "Transactions",
-      "Volume",
+      "Price",
+      "FDMC",
+      "MC",
       "Users",
-      "New Users"
+      "Volume",
+      "Transactions"
     ],
     "category": "DEX",
-    "chain": "Arbitrum"
-  },
-  {
-    "name": "gns",
-    "ticker": "GNS",
-    "cg_id": "gains-network",
-    "max_supply": 30390000,
-    "contract": "0xe5417af564e4bfda1c483642db72007871397896",
+    "chain": "Ethereum"
+  },{
+    "name": "sushiswap",
+    "ticker": "SUSHI",
+    "cg_id": "sushi",
+    "max_supply": 250000000,
+    "contract": "0x6b3595068778dd592e39a122f4f5a5cf09c90fe2",
     "dimensions": [
-      "Transactions",
-      "Volume",
+      "Price",
+      "FDMC",
+      "MC",
       "Users",
-      "New Users"
+      "Volume",
+      "Transactions"
     ],
     "category": "DEX",
-    "chain": "Polygon"
-  }
+    "chain": "Ethereum"
+  } 
 ]
