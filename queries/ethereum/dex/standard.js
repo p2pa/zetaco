@@ -37,6 +37,15 @@ module.exports = function(dimension, name){
         case 'sushiswap':
             platform = "'sushiswap'"
             break;
+        case 'synthetix':
+            platform = "'sushiswap'"
+            break;
+        case 'curve':
+            platform = "'sushiswap'"
+            break;
+        case 'balancer':
+            platform = "'sushiswap'"
+            break;
     }
 
     let z = q.replace('{column}', column)    
