@@ -13,6 +13,7 @@ order by
     date`
 
 module.exports = function(max_supply, ticker){
-    q = q.replace('{max_supply}', max_supply)
-    return q.replace('{ticker}', ticker)
+    let z = q.replace('{max_supply}', max_supply)
+    z = z.replace('{ticker}', ticker)
+    return z
 }

@@ -14,6 +14,7 @@ date
 `
 
 module.exports = function(circSupply, ticker){
-    q = q.replace('{circSupply}', circSupply)
-    return q.replace('{ticker}', ticker)
+    let z = q.replace('{circSupply}', circSupply)
+    z = z.replace('{ticker}', ticker)
+    return z
 }

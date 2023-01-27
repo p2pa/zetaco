@@ -14,5 +14,6 @@ order by
 `
 
 module.exports = function(ticker){
-    return q.replace('{ticker}', ticker)
+    let z = q.replace('{ticker}', ticker)
+    return z
 }
