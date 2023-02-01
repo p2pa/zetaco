@@ -14,6 +14,8 @@ ORDER BY
     `
 
 module.exports = function(dimension, name){
+    let column = '';
+
     switch(dimension){
         case 'buyers':
             column = 'count(distinct buyer_address) as buyers'
@@ -40,6 +42,7 @@ module.exports = function(dimension, name){
             column = 'sum(platform_fee_usd) as earnings';
             break;
     }
-    z = q.replace('{column}', column)
-    return z.replace('{name}', name)
+    let z = q.replace('{column}', column)
+    z = z.replace('{platform}', name)
+    return z
 }

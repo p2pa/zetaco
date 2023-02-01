@@ -28,5 +28,6 @@ ORDER BY
 1`
 
 module.exports = function(name){
-    return q.replace('{name}', name)
+    let z = q.replace('{name}', name)
+    return z
 }
